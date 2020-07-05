@@ -1,0 +1,16 @@
+/**
+ * #.# Block Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+.is-style-no-vertical-margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

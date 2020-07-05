@@ -1,0 +1,26 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-sketchpad-modified-blocks-annotations {
+  .sketchpad-modified-blocks-annotations-simbol {
+    padding-right: 0.25em;
+  }
+  .sketchpad-modified-blocks-annotations-content {
+    padding-left: 0.25em;
+    border-left: dotted 1px black;
+  }
+}
+
+.block-editor-inserter__preview-content {
+  .wp-block-sketchpad-modified-blocks-annotations {
+    font-size: 28px;
+
+    .sketchpad-modified-blocks-annotations-content {
+      border-left: none;
+    }
+  }
+}

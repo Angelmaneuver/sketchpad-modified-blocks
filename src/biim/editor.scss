@@ -1,0 +1,38 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-sketchpad-modified-blocks-biim {
+  .wp-block-sketchpad-modified-blocks-biim-navigationbar {
+    > .block-editor-inner-blocks {
+      > .block-editor-block-list__layout {
+        display: flex;
+
+        > div:first-child {
+          flex-basis: 0;
+          flex-grow: 2;
+          margin: 0 0.5em;
+          padding: 0.2em;
+
+          button {
+            width: 100%;
+          }
+        }
+
+        > div:last-child {
+          flex-basis: 0;
+          flex-grow: 8;
+          margin: 0 1em;
+
+          .sketchpad-modified-blocks-biim-messagebox {
+            margin: 0.2em;
+            padding: 0.2em;
+          }
+        }
+      }
+    }
+  }
+}

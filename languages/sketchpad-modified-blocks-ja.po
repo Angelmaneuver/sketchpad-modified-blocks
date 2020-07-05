@@ -1,0 +1,121 @@
+# Copyright (C) 2020 mrahmadawais, maedahbatool
+# This file is distributed under the same license as the sketchpad-modified-blocks — CGB Gutenberg Block Plugin plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: sketchpad-modified-blocks — CGB Gutenberg Block Plugin "
+"1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-"
+"modified-blocks\n"
+"Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-07-05T05:44:48+00:00\n"
+"PO-Revision-Date: 2020-07-05 05:45+0000\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: sketchpad-modified-blocks\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Plugin Name of the plugin
+msgid "sketchpad-modified-blocks — CGB Gutenberg Block Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/ahmadawais/create-guten-block/"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"sketchpad-modified-blocks — is a Gutenberg plugin created via create-guten-"
+"block."
+msgstr ""
+
+#. Author of the plugin
+msgid "mrahmadawais, maedahbatool"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://AhmadAwais.com/"
+msgstr ""
+
+#: src/init.php:98 src/annotations/block.js:20 src/biim/block.js:117
+msgid "sketchpad-modified-blocks"
+msgstr ""
+
+#: src/init.php:99
+msgid "Sketchpad - modified Blocks"
+msgstr ""
+
+#: src/init.php:103 src/biim/block.js:26 src/biim/block.js:72
+msgid "sketchpad-modified-blocks-internal-parts"
+msgstr ""
+
+#: src/init.php:104
+msgid "Sketchpad - modified Blocks Internal Parts"
+msgstr ""
+
+#: src/annotations/block.js:18
+msgid "Annotations Block"
+msgstr "注釈ブロック"
+
+#: src/annotations/block.js:21
+msgid "Block for writing annotations."
+msgstr ""
+
+#: src/annotations/block.js:23
+msgid "Sketchpad-modified-Blocks — Annotations Block"
+msgstr ""
+
+#: src/annotations/block.js:24
+msgid "Annotations"
+msgstr ""
+
+#: src/annotations/block.js:30 src/biim/block.js:127
+msgid "default"
+msgstr ""
+
+#: src/annotations/block.js:35 src/biim/block.js:132
+msgid "No Vertical Margin"
+msgstr ""
+
+#: src/annotations/block.js:85
+msgid "Annotations will be provided.<br />Second line.<br />Third line."
+msgstr ""
+
+#: src/biim/block.js:15
+msgid "Bottom line style (Biim System)"
+msgstr ""
+
+#: src/biim/block.js:24 src/biim/block.js:70
+msgid "Internal Parts"
+msgstr ""
+
+#: src/biim/block.js:27 src/biim/block.js:73
+msgid "This block is unusable. (Sketchpad - modified Blocks internal use)."
+msgstr ""
+
+#: src/biim/block.js:30 src/biim/block.js:76
+msgid "Sketchpad - modified Biim System Blocks Internal Parts"
+msgstr ""
+
+#: src/biim/block.js:115
+msgid "Biim System Block"
+msgstr ""
+
+#: src/biim/block.js:118
+msgid "Biim System Block."
+msgstr ""
+
+#: src/biim/block.js:120
+msgid "Sketchpad-modified-Blocks — Biim System Block"
+msgstr ""
+
+#: src/biim/block.js:121
+msgid "Biim"
+msgstr ""
+
+#: src/indent/block.js:13
+msgid "Indent"
+msgstr ""
