@@ -1,5 +1,10 @@
-node_modules
+# ignore node dependency directories
+node_modules/
 
-## Uncomment line below if you prefer to
-## keep compiled files out of version control
-# dist/
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore os manage files
+.DS_Store
