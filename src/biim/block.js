@@ -23,8 +23,8 @@ registerBlockType(
 	{
 		title: __( 'Internal Parts', 'sketchpad-modified-blocks' ),
 		icon: 'editor-paragraph',
-		category: __( 'sketchpad-modified-blocks-internal-parts', 'sketchpad-modified-blocks' ),
-		descriptions: __( 'This block is unusable. (Sketchpad - modified Blocks internal use).', 'sketchpad-modified-blocks' ),
+		category: 'sketchpad-modified-blocks-internal-parts',
+		description: __( 'This block is unusable. (Sketchpad - modified Blocks internal use).', 'sketchpad-modified-blocks' ),
 		parent: 'sketchpad-modified-blocks/biim',
 		keywords: [
 			__( 'Sketchpad - modified Biim System Blocks Internal Parts', 'sketchpad-modified-blocks' ),
@@ -69,8 +69,8 @@ registerBlockType(
 	{
 		title: __( 'Internal Parts', 'sketchpad-modified-blocks' ),
 		icon: 'editor-paragraph',
-		category: __( 'sketchpad-modified-blocks-internal-parts', 'sketchpad-modified-blocks' ),
-		descriptions: __( 'This block is unusable. (Sketchpad - modified Blocks internal use).', 'sketchpad-modified-blocks' ),
+		category: 'sketchpad-modified-blocks-internal-parts',
+		description: __( 'This block is unusable. (Sketchpad - modified Blocks internal use).', 'sketchpad-modified-blocks' ),
 		parent: 'sketchpad-modified-blocks/biim',
 		keywords: [
 			__( 'Sketchpad - modified Biim System Blocks Internal Parts', 'sketchpad-modified-blocks' ),
@@ -114,8 +114,8 @@ registerBlockType(
 	{
 		title: __( 'Biim System Block', 'sketchpad-modified-blocks' ),
 		icon: 'editor-paragraph',
-		category: __( 'sketchpad-modified-blocks', 'sketchpad-modified-blocks' ),
-		descriptions: __( 'Biim System Block.', 'sketchpad-modified-blocks' ),
+		category: 'sketchpad-modified-blocks',
+		description: __( 'Biim System Block.', 'sketchpad-modified-blocks' ),
 		keywords: [
 			__( 'Sketchpad-modified-Blocks — Biim System Block', 'sketchpad-modified-blocks' ),
 			__( 'Biim', 'sketchpad-modified-blocks' ),

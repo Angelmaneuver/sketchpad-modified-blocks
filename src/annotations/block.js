@@ -17,8 +17,8 @@ registerBlockType(
 	{
 		title: __( 'Annotations Block', 'sketchpad-modified-blocks' ),
 		icon: 'editor-paragraph',
-		category: __( 'sketchpad-modified-blocks', 'sketchpad-modified-blocks' ),
-		descriptions: __( 'Block for writing annotations.', 'sketchpad-modified-blocks' ),
+		category: 'sketchpad-modified-blocks',
+		description: __( 'Block for writing annotations.', 'sketchpad-modified-blocks' ),
 		keywords: [
 			__( 'Sketchpad-modified-Blocks — Annotations Block', 'sketchpad-modified-blocks' ),
 			__( 'Annotations', 'sketchpad-modified-blocks' ),
@@ -81,7 +81,7 @@ registerBlockType(
 		},
 		example: {
 			attributes: {
-				simbol: __( '*' ),
+				simbol: __( '*', 'sketchpad-modified-blocks' ),
 				content: __( 'Annotations will be provided.<br />Second line.<br />Third line.', 'sketchpad-modified-blocks' ),
 			}
 		}

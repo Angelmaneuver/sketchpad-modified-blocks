@@ -84,18 +84,20 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 			'editor_style'  => 'sketchpad_modified_blocks-cgb-block-editor-css',
 		)
 	);
+
+	wp_set_script_translations('sketchpad_modified_blocks-cgb-block-js', 'sketchpad-modified-blocks', dirname( plugin_dir_path( __FILE__ ) ) . '/languages' );
 }
 
 function sketchpad_modified_block_categories( $categories, $post ) {
 	return array_merge( $categories,
 											array(
 												array(
-													'slug'	=> __( 'sketchpad-modified-blocks', 'sketchpad-modified-blocks' ),
+													'slug'	=> 'sketchpad-modified-blocks',
 													'title'	=> __( 'Sketchpad - modified Blocks', 'sketchpad-modified-blocks' ),
 													'icon'	=> 'portfolio',
 												),
 												array(
-													'slug'	=> __( 'sketchpad-modified-blocks-internal-parts', 'sketchpad-modified-blocks' ),
+													'slug'	=> 'sketchpad-modified-blocks-internal-parts',
 													'title'	=> __( 'Sketchpad - modified Blocks Internal Parts', 'sketchpad-modified-blocks' ),
 													'icon'	=> 'portfolio',
 												),

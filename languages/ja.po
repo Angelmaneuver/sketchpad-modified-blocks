@@ -40,39 +40,39 @@ msgstr ""
 
 #: src/init.php:101
 msgid "Sketchpad - modified Blocks Internal Parts"
-msgstr ""
+msgstr "Sketchpad - modified Blocks 内部パ－ツ"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:18
 msgid "Annotations Block"
-msgstr ""
+msgstr "注釈ブロック"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:21
 msgid "Block for writing annotations."
-msgstr ""
+msgstr "注釈を書く為のブロックです。"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:23
 msgid "Sketchpad-modified-Blocks — Annotations Block"
-msgstr ""
+msgstr "Sketchpad-modified-Blocks — 注釈ブロック"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:24
 msgid "Annotations"
-msgstr ""
+msgstr "注釈"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:30
 #: src/biim/block.js:127
 msgid "default"
-msgstr ""
+msgstr "デフォルト"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:35
 #: src/biim/block.js:132
 msgid "No Vertical Margin"
-msgstr ""
+msgstr "余白無し"
 
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:84
@@ -82,45 +82,45 @@ msgstr ""
 #: dist/blocks.build.js:1
 #: src/annotations/block.js:85
 msgid "Annotations will be provided.<br />Second line.<br />Third line."
-msgstr ""
+msgstr "注釈を書く為のブロックが提供されます。<br />2行目。<br />3行目。"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:15
 msgid "Bottom line style (Biim System)"
-msgstr ""
+msgstr "最下行スタイル (Biim System)"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:24
 #: src/biim/block.js:70
 msgid "Internal Parts"
-msgstr ""
+msgstr "内部パ－ツ"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:27
 #: src/biim/block.js:73
 msgid "This block is unusable. (Sketchpad - modified Blocks internal use)."
-msgstr ""
+msgstr "このブロックは使用できません (Sketchpad - modified Blocks 内部で使用されています)。"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:30
 #: src/biim/block.js:76
 msgid "Sketchpad - modified Biim System Blocks Internal Parts"
-msgstr ""
+msgstr "Sketchpad - modified Biim System Blocks 内部パ－ツ"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:115
 msgid "Biim System Block"
-msgstr ""
+msgstr "Biim System ブロック"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:118
 msgid "Biim System Block."
-msgstr ""
+msgstr "Biim System ブロック。"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:120
 msgid "Sketchpad-modified-Blocks — Biim System Block"
-msgstr ""
+msgstr "Sketchpad-modified-Blocks — Biim System ブロック"
 
 #: dist/blocks.build.js:1
 #: src/biim/block.js:121
@@ -130,4 +130,4 @@ msgstr ""
 #: dist/blocks.build.js:1
 #: src/indent/block.js:13
 msgid "Indent"
-msgstr ""
+msgstr "インデント"
