@@ -7,8 +7,7 @@ import './style.scss';
 import { InnerBlocks } from '@wordpress/block-editor';
 
 const { __ } = wp.i18n;
-const { registerBlockType } = wp.blocks;
-const { registerBlockStyle } = wp.blocks;
+const { registerBlockType, registerBlockStyle } = wp.blocks;
 
 registerBlockStyle( 'core/paragraph', {
 	name: 'bottom',

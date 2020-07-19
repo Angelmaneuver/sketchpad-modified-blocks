@@ -88,6 +88,19 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 	wp_set_script_translations('sketchpad_modified_blocks-cgb-block-js', 'sketchpad-modified-blocks', dirname( plugin_dir_path( __FILE__ ) ) . '/languages' );
 }
 
+// Load a other script.
+function sketchpad_modified_blocks_script() {
+	if ( is_singular() ) {
+		wp_enqueue_script( 'clipboard' );
+		wp_enqueue_script( 'sketchpad-modified-blocks-clipboard', plugins_url( 'src/copy/clipboard.js', dirname( __FILE__ ) ), array( 'jquery', 'wp-i18n' ), false, true );
+		wp_enqueue_style( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css', array(), false, 'screen' );
+		wp_enqueue_script( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js', array( 'jquery' ), false, true );
+
+		wp_set_script_translations('sketchpad-modified-blocks-clipboard', 'sketchpad-modified-blocks', dirname( plugin_dir_path( __FILE__ ) ) . '/languages' );
+	}
+}
+
+// Add a block categories.
 function sketchpad_modified_block_categories( $categories, $post ) {
 	return array_merge( $categories,
 											array(
@@ -107,5 +120,6 @@ function sketchpad_modified_block_categories( $categories, $post ) {
 
 // Hook: Block assets.
 add_action( 'init', 'sketchpad_modified_blocks_cgb_block_assets' );
+add_action( 'wp_enqueue_scripts', 'sketchpad_modified_blocks_script' );
 
 add_filter( 'block_categories', 'sketchpad_modified_block_categories', 10, 2 );
