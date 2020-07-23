@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sketchpad-modified-blocks — CGB Gutenberg Block Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2020-07-19T02:23:35+00:00\n"
+"POT-Creation-Date: 2020-07-23T18:24:24+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,10 +127,6 @@ msgstr "コピ－ボタン 設定"
 #: dist/blocks.build.js:1 src/copy/block.js:62
 msgid "Specify the class name of the element to be copied to the clipborard."
 msgstr "クリップボ－ドにコピ－する要素のクラス名を指定します。"
-
-#: dist/blocks.build.js:1 src/indent/block.js:13
-msgid "Indent"
-msgstr "インデント"
 
 #: src/copy/clipboard.js:12
 msgid "copied!"
