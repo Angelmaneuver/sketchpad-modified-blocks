@@ -30,6 +30,9 @@ registerBlockType(
 			__( '', 'sketchpad-modified-blocks' ),
 			__( '', 'sketchpad-modified-blocks' ),
 		],
+		supports: {
+			inserter: false,
+		},
 		styles: [],
 		edit: ( { attributes, setAttributes, className } ) => {
 			const TEMPLATE = [
@@ -76,6 +79,9 @@ registerBlockType(
 			__( '', 'sketchpad-modified-blocks' ),
 			__( '', 'sketchpad-modified-blocks' ),
 		],
+		supports: {
+			inserter: false,
+		},
 		styles: [],
 		edit: ( { attributes, setAttributes, className } ) => {
 			const TEMPLATE = [

@@ -8,6 +8,8 @@ import { RichText } from '@wordpress/block-editor';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
+const { Fragment } = wp.element;
+const { InspectorControls, PanelColorSettings } = wp.editor;
 
 /**
  * Register: Custom Gutenberg Block.
@@ -48,34 +50,80 @@ registerBlockType(
 				default: '',
 				selector: '.sketchpad-modified-blocks-annotations-content',
 			},
+			textColor: {
+				type: 'string',
+			},
+			backgroundColor: {
+				type: 'string',
+			},
 		},
 		edit: ( { attributes, setAttributes, className } ) => {
 			const updateSimbol = ( value ) => { setAttributes( { simbol: value } ) };
 			const updateContent = ( value ) => { setAttributes( { content: value } ) };
+			const updateTextColor = ( value ) => { setAttributes( { textColor: value } ) };
+			const updateBackgroundColor = ( value ) => { setAttributes( { backgroundColor: value } ) };
+			let style = {
+				color: attributes.textColor
+			}
 			return (
-				<div className={ className }>
-					<div>
-						<RichText
-							className="sketchpad-modified-blocks-annotations-simbol"
-							value={ attributes.simbol }
-							onChange={ updateSimbol }
+				<Fragment>
+					<InspectorControls>
+						<PanelColorSettings
+							title={ __( 'Color' ) + __( 'Settings' ) }
+							colorSettings={ [
+								{
+									value: attributes.textColor,
+									onChange: updateTextColor,
+									label: __( 'Text Color' ),
+								},
+								{
+									value: attributes.backgroundColor,
+									onChange: updateBackgroundColor,
+									label: __( 'Background Color' ),
+								},
+							] }
 						/>
+					</InspectorControls>
+					<div
+						className={ className }
+						style={ { background: attributes.backgroundColor } }
+					>
+						<div>
+							<RichText
+								className="sketchpad-modified-blocks-annotations-simbol"
+								style={ style }
+								value={ attributes.simbol }
+								onChange={ updateSimbol }
+							/>
+						</div>
+						<div>
+							<RichText
+								className="sketchpad-modified-blocks-annotations-content"
+								style={ style }
+								value={ attributes.content }
+								onChange={ updateContent }
+							/>
+						</div>
 					</div>
-					<div>
-						<RichText
-							className="sketchpad-modified-blocks-annotations-content"
-							value={ attributes.content }
-							onChange={ updateContent }
-						/>
-					</div>
-				</div>
+				</Fragment>
 			);
 		},
 		save: ( { attributes, className } ) => {
+			let style = {
+				color: attributes.textColor
+			}
 			return (
-				<div>
-					<p className="sketchpad-modified-blocks-annotations-simbol"><RichText.Content value={ attributes.simbol } /></p>
-					<p className="sketchpad-modified-blocks-annotations-content"><RichText.Content value={ attributes.content } /></p>
+				<div
+					style={ { background: attributes.backgroundColor } }
+				>
+					<p
+						className="sketchpad-modified-blocks-annotations-simbol"
+						style={ style }
+					><RichText.Content value={ attributes.simbol } /></p>
+					<p
+						className="sketchpad-modified-blocks-annotations-content"
+						style={ style }
+					><RichText.Content value={ attributes.content } /></p>
 				</div>
 			);
 		},
