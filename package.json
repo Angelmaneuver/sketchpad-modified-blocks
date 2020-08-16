@@ -8,8 +8,8 @@
     "eject": "cgb-scripts eject"
   },
   "dependencies": {
-    "cgb-scripts": "1.23.0",
-    "node-sass": "^4.14.1"
+    "cgb-scripts": "latest",
+    "node-sass": "latest"
   },
   "devDependencies": {}
 }
