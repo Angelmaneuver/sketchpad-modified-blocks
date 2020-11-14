@@ -5,19 +5,17 @@
  */
 
 .wp-block-sketchpad-modified-blocks-biim {
-  margin-bottom: 1em;
-  color: rgb(238, 238, 238);
   background-color: rgb(49, 49, 49);
 
   > .sketchpad-modified-blocks-biim-screen {
     margin: 0;
     padding: 0;
-    min-height: 20em;
+    min-height: 34rem;
   }
 
   > .wp-block-sketchpad-modified-blocks-biim-navigationbar {
     display: flex;
-    padding: 0.5em;
+    padding: 0.5rem;
 
     > .sketchpad-modified-blocks-biim-icon {
       flex-grow: 2;
@@ -33,12 +31,13 @@
       flex-grow: 7;
       display: flex;
       flex-direction: column;
-      min-height: 5em;
-      margin-left: 0.5em;
-      border: 1px solid #fff;
+      min-height: 9.8rem;
+      margin-left: 0.5rem;
+      border: thin solid #fff;
 
       > p {
-        margin: 0 0.5em;
+        color: rgb(238, 238, 238);
+        margin: 0 1rem;
 
         &.is-style-bottom {
           order: 1;

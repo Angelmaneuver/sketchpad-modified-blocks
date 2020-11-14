@@ -4,9 +4,9 @@
 
 const { __ } = wp.i18n;
 
-(function( $ ){
-	$(document).ready(function() {
-    var clipboard = new ClipboardJS( '.sketchpad-modified-blocks-copy-button' );
+( function( $ ){
+	$( document ).ready( function() {
+    let clipboard = new ClipboardJS( '.sketchpad-modified-blocks-copy-button' );
 
     clipboard.on( 'success', ( e ) => {
       toastr.success( __( 'copied!', 'sketchpad-modified-blocks' ) );

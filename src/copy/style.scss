@@ -32,11 +32,15 @@
 
   .sketchpad-modified-blocks-copy-button {
     background-color: transparent;
-    font-size: 1em;
+    font-size: 2rem;
     border: none;
     
     > div {
       color: #9b8f76;
     }
   }
+}
+
+.toast-message {
+  font-size: 1.5rem;
 }

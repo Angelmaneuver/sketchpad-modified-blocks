@@ -92,7 +92,7 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 function sketchpad_modified_blocks_script() {
 	if ( is_singular() ) {
 		wp_enqueue_script( 'clipboard' );
-		wp_enqueue_script( 'sketchpad-modified-blocks-clipboard', plugins_url( 'src/copy/clipboard.js', dirname( __FILE__ ) ), array( 'jquery', 'wp-i18n' ), false, true );
+		wp_enqueue_script( 'sketchpad-modified-blocks-clipboard', plugins_url( 'js/clipboard.js', dirname( __FILE__ ) ), array( 'jquery', 'wp-i18n' ), false, true );
 		wp_enqueue_style( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css', array(), false, 'screen' );
 		wp_enqueue_script( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js', array( 'jquery' ), false, true );
 

@@ -56,10 +56,6 @@ registerBlockType(
 				</div>
 			);
 		},
-		example: {
-			attributes: {
-			}
-		}
 	}
 );
 
@@ -104,10 +100,6 @@ registerBlockType(
 				</div>
 			);
 		},
-		example: {
-			attributes: {
-			}
-		}
 	}
 );
 
@@ -158,9 +150,5 @@ registerBlockType(
 				</div>
 			);
 		},
-		example: {
-			attributes: {
-			}
-		}
 	}
 );

@@ -7,17 +7,17 @@
 
 .wp-block-sketchpad-modified-blocks-annotations {
   .sketchpad-modified-blocks-annotations-simbol {
-    padding-right: 0.25em;
+    min-width: 1.5rem;
   }
   .sketchpad-modified-blocks-annotations-content {
-    padding-left: 0.25em;
-    border-left: dotted 1px black;
+    padding-left: 0.2rem;
+    border-left: thin dotted black;
   }
 }
 
 .block-editor-inserter__preview-content {
   .wp-block-sketchpad-modified-blocks-annotations {
-    font-size: 28px;
+    font-size: 1.5rem;
 
     .sketchpad-modified-blocks-annotations-content {
       border-left: none;
