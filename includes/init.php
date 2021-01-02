@@ -33,7 +33,8 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 		'sketchpad_modified_blocks-cgb-style-css', // Handle.
 		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
 		is_admin() ? array( 'wp-editor' ) : null, // Dependency to include the CSS after it.
-		null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
+		(string) filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ), // Version: File modification time.
+		'all'
 	);
 
 	// Register block editor script for backend.
@@ -41,7 +42,7 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 		'sketchpad_modified_blocks-cgb-block-js', // Handle.
 		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
 		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
-		null, // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: filemtime — Gets file modification time.
+		(string) filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.build.js' ), // Version: filemtime — Gets file modification time.
 		true // Enqueue the script in the footer.
 	);
 
@@ -50,18 +51,19 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 		'sketchpad_modified_blocks-cgb-block-editor-css', // Handle.
 		plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
 		array( 'wp-edit-blocks' ), // Dependency to include the CSS after it.
-		null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ) // Version: File modification time.
+		(string) filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.editor.build.css' ), // Version: File modification time.
+		'all'
 	);
 
 	// WP Localized globals. Use dynamic PHP stuff in JavaScript via `cgbGlobal` object.
 	wp_localize_script(
 		'sketchpad_modified_blocks-cgb-block-js',
 		'cgbGlobal', // Array containing dynamic data for a JS Global.
-		[
+		array(
 			'pluginDirPath' => plugin_dir_path( __DIR__ ),
 			'pluginDirUrl'  => plugin_dir_url( __DIR__ ),
 			// Add more data here that you want to access from `cgbGlobal` object.
-		]
+		)
 	);
 
 	/**
@@ -85,37 +87,72 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 		)
 	);
 
-	wp_set_script_translations('sketchpad_modified_blocks-cgb-block-js', 'sketchpad-modified-blocks', dirname( plugin_dir_path( __FILE__ ) ) . '/languages' );
+	wp_set_script_translations(
+		'sketchpad_modified_blocks-cgb-block-js',
+		'sketchpad-modified-blocks',
+		dirname( plugin_dir_path( __FILE__ ) ) . '/languages'
+	);
 }
 
-// Load a other script.
+/**
+ * Register other scripts.
+ *
+ * @since 1.0.1
+ */
 function sketchpad_modified_blocks_script() {
 	if ( is_singular() ) {
 		wp_enqueue_script( 'clipboard' );
-		wp_enqueue_script( 'sketchpad-modified-blocks-clipboard', plugins_url( 'js/clipboard.js', dirname( __FILE__ ) ), array( 'jquery', 'wp-i18n' ), false, true );
-		wp_enqueue_style( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css', array(), false, 'screen' );
-		wp_enqueue_script( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js', array( 'jquery' ), false, true );
+		wp_enqueue_script(
+			'sketchpad-modified-blocks-clipboard',
+			plugins_url( 'js/clipboard.js', dirname( __FILE__ ) ),
+			array( 'jquery', 'wp-i18n' ),
+			(string) filemtime( plugin_dir_path( __DIR__ ) . 'js/clipboard.js' ),
+			true
+		);
+		wp_enqueue_style(
+			'toastr',
+			'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css',
+			array(),
+			false,
+			'screen'
+		);
+		wp_enqueue_script(
+			'toastr',
+			'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js',
+			array( 'jquery' ),
+			false,
+			true
+		);
 
-		wp_set_script_translations('sketchpad-modified-blocks-clipboard', 'sketchpad-modified-blocks', dirname( plugin_dir_path( __FILE__ ) ) . '/languages' );
+		wp_set_script_translations(
+			'sketchpad-modified-blocks-clipboard',
+			'sketchpad-modified-blocks',
+			dirname( plugin_dir_path( __FILE__ ) ) . '/languages'
+		);
 	}
 }
 
-// Add a block categories.
+/**
+ * Register block categories.
+ *
+ * @since 1.0.1
+ */
 function sketchpad_modified_block_categories( $categories, $post ) {
-	return array_merge( $categories,
-											array(
-												array(
-													'slug'	=> 'sketchpad-modified-blocks',
-													'title'	=> __( 'Sketchpad - modified Blocks', 'sketchpad-modified-blocks' ),
-													'icon'	=> 'portfolio',
-												),
-												array(
-													'slug'	=> 'sketchpad-modified-blocks-internal-parts',
-													'title'	=> __( 'Sketchpad - modified Blocks Internal Parts', 'sketchpad-modified-blocks' ),
-													'icon'	=> 'portfolio',
-												),
-											)
-										);
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug'  => 'sketchpad-modified-blocks',
+				'title' => __( 'Sketchpad - modified Blocks', 'sketchpad-modified-blocks' ),
+				'icon'  => 'portfolio',
+			),
+			array(
+				'slug'  => 'sketchpad-modified-blocks-internal-parts',
+				'title' => __( 'Sketchpad - modified Blocks Internal Parts', 'sketchpad-modified-blocks' ),
+				'icon'  => 'portfolio',
+			),
+		)
+	);
 }
 
 // Hook: Block assets.

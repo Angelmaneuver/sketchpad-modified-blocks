@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sketchpad-modified-blocks — CGB Gutenberg Block Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2020-07-23T18:24:24+00:00\n"
+"POT-Creation-Date: 2021-01-02T07:35:37+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,99 +35,99 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
-#: src/init.php:109
+#: includes/init.php:146
 msgid "Sketchpad - modified Blocks"
 msgstr ""
 
-#: src/init.php:114
+#: includes/init.php:151
 msgid "Sketchpad - modified Blocks Internal Parts"
 msgstr "Sketchpad - modified Blocks 内部パ－ツ"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:18
+#: dist/blocks.build.js:1
 msgid "Annotations Block"
 msgstr "注釈ブロック"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:21
+#: dist/blocks.build.js:1
 msgid "Block for writing annotations."
 msgstr "注釈を書く為のブロックです。"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:23
+#: dist/blocks.build.js:1
 msgid "Sketchpad-modified-Blocks — Annotations Block"
 msgstr "Sketchpad-modified-Blocks — 注釈ブロック"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:24
+#: dist/blocks.build.js:1
 msgid "Annotations"
 msgstr "注釈"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:30 src/biim/block.js:126
+#: dist/blocks.build.js:1
 msgid "default"
 msgstr "デフォルト"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:35 src/biim/block.js:131
+#: dist/blocks.build.js:1
 msgid "No Vertical Margin"
 msgstr "余白無し"
 
-#: dist/blocks.build.js:1 src/annotations/block.js:84
+#: dist/blocks.build.js:1
 msgid "*"
 msgstr ""
 
-#: dist/blocks.build.js:1 src/annotations/block.js:85
+#: dist/blocks.build.js:1
 msgid "Annotations will be provided.<br />Second line.<br />Third line."
 msgstr "注釈を書く為のブロックが提供されます。<br />2行目。<br />3行目。"
 
-#: dist/blocks.build.js:1 src/biim/block.js:14
+#: dist/blocks.build.js:1
 msgid "Bottom line style (Biim System)"
 msgstr "最下行スタイル (Biim System)"
 
-#: dist/blocks.build.js:1 src/biim/block.js:23 src/biim/block.js:69
+#: dist/blocks.build.js:1
 msgid "Internal Parts"
 msgstr "内部パ－ツ"
 
-#: dist/blocks.build.js:1 src/biim/block.js:26 src/biim/block.js:72
+#: dist/blocks.build.js:1
 msgid "This block is unusable. (Sketchpad - modified Blocks internal use)."
 msgstr "このブロックは使用できません (Sketchpad - modified Blocks 内部で使用されています)。"
 
-#: dist/blocks.build.js:1 src/biim/block.js:29 src/biim/block.js:75
+#: dist/blocks.build.js:1
 msgid "Sketchpad - modified Biim System Blocks Internal Parts"
 msgstr "Sketchpad - modified Biim System Blocks 内部パ－ツ"
 
-#: dist/blocks.build.js:1 src/biim/block.js:114
+#: dist/blocks.build.js:1
 msgid "Biim System Block"
 msgstr "Biim System ブロック"
 
-#: dist/blocks.build.js:1 src/biim/block.js:117
+#: dist/blocks.build.js:1
 msgid "Biim System Block."
 msgstr "Biim System ブロック。"
 
-#: dist/blocks.build.js:1 src/biim/block.js:119
+#: dist/blocks.build.js:1
 msgid "Sketchpad-modified-Blocks — Biim System Block"
 msgstr "Sketchpad-modified-Blocks — Biim System ブロック"
 
-#: dist/blocks.build.js:1 src/biim/block.js:120
+#: dist/blocks.build.js:1
 msgid "Biim"
 msgstr ""
 
-#: dist/blocks.build.js:1 src/copy/block.js:20 src/copy/block.js:26
+#: dist/blocks.build.js:1
 msgid "Copy Button"
 msgstr "コピ－ボタン"
 
-#: dist/blocks.build.js:1 src/copy/block.js:23
+#: dist/blocks.build.js:1
 msgid "Copy button."
 msgstr "コピ－ボタン。"
 
-#: dist/blocks.build.js:1 src/copy/block.js:25
+#: dist/blocks.build.js:1
 #, fuzzy
 msgid "Sketchpad-modified-Blocks — Copy Button"
 msgstr "Sketchpad-modified-Blocks — 注釈ブロック"
 
-#: dist/blocks.build.js:1 src/copy/block.js:57
+#: dist/blocks.build.js:1
 msgid "Copy Button Configuration"
 msgstr "コピ－ボタン 設定"
 
-#: dist/blocks.build.js:1 src/copy/block.js:62
+#: dist/blocks.build.js:1
 msgid "Specify the class name of the element to be copied to the clipborard."
 msgstr "クリップボ－ドにコピ－する要素のクラス名を指定します。"
 
-#: src/copy/clipboard.js:12
+#: js/clipboard.js:14
 msgid "copied!"
 msgstr "コピ－しました..."

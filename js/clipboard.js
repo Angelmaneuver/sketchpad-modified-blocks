@@ -4,12 +4,14 @@
 
 const { __ } = wp.i18n;
 
-( function( $ ){
-	$( document ).ready( function() {
-    let clipboard = new ClipboardJS( '.sketchpad-modified-blocks-copy-button' );
+( function ( $ ) {
+	$( document ).ready( function () {
+		const clipboard = new ClipboardJS(
+			'.sketchpad-modified-blocks-copy-button'
+		);
 
-    clipboard.on( 'success', ( e ) => {
-      toastr.success( __( 'copied!', 'sketchpad-modified-blocks' ) );
-    });
-  });
-})( jQuery );
+		clipboard.on( 'success', ( e ) => {
+			toastr.success( __( 'copied!', 'sketchpad-modified-blocks' ) );
+		} );
+	} );
+} )( jQuery );

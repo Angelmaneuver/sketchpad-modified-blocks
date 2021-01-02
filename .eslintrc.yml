@@ -9,4 +9,11 @@ parserOptions:
     jsx: true
   ecmaVersion: 12
   sourceType: module
-rules: {}
+globals:
+  jQuery: readonly
+  ClipboardJS: readonly
+  toastr: readonly
+rules:
+  no-unused-vars:
+    - error
+    - args: none
