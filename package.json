@@ -10,6 +10,7 @@
   "dependencies": {
     "cgb-scripts": "latest",
     "mem": ">=4.0.0",
+    "ini": "latest",
     "node-sass": "latest"
   },
   "devDependencies": {
