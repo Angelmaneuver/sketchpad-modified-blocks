@@ -11,5 +11,7 @@
     "cgb-scripts": "latest",
     "node-sass": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.16.0"
+  }
 }
