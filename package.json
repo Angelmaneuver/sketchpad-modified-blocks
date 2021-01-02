@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cgb-scripts": "latest",
+    "mem": ">=4.0.0",
     "node-sass": "latest"
   },
   "devDependencies": {
