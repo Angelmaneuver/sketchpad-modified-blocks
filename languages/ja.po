@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sketchpad-modified-blocks — CGB Gutenberg Block Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2021-01-30T14:35:16+00:00\n"
+"POT-Creation-Date: 2021-01-30T15:25:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,8 @@ msgid "Bottom line style (Biim System)"
 msgstr "最下行スタイル (Biim System)"
 
 #: dist/blocks.build.js:1
-msgid "Internal Parts"
-msgstr "内部パ－ツ"
+msgid "Messages Block"
+msgstr "メッセ－ジ (複数) ブロック"
 
 #: dist/blocks.build.js:1
 msgid "This block is unusable. (Sketchpad - modified Blocks internal use)."
@@ -90,6 +90,10 @@ msgstr "このブロックは使用できません (Sketchpad - modified Blocks 
 #: dist/blocks.build.js:1
 msgid "Sketchpad - modified Biim System Blocks Internal Parts"
 msgstr "Sketchpad - modified Biim System Blocks 内部パ－ツ"
+
+#: dist/blocks.build.js:1
+msgid "Biim Navigation bar Block"
+msgstr "Biim ナビゲ－ションバ－ブロック"
 
 #: dist/blocks.build.js:1
 msgid "Biim System Block"
@@ -154,10 +158,6 @@ msgstr "会話スタイル"
 #: dist/blocks.build.js:1
 msgid "Mind voice style"
 msgstr "心の声スタイル"
-
-#: dist/blocks.build.js:1
-msgid "Messages Block"
-msgstr "メッセ－ジ (複数) ブロック"
 
 #: dist/blocks.build.js:1
 msgid "Message Box Block"

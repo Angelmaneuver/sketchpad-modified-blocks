@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-01-30T14:35:16+00:00\n"
+"POT-Creation-Date: 2021-01-30T15:25:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified-blocks\n"
@@ -79,7 +79,7 @@ msgid "Bottom line style (Biim System)"
 msgstr ""
 
 #: dist/blocks.build.js:1
-msgid "Internal Parts"
+msgid "Messages Block"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -88,6 +88,10 @@ msgstr ""
 
 #: dist/blocks.build.js:1
 msgid "Sketchpad - modified Biim System Blocks Internal Parts"
+msgstr ""
+
+#: dist/blocks.build.js:1
+msgid "Biim Navigation bar Block"
 msgstr ""
 
 #: dist/blocks.build.js:1
@@ -152,10 +156,6 @@ msgstr ""
 
 #: dist/blocks.build.js:1
 msgid "Mind voice style"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Messages Block"
 msgstr ""
 
 #: dist/blocks.build.js:1

@@ -18,7 +18,7 @@ registerBlockStyle( 'core/paragraph', {
  * Register: Internal Part of paragraph.
  */
 registerBlockType( 'sketchpad-modified-blocks/biim-paragraph', {
-	title: __( 'Internal Parts', 'sketchpad-modified-blocks' ),
+	title: __( 'Messages Block', 'sketchpad-modified-blocks' ),
 	icon: 'editor-paragraph',
 	category: 'sketchpad-modified-blocks-internal-parts',
 	description: __(
@@ -64,7 +64,7 @@ registerBlockType( 'sketchpad-modified-blocks/biim-paragraph', {
  * Register: Internal Part of navigationbar.
  */
 registerBlockType( 'sketchpad-modified-blocks/biim-navigationbar', {
-	title: __( 'Internal Parts', 'sketchpad-modified-blocks' ),
+	title: __( 'Biim Navigation bar Block', 'sketchpad-modified-blocks' ),
 	icon: 'editor-paragraph',
 	category: 'sketchpad-modified-blocks-internal-parts',
 	description: __(
