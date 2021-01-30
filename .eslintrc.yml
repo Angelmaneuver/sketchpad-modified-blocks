@@ -13,6 +13,7 @@ globals:
   jQuery: readonly
   ClipboardJS: readonly
   toastr: readonly
+  ScrollTrigger: readonly
 rules:
   no-unused-vars:
     - error

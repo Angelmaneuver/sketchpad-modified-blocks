@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sketchpad-modified-blocks — CGB Gutenberg Block Plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2021-01-02T07:35:37+00:00\n"
+"POT-Creation-Date: 2021-01-30T14:35:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,11 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
-#: includes/init.php:146
+#: includes/init.php:164
 msgid "Sketchpad - modified Blocks"
 msgstr ""
 
-#: includes/init.php:151
+#: includes/init.php:169
 msgid "Sketchpad - modified Blocks Internal Parts"
 msgstr "Sketchpad - modified Blocks 内部パ－ツ"
 
@@ -116,9 +116,8 @@ msgid "Copy button."
 msgstr "コピ－ボタン。"
 
 #: dist/blocks.build.js:1
-#, fuzzy
 msgid "Sketchpad-modified-Blocks — Copy Button"
-msgstr "Sketchpad-modified-Blocks — 注釈ブロック"
+msgstr "Sketchpad-modified-Blocks — コピ－ボタン"
 
 #: dist/blocks.build.js:1
 msgid "Copy Button Configuration"
@@ -127,6 +126,66 @@ msgstr "コピ－ボタン 設定"
 #: dist/blocks.build.js:1
 msgid "Specify the class name of the element to be copied to the clipborard."
 msgstr "クリップボ－ドにコピ－する要素のクラス名を指定します。"
+
+#: dist/blocks.build.js:1
+msgid "Icon Block"
+msgstr "アイコンブロック"
+
+#: dist/blocks.build.js:1
+msgid "Sketchpad - modified Talk Blocks Internal Parts"
+msgstr "Sketchpad - modified 会話ブロック 内部パ－ツ"
+
+#: dist/blocks.build.js:1
+msgid "Rounded Corners"
+msgstr "角丸"
+
+#: dist/blocks.build.js:1
+msgid "Name Block"
+msgstr "名前ブロック"
+
+#: dist/blocks.build.js:1
+msgid "Message"
+msgstr "メッセ－ジ"
+
+#: dist/blocks.build.js:1
+msgid "Talk style"
+msgstr "会話スタイル"
+
+#: dist/blocks.build.js:1
+msgid "Mind voice style"
+msgstr "心の声スタイル"
+
+#: dist/blocks.build.js:1
+msgid "Messages Block"
+msgstr "メッセ－ジ (複数) ブロック"
+
+#: dist/blocks.build.js:1
+msgid "Message Box Block"
+msgstr "メッセ－ジボックスブロック"
+
+#: dist/blocks.build.js:1
+msgid "Talk Block"
+msgstr "会話ブロック"
+
+#: dist/blocks.build.js:1
+msgid "Talk Block."
+msgstr "会話ブロック"
+
+#: dist/blocks.build.js:1
+msgid "Sketchpad-modified-Blocks — Talk Block"
+msgstr "Sketchpad-modified-Blocks — 会話ブロック"
+
+#: dist/blocks.build.js:1
+msgid "Talk"
+msgstr "会話"
+
+#: dist/blocks.build.js:1
+msgid "Chat message left style"
+msgstr "チャットメッセ－ジ (左側) スタイル"
+
+#: dist/blocks.build.js:1
+msgid "Chat message right style"
+msgstr "チャットメッセ－ジ (右側) スタイル"
 
 #: js/clipboard.js:14
 msgid "copied!"

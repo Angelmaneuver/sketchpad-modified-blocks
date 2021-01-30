@@ -12,3 +12,4 @@
 import './annotations/block.js';
 import './biim/block.js';
 import './copy/block.js';
+import './talk/block.js';

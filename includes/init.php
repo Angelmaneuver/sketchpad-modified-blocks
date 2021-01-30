@@ -102,13 +102,6 @@ function sketchpad_modified_blocks_cgb_block_assets() { // phpcs:ignore
 function sketchpad_modified_blocks_script() {
 	if ( is_singular() ) {
 		wp_enqueue_script( 'clipboard' );
-		wp_enqueue_script(
-			'sketchpad-modified-blocks-clipboard',
-			plugins_url( 'js/clipboard.js', dirname( __FILE__ ) ),
-			array( 'jquery', 'wp-i18n' ),
-			(string) filemtime( plugin_dir_path( __DIR__ ) . 'js/clipboard.js' ),
-			true
-		);
 		wp_enqueue_style(
 			'toastr',
 			'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css',
@@ -121,6 +114,28 @@ function sketchpad_modified_blocks_script() {
 			'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js',
 			array( 'jquery' ),
 			false,
+			true
+		);
+		wp_enqueue_script(
+			'scrolltrigger',
+			'https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js',
+			array(),
+			false,
+			true
+		);
+
+		wp_enqueue_script(
+			'sketchpad-modified-blocks-clipboard',
+			plugins_url( 'js/clipboard.js', dirname( __FILE__ ) ),
+			array( 'jquery', 'wp-i18n', 'toastr' ),
+			(string) filemtime( plugin_dir_path( __DIR__ ) . 'js/clipboard.js' ),
+			true
+		);
+		wp_enqueue_script(
+			'sketchpad-modified-blocks-datatriger',
+			plugins_url( 'js/datatrigger.js', dirname( __FILE__ ) ),
+			array( 'jquery', 'scrolltrigger' ),
+			(string) filemtime( plugin_dir_path( __DIR__ ) . 'js/datatrigger.js' ),
 			true
 		);
 
@@ -136,10 +151,13 @@ function sketchpad_modified_blocks_script() {
  * Register block categories.
  *
  * @since 1.0.1
+ * @param Array   $default_categories Array of block categories.
+ * @param WP_Post $post Post being loaded.
+ * @return Array Array after adding block categories.
  */
-function sketchpad_modified_block_categories( $categories, $post ) {
+function sketchpad_modified_block_categories( $default_categories, $post ) {
 	return array_merge(
-		$categories,
+		$default_categories,
 		array(
 			array(
 				'slug'  => 'sketchpad-modified-blocks',
