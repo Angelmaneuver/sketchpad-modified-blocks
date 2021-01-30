@@ -163,6 +163,11 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 						className="sketchpad-modified-blocks-talk-message-content"
 						value={ attributes.content }
 						onChange={ updateContent }
+						placeholder={ __(
+							'Start writing',
+							'sketchpad-modified-blocks'
+						) }
+						keepPlaceholderOnFocus={ true }
 					/>
 				</p>
 			</div>
