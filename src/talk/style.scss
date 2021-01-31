@@ -81,8 +81,8 @@ div.wp-block-sketchpad-modified-blocks-talk {
         div.wp-block-sketchpad-modified-blocks-talk-message {
           &:not([class*="is-style-"]), &.is-style-talk {
             &::before {
-              left: -1.4rem;
-              transform: rotate(-20deg);
+              left: -1.3rem;
+              transform: rotate(-19deg);
             }
           }
 
@@ -119,8 +119,8 @@ div.wp-block-sketchpad-modified-blocks-talk {
               content: '';
               position: absolute;
               display: block;
-              right: -1.4rem;
-              transform: rotate(20deg);
+              right: -1.3rem;
+              transform: rotate(19deg);
             }
           }
 

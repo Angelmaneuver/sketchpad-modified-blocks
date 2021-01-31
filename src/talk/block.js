@@ -8,6 +8,8 @@ import { InnerBlocks, RichText } from '@wordpress/block-editor';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
+const { Fragment } = wp.element;
+const { BlockControls, AlignmentToolbar } = wp.blockEditor;
 
 /**
  * Register: Internal Part of icon.
@@ -145,6 +147,10 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 		},
 	],
 	attributes: {
+		alignment: {
+			type: 'string',
+			default: '',
+		},
 		content: {
 			type: 'string',
 			source: 'html',
@@ -153,14 +159,32 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 		},
 	},
 	edit: ( { attributes, setAttributes, className } ) => {
+		const updateAlignment = ( value ) => {
+			setAttributes( {
+				alignment: value === null ? '' : value,
+			} );
+		};
 		const updateContent = ( value ) => {
 			setAttributes( { content: value } );
 		};
+		const textAlignment =
+			attributes.alignment === undefined ||
+			attributes.alignment === null ||
+			attributes.alignment === ''
+				? ''
+				: 'has-text-align-' + attributes.alignment;
 		return (
-			<div className={ className }>
-				<p>
+			<Fragment>
+				<BlockControls>
+					<AlignmentToolbar
+						value={ attributes.alignment }
+						onChange={ updateAlignment }
+					/>
+				</BlockControls>
+				<div className={ className }>
 					<RichText
-						className="sketchpad-modified-blocks-talk-message-content"
+						tagName="p"
+						className={ `sketchpad-modified-blocks-talk-message-content ${ textAlignment }` }
 						value={ attributes.content }
 						onChange={ updateContent }
 						placeholder={ __(
@@ -169,16 +193,24 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 						) }
 						keepPlaceholderOnFocus={ true }
 					/>
-				</p>
-			</div>
+				</div>
+			</Fragment>
 		);
 	},
 	save: ( { attributes, className } ) => {
+		const textAlignment =
+			attributes.alignment === undefined ||
+			attributes.alignment === null ||
+			attributes.alignment === ''
+				? ''
+				: 'has-text-align-' + attributes.alignment;
 		return (
 			<div>
-				<p className="sketchpad-modified-blocks-talk-message-content">
-					<RichText.Content value={ attributes.content } />
-				</p>
+				<RichText.Content
+					tagName="p"
+					className={ `sketchpad-modified-blocks-talk-message-content ${ textAlignment }` }
+					value={ attributes.content }
+				/>
 			</div>
 		);
 	},
