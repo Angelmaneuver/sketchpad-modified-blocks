@@ -4,12 +4,16 @@
 
 import './editor.scss';
 import './style.scss';
-import { InnerBlocks, RichText } from '@wordpress/block-editor';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { Fragment } = wp.element;
-const { BlockControls, AlignmentToolbar } = wp.blockEditor;
+const {
+	BlockControls,
+	AlignmentToolbar,
+	InnerBlocks,
+	RichText,
+} = wp.blockEditor;
 
 /**
  * Register: Internal Part of icon.

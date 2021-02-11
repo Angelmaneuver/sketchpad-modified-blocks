@@ -4,11 +4,10 @@
 
 import './editor.scss';
 import './style.scss';
-import { RichText } from '@wordpress/block-editor';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
-const { InspectorControls, PanelColorSettings } = wp.blockEditor;
+const { InspectorControls, PanelColorSettings, RichText } = wp.blockEditor;
 const { Fragment } = wp.element;
 
 /**

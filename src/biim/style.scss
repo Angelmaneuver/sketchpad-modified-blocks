@@ -8,9 +8,31 @@
   background-color: rgb(49, 49, 49);
 
   > .sketchpad-modified-blocks-biim-screen {
+    position: relative;
     margin: 0;
     padding: 0;
-    min-height: 34rem;
+    width: 100%;
+    height: auto;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &.is-style-image-postit {
+      margin-bottom: 2rem;
+    }
   }
 
   > .wp-block-sketchpad-modified-blocks-biim-navigationbar {
@@ -19,12 +41,9 @@
 
     > .sketchpad-modified-blocks-biim-icon {
       flex-grow: 2;
-      max-width: 100px;
-      margin: 0;
-      
-      > img {
-          vertical-align: middle;
-      }
+      max-width: 10rem;
+      max-height: 10rem;
+      margin: 0 auto;
     }
 
     .sketchpad-modified-blocks-biim-messagebox {
@@ -35,13 +54,16 @@
       margin-left: 0.5rem;
       border: thin solid #fff;
 
-      > p {
-        color: rgb(238, 238, 238);
-        margin: 0 1rem;
-
+      .wp-block-sketchpad-modified-blocks-biim-paragraph {
         &.is-style-bottom {
           order: 1;
           margin-top: auto;
+        }
+
+        > p {
+          color: rgb(238, 238, 238);
+          margin: 0 1rem;
+
         }
       }
     }
