@@ -11,9 +11,72 @@ const { Fragment } = wp.element;
 const {
 	BlockControls,
 	AlignmentToolbar,
+	InspectorControls,
 	InnerBlocks,
 	RichText,
 } = wp.blockEditor;
+const { PanelBody, FontSizePicker } = wp.components;
+
+const Preset = {
+	Font: {
+		Sizes: [
+			{
+				name: __( 'Small' ),
+				slug: 'small',
+				size: 13,
+			},
+			{
+				name: __( 'Standard' ),
+				slug: 'standard',
+				size: 16,
+			},
+			{
+				name: __( 'Medium' ),
+				slug: 'medium',
+				size: 20,
+			},
+			{
+				name: __( 'Large' ),
+				slug: 'large',
+				size: 36,
+			},
+			{
+				name: __( 'Extra Large' ),
+				slug: 'huge',
+				size: 42,
+			},
+		],
+		Size2Class: ( value ) => {
+			let keyword = '';
+
+			switch ( value ) {
+				case 13:
+					keyword = 'small';
+					break;
+				case 16:
+					keyword = 'standard';
+					break;
+				case 20:
+					keyword = 'medium';
+					break;
+				case 36:
+					keyword = 'large';
+					break;
+				case 42:
+					keyword = 'huge';
+					break;
+				default:
+			}
+
+			return keyword === '' ? '' : ' has-' + keyword + '-font-size';
+		},
+		alignment2Class: ( value ) => {
+			return value === undefined || value === null || value === ''
+				? ''
+				: ' has-text-align-' + value;
+		},
+	},
+};
 
 /**
  * Register: Internal Part of icon.
@@ -155,6 +218,10 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 			type: 'string',
 			default: '',
 		},
+		fontSize: {
+			type: 'number',
+			default: null,
+		},
 		content: {
 			type: 'string',
 			source: 'html',
@@ -168,15 +235,26 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 				alignment: value === null ? '' : value,
 			} );
 		};
+		const updateFontSize = ( value ) => {
+			setAttributes( {
+				fontSize: value,
+			} );
+		};
 		const updateContent = ( value ) => {
 			setAttributes( { content: value } );
 		};
-		const textAlignment =
-			attributes.alignment === undefined ||
-			attributes.alignment === null ||
-			attributes.alignment === ''
-				? ''
-				: 'has-text-align-' + attributes.alignment;
+		const textAlignment = Preset.Font.alignment2Class(
+			attributes.alignment
+		);
+		const textFontSize = Preset.Font.Size2Class( attributes.fontSize );
+		const classValue =
+			'sketchpad-modified-blocks-talk-message-content' +
+			textAlignment +
+			textFontSize;
+		const styleValue =
+			Preset.Font.Size2Class( attributes.fontSize ) === ''
+				? { fontSize: attributes.fontSize }
+				: {};
 		return (
 			<Fragment>
 				<BlockControls>
@@ -185,10 +263,20 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 						onChange={ updateAlignment }
 					/>
 				</BlockControls>
+				<InspectorControls>
+					<PanelBody title={ __( 'Typography' ) }>
+						<FontSizePicker
+							fontSizes={ Preset.Font.Sizes }
+							value={ attributes.fontSize }
+							onChange={ updateFontSize }
+						/>
+					</PanelBody>
+				</InspectorControls>
 				<div className={ className }>
 					<RichText
 						tagName="p"
-						className={ `sketchpad-modified-blocks-talk-message-content ${ textAlignment }` }
+						className={ classValue }
+						style={ styleValue }
 						value={ attributes.content }
 						onChange={ updateContent }
 						placeholder={ __(
@@ -202,17 +290,24 @@ registerBlockType( 'sketchpad-modified-blocks/talk-message', {
 		);
 	},
 	save: ( { attributes, className } ) => {
-		const textAlignment =
-			attributes.alignment === undefined ||
-			attributes.alignment === null ||
-			attributes.alignment === ''
-				? ''
-				: 'has-text-align-' + attributes.alignment;
+		const textAlignment = Preset.Font.alignment2Class(
+			attributes.alignment
+		);
+		const textFontSize = Preset.Font.Size2Class( attributes.fontSize );
+		const classValue =
+			'sketchpad-modified-blocks-talk-message-content' +
+			textAlignment +
+			textFontSize;
+		const styleValue =
+			Preset.Font.Size2Class( attributes.fontSize ) === ''
+				? { fontSize: attributes.fontSize }
+				: {};
 		return (
 			<div>
 				<RichText.Content
 					tagName="p"
-					className={ `sketchpad-modified-blocks-talk-message-content ${ textAlignment }` }
+					className={ classValue }
+					style={ styleValue }
 					value={ attributes.content }
 				/>
 			</div>
