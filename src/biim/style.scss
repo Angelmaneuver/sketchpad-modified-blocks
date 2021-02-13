@@ -52,6 +52,7 @@
       flex-direction: column;
       min-height: 9.8rem;
       margin-left: 0.5rem;
+      padding: 0 1rem;
       border: thin solid #fff;
 
       .wp-block-sketchpad-modified-blocks-biim-paragraph {
@@ -62,8 +63,6 @@
 
         > p {
           color: rgb(238, 238, 238);
-          margin: 0 1rem;
-
         }
       }
     }
