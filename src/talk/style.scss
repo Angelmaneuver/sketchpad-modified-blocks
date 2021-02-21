@@ -72,6 +72,10 @@ div.wp-block-sketchpad-modified-blocks-talk {
 
     p {
       margin: 1rem 2rem;
+
+      &[class*='has-'][class*='-font-size'] {
+        line-height: initial;
+      }
     }
   }
 
