@@ -46,6 +46,11 @@ div.wp-block-sketchpad-modified-blocks-talk {
       font-size: 1.4rem;
       margin-left: 1rem;
       margin-right: 1rem;
+
+      &::before {
+        content: '';
+        display: inline-block;
+      }
     }
 
     div.wp-block-sketchpad-modified-blocks-talk-messages {
