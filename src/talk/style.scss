@@ -13,8 +13,10 @@ div.wp-block-sketchpad-modified-blocks-talk {
     max-width: 7.5rem;
     margin: 0;
 
-    &.is-style-rounded p {
-      border-radius: 9999px;
+    &.is-style-rounded {
+      figure.is-style-default img, figure:not([class*='is-style']) img, p {
+        border-radius: 9999px;
+      }
     }
 
     figure.wp-block-image {
