@@ -68,6 +68,7 @@ add_action( 'init', 'sketchpad_modified_blocks_init' );
 function sketchpad_modified_blocks_scripts() {
 	if ( is_singular() ) {
 		wp_enqueue_script( 'clipboard' );
+		wp_enqueue_style( 'dashicons' );
 		wp_enqueue_style(
 			'toastr',
 			'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css',
