@@ -1,11 +1,9 @@
 /**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
+ * The following styles get applied both on the front of your site
+ * and in the editor.
  */
 
 .wp-block-sketchpad-modified-blocks-copy {
-
   button {
     display: block;
     cursor: pointer;
@@ -32,11 +30,18 @@
 
   .sketchpad-modified-blocks-copy-button {
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 4rem;
+    line-height: 1;
     border: none;
     
     > div {
       color: #9b8f76;
+
+      &::after {
+        font-family: "dashicons";
+        content: "\f481";
+        vertical-align: middle;
+      }
     }
   }
 }

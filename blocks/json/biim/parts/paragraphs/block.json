@@ -1,0 +1,42 @@
+{
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/biim-paragraphs",
+	"version": "0.1.0",
+	"title": "Biim Messagebox Block",
+	"icon": "editor-paragraph",
+	"description": "Messagebox Block.",
+	"keywords": [],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		},
+		{
+			"name": "bottom-justification",
+			"label": "Bottom justified vertical position"
+		},
+		{
+			"name": "center-justification",
+			"label": "Center justified vertical position"
+		},
+		{
+			"name": "space-between",
+			"label": "Space between"
+		},
+		{
+			"name": "space-around",
+			"label": "Space around"
+		}
+	],
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"reusable": false
+	},
+	"attributes": {},
+	"textdomain": "sketchpad-modified-blocks",
+	"editorScript": "file:../../../../components/biim-paragraphs/biim-paragraphs.js",
+	"editorStyle": "file:../../../../components/biim-paragraphs/biim-paragraphs.css",
+	"style": "file:../../../../components/biim-paragraphs/style-biim-paragraphs.css"
+}

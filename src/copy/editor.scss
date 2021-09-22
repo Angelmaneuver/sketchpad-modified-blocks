@@ -1,11 +1,8 @@
 /**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
+ * The following styles get applied inside the editor only.
  */
 
- .block-editor-inserter__preview-content {
+.block-editor-inserter__preview-content {
   .wp-block-sketchpad-modified-blocks-copy {
     font-size: 2rem;
   }

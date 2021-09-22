@@ -1,13 +1,12 @@
 /**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
+ * The following styles get applied both on the front of your site
+ * and in the editor.
  */
 
 .wp-block-sketchpad-modified-blocks-annotations {
-  display: flex;
-
-  .sketchpad-modified-blocks-annotations-simbol {
-    margin-right: 1rem;
-  }
+	display: flex;
+	
+	.sketchpad-modified-blocks-annotations-simbol {
+		margin-right: 1rem;
+	}
 }

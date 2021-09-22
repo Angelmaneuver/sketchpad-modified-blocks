@@ -1,26 +1,35 @@
 /**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
+ * The following styles get applied inside the editor only.
  */
 
 .wp-block-sketchpad-modified-blocks-annotations {
-  .sketchpad-modified-blocks-annotations-simbol {
-    min-width: 1.5rem;
+  > div:first-child {
+    width: 5%;
+
+    .sketchpad-modified-blocks-annotations-simbol {
+      width: 100%;
+      height: 100%;
+    }
   }
-  .sketchpad-modified-blocks-annotations-content {
-    padding-left: 0.2rem;
-    border-left: thin dotted black;
+
+  > div:last-child {
+    width: 95%;
+
+    .sketchpad-modified-blocks-annotations-content {
+      width: 100%;
+      height: 100%;
+      padding-left: 0.2rem;
+      border-left: thin dotted black;
+    }
   }
 }
 
 .block-editor-inserter__preview-content {
-  .wp-block-sketchpad-modified-blocks-annotations {
-    font-size: 1.5rem;
+	.wp-block-sketchpad-modified-blocks-annotations {
+		font-size: 1.5rem;
 
-    .sketchpad-modified-blocks-annotations-content {
-      border-left: none;
-    }
-  }
+		.sketchpad-modified-blocks-annotations-content {
+			border-left: none;
+		}
+	}
 }

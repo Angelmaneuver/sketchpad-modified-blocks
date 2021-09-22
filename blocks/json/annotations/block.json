@@ -1,0 +1,57 @@
+{
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/annotations",
+	"version": "0.1.0",
+	"title": "Annotations Block",
+	"category": "sketchpad-modified-blocks",
+	"icon": "editor-paragraph",
+	"description": "Block for writing annotations.",
+	"keywords": [
+		"Sketchpad",
+		"Annotation"
+	],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		},
+		{
+			"name": "no-vertical-margin",
+			"label": "No Vertical Margin"
+		}
+	],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"simbol": {
+			"type": "string",
+			"source": "html",
+			"default": "*",
+			"selector": ".sketchpad-modified-blocks-annotations-simbol"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"default": "",
+			"selector": ".sketchpad-modified-blocks-annotations-content"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"simbol": "*",
+			"content": "Annotations will be provided.<br />Second line.<br />Third line."
+		}
+	},
+	"textdomain": "sketchpad-modified-blocks",
+	"editorScript": "file:../../components/annotations/annotations.js",
+	"editorStyle": "file:../../components/annotations/annotations.css",
+	"style": "file:../../components/annotations/style-annotations.css"
+}

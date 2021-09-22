@@ -1,0 +1,37 @@
+{
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/copy",
+	"version": "0.1.0",
+	"title": "Copy Block",
+	"category": "sketchpad-modified-blocks",
+	"icon": "clipboard",
+	"description": "Copy button block allows you to copy the text of other blocks.",
+	"keywords": [
+		"Sketchpad",
+		"Copy"
+	],
+	"styles": [],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"target": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "button",
+			"attribute": "data-clipboard-target",
+			"default": ""
+		},
+		"alignment": {
+			"type": "string",
+			"default": "none"
+		}
+	},
+	"example": {
+		"attributes": {}
+	},
+	"textdomain": "sketchpad-modified-blocks",
+	"editorScript": "sketchpad-modified-blocks-copy-js",
+	"editorStyle": "file:../../components/copy/copy.css",
+	"style": "file:../../components/copy/style-copy.css"
+}

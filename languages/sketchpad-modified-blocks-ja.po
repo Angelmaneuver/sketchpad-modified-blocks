@@ -1,0 +1,242 @@
+# Copyright (C) 2021 Angelmaneuver
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-22T09:11:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: sketchpad-modified-blocks\n"
+
+#. Plugin Name of the plugin
+#: plugin.php:106
+msgid "Sketchpad Modified - Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/Angelmaneuver/sketchpad-modified-blocks"
+msgstr ""
+
+#. Description of the plugin
+msgid "Custom Gutenberg Blocks for myself."
+msgstr "自分向けのカスタムグーテンベルグブロック。"
+
+#. Author of the plugin
+msgid "Angelmaneuver"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/Angelmaneuver"
+msgstr ""
+
+#: blocks/components/copy/copy.js:1
+msgid "Copy Button Configuration"
+msgstr "コピーボタン設定"
+
+#: blocks/components/copy/copy.js:1
+msgid "Enter a value that identifies the element you want to copy the clipboard."
+msgstr "クリップボードにコピーさせたい要素を識別する値を入力します。"
+
+#: js/clipboard.js:14
+msgid "copied!"
+msgstr "コピーしました..."
+
+#: blocks/json/annotations/block.json
+msgctxt "block title"
+msgid "Annotations Block"
+msgstr "注釈ブロック"
+
+#: blocks/json/annotations/block.json
+msgctxt "block description"
+msgid "Block for writing annotations."
+msgstr "注釈を書く為のブロックです。"
+
+#: blocks/json/annotations/block.json
+#: blocks/json/biim/block.json
+#: blocks/json/copy/block.json
+#: blocks/json/talk/block.json
+msgctxt "block keyword"
+msgid "Sketchpad"
+msgstr ""
+
+#: blocks/json/annotations/block.json
+msgctxt "block keyword"
+msgid "Annotation"
+msgstr "注釈"
+
+#: blocks/json/annotations/block.json
+#: blocks/json/biim/block.json
+#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block style label"
+msgid "default"
+msgstr "デフォルト"
+
+#: blocks/json/annotations/block.json
+#: blocks/json/biim/block.json
+msgctxt "block style label"
+msgid "No Vertical Margin"
+msgstr "余白無し"
+
+#: blocks/json/biim/block.json
+msgctxt "block title"
+msgid "Biim System Block"
+msgstr "Biimシステムブロック"
+
+#: blocks/json/biim/block.json
+msgctxt "block description"
+msgid "Block that reproduces the Biim System."
+msgstr "Biim Systemを再現したブロックです。"
+
+#: blocks/json/biim/block.json
+msgctxt "block keyword"
+msgid "Biim"
+msgstr ""
+
+#: blocks/json/biim/parts/navigationbar/block.json
+msgctxt "block title"
+msgid "Biim Navigationbar Block"
+msgstr "Biimナビゲーションバーブロック"
+
+#: blocks/json/biim/parts/navigationbar/block.json
+msgctxt "block description"
+msgid "Navigationbar Block."
+msgstr "ナビゲーションバーブロック"
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block title"
+msgid "Biim Messagebox Block"
+msgstr "Biimメッセージボックスブロック"
+
+#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/json/talk/parts/messagebox/block.json
+msgctxt "block description"
+msgid "Messagebox Block."
+msgstr "メッセージボックスブロック"
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Bottom justified vertical position"
+msgstr "下揃え"
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Center justified vertical position"
+msgstr "中央揃え"
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Space between"
+msgstr "両端揃え"
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Space around"
+msgstr "均等揃え"
+
+#: blocks/json/copy/block.json
+msgctxt "block title"
+msgid "Copy Block"
+msgstr "コピーブロック"
+
+#: blocks/json/copy/block.json
+msgctxt "block description"
+msgid "Copy button block allows you to copy the text of other blocks."
+msgstr "コピーボタンブロックでは、他のブロックのテキストをコピーする事ができます。"
+
+#: blocks/json/copy/block.json
+msgctxt "block keyword"
+msgid "Copy"
+msgstr "コピー"
+
+#: blocks/json/talk/block.json
+msgctxt "block title"
+msgid "Talk Block"
+msgstr "会話ブロック"
+
+#: blocks/json/talk/block.json
+msgctxt "block description"
+msgid "Designed to look like a chat exchange."
+msgstr "チャットのやり取りに似せたデザインです。"
+
+#: blocks/json/talk/block.json
+msgctxt "block keyword"
+msgid "Talk"
+msgstr "会話"
+
+#: blocks/json/talk/block.json
+msgctxt "block style label"
+msgid "Left style"
+msgstr "左側スタイル"
+
+#: blocks/json/talk/block.json
+msgctxt "block style label"
+msgid "Right style"
+msgstr "右側スタイル"
+
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block title"
+msgid "Talk Icon Block"
+msgstr "会話アイコンブロック"
+
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block description"
+msgid "Icon Block."
+msgstr "アイコンブロックです。"
+
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block style label"
+msgid "Rounded Corners"
+msgstr "各丸"
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block title"
+msgid "Talk Message Block"
+msgstr "会話メッセージブロック"
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block description"
+msgid "Message Block."
+msgstr "メッセージブロックです。"
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block style label"
+msgid "Talk style"
+msgstr "会話スタイル"
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block style label"
+msgid "Mind voice style"
+msgstr "心の声スタイル"
+
+#: blocks/json/talk/parts/messagebox/block.json
+msgctxt "block title"
+msgid "Talk Messagebox Block"
+msgstr "会話メッセージボックスブロック"
+
+#: blocks/json/talk/parts/messages/block.json
+msgctxt "block title"
+msgid "Talk Messages Block"
+msgstr "会話メッセージブロック"
+
+#: blocks/json/talk/parts/messages/block.json
+msgctxt "block description"
+msgid "Messages Block."
+msgstr "メッセージブロックです。"
+
+#: blocks/json/talk/parts/name/block.json
+msgctxt "block title"
+msgid "Talk Name Block"
+msgstr "会話名前ブロック"
+
+#: blocks/json/talk/parts/name/block.json
+msgctxt "block description"
+msgid "Name Block."
+msgstr "名前ブロックです。"

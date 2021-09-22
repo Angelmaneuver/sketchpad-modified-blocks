@@ -1,72 +1,22 @@
 /**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
+ * The following styles get applied both on the front of your site
+ * and in the editor.
  */
 
 .wp-block-sketchpad-modified-blocks-biim {
   background-color: rgb(49, 49, 49);
 
+  figcaption {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+    color: rgb(238, 238, 238);
+    text-align: center;
+  }
+
   > .sketchpad-modified-blocks-biim-screen {
-    position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
-
-    &:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-    }
-
-    > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    &.is-style-image-postit {
-      margin-bottom: 2rem;
-    }
-  }
-
-  > .wp-block-sketchpad-modified-blocks-biim-navigationbar {
-    display: flex;
-    padding: 0.5rem;
-
-    > .sketchpad-modified-blocks-biim-icon {
-      flex-grow: 2;
-      max-width: 10rem;
-      min-width: 8rem;
-      max-height: 10rem;
-      margin: 0 auto;
-    }
-
-    .sketchpad-modified-blocks-biim-messagebox {
-      flex-grow: 7;
-      display: flex;
-      flex-direction: column;
-      min-width: 20rem;
-      min-height: 9.8rem;
-      margin-left: 0.5rem;
-      padding: 0.5rem 1rem;
-      border: thin solid #fff;
-
-      .wp-block-sketchpad-modified-blocks-biim-paragraph {
-        &.is-style-bottom {
-          order: 1;
-          margin-top: auto;
-        }
-
-        > p {
-          color: rgb(238, 238, 238);
-        }
-      }
-    }
   }
 }

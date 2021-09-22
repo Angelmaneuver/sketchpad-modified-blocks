@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.wp-block-sketchpad-modified-blocks-biim-navigationbar {
+  display: flex;
+  padding: 0.5rem;
+
+  > .sketchpad-modified-blocks-biim-icon {
+    flex-grow: 2;
+    height: auto;
+    min-width: 8rem;
+    max-width: 11.5rem;
+    margin: 0 auto;
+
+    & > img:only-child {
+      height: 100%;
+    }
+  }
+}

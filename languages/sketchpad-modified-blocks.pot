@@ -1,21 +1,22 @@
 # Copyright (C) 2021 Angelmaneuver
-# This file is distributed under the same license as the sketchpad-modified-blocks — CGB Gutenberg Block Plugin plugin.
+# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: sketchpad-modified-blocks — CGB Gutenberg Block Plugin 1.0.0\n"
+"Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-01-30T16:11:28+00:00\n"
+"POT-Creation-Date: 2021-09-22T09:11:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sketchpad-modified-blocks\n"
 
 #. Plugin Name of the plugin
-msgid "sketchpad-modified-blocks — CGB Gutenberg Block Plugin"
+#: plugin.php:106
+msgid "Sketchpad Modified - Blocks"
 msgstr ""
 
 #. Plugin URI of the plugin
@@ -23,7 +24,7 @@ msgid "https://github.com/Angelmaneuver/sketchpad-modified-blocks"
 msgstr ""
 
 #. Description of the plugin
-msgid "sketchpad-modified-blocks — is a Gutenberg plugin created via create-guten-block."
+msgid "Custom Gutenberg Blocks for myself."
 msgstr ""
 
 #. Author of the plugin
@@ -34,162 +35,207 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
-#: includes/init.php:164
-msgid "Sketchpad - modified Blocks"
-msgstr ""
-
-#: includes/init.php:169
-msgid "Sketchpad - modified Blocks Internal Parts"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Annotations Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Block for writing annotations."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sketchpad-modified-Blocks — Annotations Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Annotations"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "default"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "No Vertical Margin"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "*"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Annotations will be provided.<br />Second line.<br />Third line."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Bottom line style (Biim System)"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Messages Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "This block is unusable. (Sketchpad - modified Blocks internal use)."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sketchpad - modified Biim System Blocks Internal Parts"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Biim Navigation bar Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Biim System Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Biim System Block."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sketchpad-modified-Blocks — Biim System Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Biim"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Copy Button"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Copy button."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sketchpad-modified-Blocks — Copy Button"
-msgstr ""
-
-#: dist/blocks.build.js:1
+#: blocks/components/copy/copy.js:1
 msgid "Copy Button Configuration"
 msgstr ""
 
-#: dist/blocks.build.js:1
-msgid "Specify the class name of the element to be copied to the clipborard."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Icon Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sketchpad - modified Talk Blocks Internal Parts"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Rounded Corners"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Name Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Message"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Talk style"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Mind voice style"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Start writing"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Message Box Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Talk Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Talk Block."
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Sketchpad-modified-Blocks — Talk Block"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Talk"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Chat message left style"
-msgstr ""
-
-#: dist/blocks.build.js:1
-msgid "Chat message right style"
+#: blocks/components/copy/copy.js:1
+msgid "Enter a value that identifies the element you want to copy the clipboard."
 msgstr ""
 
 #: js/clipboard.js:14
 msgid "copied!"
+msgstr ""
+
+#: blocks/json/annotations/block.json
+msgctxt "block title"
+msgid "Annotations Block"
+msgstr ""
+
+#: blocks/json/annotations/block.json
+msgctxt "block description"
+msgid "Block for writing annotations."
+msgstr ""
+
+#: blocks/json/annotations/block.json
+#: blocks/json/biim/block.json
+#: blocks/json/copy/block.json
+#: blocks/json/talk/block.json
+msgctxt "block keyword"
+msgid "Sketchpad"
+msgstr ""
+
+#: blocks/json/annotations/block.json
+msgctxt "block keyword"
+msgid "Annotation"
+msgstr ""
+
+#: blocks/json/annotations/block.json
+#: blocks/json/biim/block.json
+#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block style label"
+msgid "default"
+msgstr ""
+
+#: blocks/json/annotations/block.json
+#: blocks/json/biim/block.json
+msgctxt "block style label"
+msgid "No Vertical Margin"
+msgstr ""
+
+#: blocks/json/biim/block.json
+msgctxt "block title"
+msgid "Biim System Block"
+msgstr ""
+
+#: blocks/json/biim/block.json
+msgctxt "block description"
+msgid "Block that reproduces the Biim System."
+msgstr ""
+
+#: blocks/json/biim/block.json
+msgctxt "block keyword"
+msgid "Biim"
+msgstr ""
+
+#: blocks/json/biim/parts/navigationbar/block.json
+msgctxt "block title"
+msgid "Biim Navigationbar Block"
+msgstr ""
+
+#: blocks/json/biim/parts/navigationbar/block.json
+msgctxt "block description"
+msgid "Navigationbar Block."
+msgstr ""
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block title"
+msgid "Biim Messagebox Block"
+msgstr ""
+
+#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/json/talk/parts/messagebox/block.json
+msgctxt "block description"
+msgid "Messagebox Block."
+msgstr ""
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Bottom justified vertical position"
+msgstr ""
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Center justified vertical position"
+msgstr ""
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Space between"
+msgstr ""
+
+#: blocks/json/biim/parts/paragraphs/block.json
+msgctxt "block style label"
+msgid "Space around"
+msgstr ""
+
+#: blocks/json/copy/block.json
+msgctxt "block title"
+msgid "Copy Block"
+msgstr ""
+
+#: blocks/json/copy/block.json
+msgctxt "block description"
+msgid "Copy button block allows you to copy the text of other blocks."
+msgstr ""
+
+#: blocks/json/copy/block.json
+msgctxt "block keyword"
+msgid "Copy"
+msgstr ""
+
+#: blocks/json/talk/block.json
+msgctxt "block title"
+msgid "Talk Block"
+msgstr ""
+
+#: blocks/json/talk/block.json
+msgctxt "block description"
+msgid "Designed to look like a chat exchange."
+msgstr ""
+
+#: blocks/json/talk/block.json
+msgctxt "block keyword"
+msgid "Talk"
+msgstr ""
+
+#: blocks/json/talk/block.json
+msgctxt "block style label"
+msgid "Left style"
+msgstr ""
+
+#: blocks/json/talk/block.json
+msgctxt "block style label"
+msgid "Right style"
+msgstr ""
+
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block title"
+msgid "Talk Icon Block"
+msgstr ""
+
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block description"
+msgid "Icon Block."
+msgstr ""
+
+#: blocks/json/talk/parts/icon/block.json
+msgctxt "block style label"
+msgid "Rounded Corners"
+msgstr ""
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block title"
+msgid "Talk Message Block"
+msgstr ""
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block description"
+msgid "Message Block."
+msgstr ""
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block style label"
+msgid "Talk style"
+msgstr ""
+
+#: blocks/json/talk/parts/message/block.json
+msgctxt "block style label"
+msgid "Mind voice style"
+msgstr ""
+
+#: blocks/json/talk/parts/messagebox/block.json
+msgctxt "block title"
+msgid "Talk Messagebox Block"
+msgstr ""
+
+#: blocks/json/talk/parts/messages/block.json
+msgctxt "block title"
+msgid "Talk Messages Block"
+msgstr ""
+
+#: blocks/json/talk/parts/messages/block.json
+msgctxt "block description"
+msgid "Messages Block."
+msgstr ""
+
+#: blocks/json/talk/parts/name/block.json
+msgctxt "block title"
+msgid "Talk Name Block"
+msgstr ""
+
+#: blocks/json/talk/parts/name/block.json
+msgctxt "block description"
+msgid "Name Block."
 msgstr ""

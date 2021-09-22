@@ -1,0 +1,30 @@
+{
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/talk-icon",
+	"version": "0.1.0",
+	"title": "Talk Icon Block",
+	"icon": "format-image",
+	"description": "Icon Block.",
+	"keywords": [],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default"
+		},
+		{
+			"name": "rounded",
+			"label": "Rounded Corners",
+			"isDefault": true
+		}
+	],
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"reusable": false
+	},
+	"attributes": {},
+	"textdomain": "sketchpad-modified-blocks",
+	"editorScript": "file:../../../../components/talk-icon/talk-icon.js",
+	"editorStyle": "file:../../../../components/talk-icon/talk-icon.css",
+	"style": "file:../../../../components/talk-icon/style-talk-icon.css"
+}
