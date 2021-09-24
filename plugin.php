@@ -34,7 +34,7 @@ function sketchpad_modified_blocks_init() {
 		'sketchpad-modified-blocks-copy-js',
 		plugins_url( '/blocks/components/copy/copy.js', __FILE__ ),
 		array( 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n', 'wp-polyfill' ),
-		(string) filemtime( plugin_dir_path( __DIR__ ) . 'blocks/components/copy/copy.js' ),
+		(string) filemtime( plugin_dir_path( __FILE__ ) . 'blocks/components/copy/copy.js' ),
 		true,
 	);
 
