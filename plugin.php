@@ -95,14 +95,14 @@ function sketchpad_modified_blocks_scripts() {
 			'sketchpad-modified-blocks-clipboard',
 			plugins_url( 'js/clipboard.js', __FILE__ ),
 			array( 'jquery', 'wp-i18n', 'toastr' ),
-			(string) filemtime( plugin_dir_path( __DIR__ ) . 'js/clipboard.js' ),
+			(string) filemtime( plugin_dir_path( __FILE__ ) . 'js/clipboard.js' ),
 			true
 		);
 		wp_enqueue_script(
 			'sketchpad-modified-blocks-datatriger',
 			plugins_url( 'js/datatrigger.js', __FILE__ ),
 			array( 'jquery', 'scrolltrigger' ),
-			(string) filemtime( plugin_dir_path( __DIR__ ) . 'js/datatrigger.js' ),
+			(string) filemtime( plugin_dir_path( __FILE__ ) . 'js/datatrigger.js' ),
 			true
 		);
 
