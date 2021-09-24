@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Sketchpad Modified - Blocks
+ * Plugin Name:       Sketchpad modified - Blocks
  * Plugin URI:        https://github.com/Angelmaneuver/sketchpad-modified-blocks
  * Description:       Custom Gutenberg Blocks for myself.
  * Requires at least: 5.8
