@@ -80,7 +80,6 @@ export default function Edit( { attributes, setAttributes } ) {
 						value                  = { attributes.content }
 						onChange               = { updateContent }
 						placeholder            = { __( 'Start writing or type / to choose a block' ) }
-						keepPlaceholderOnFocus = { true }
 					/>
 				</div>
 			</div>
