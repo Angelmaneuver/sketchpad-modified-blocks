@@ -6,7 +6,17 @@
 	"icon": "editor-paragraph",
 	"description": "Navigationbar Block.",
 	"keywords": [],
-	"styles": [],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		},
+		{
+			"name": "no-icon",
+			"label": "No Icon"
+		}
+	],
 	"supports": {
 		"html": false,
 		"inserter": false,

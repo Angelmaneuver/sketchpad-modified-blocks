@@ -28,4 +28,14 @@
       }
     }
   }
+
+  &.is-style-no-icon {
+    > .block-editor-inner-blocks {
+      > .block-editor-block-list__layout {
+        figure.sketchpad-modified-blocks-biim-icon {
+          display: none;
+        }
+      }
+    }  
+  }
 }
