@@ -13,8 +13,11 @@
  * Text Domain:       sketchpad-modified-blocks
  * Domain Path:       /languages
  *
- * @package           create-block
+ * @package           Skethcpad modified - Blocks
  */
+
+// Modules loading.
+require_once __DIR__ . '/includes/load.php';
 
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
@@ -50,6 +53,12 @@ function sketchpad_modified_blocks_init() {
 	register_block_type( __DIR__ . '/blocks/json/biim/parts/paragraphs' );
 	register_block_type( __DIR__ . '/blocks/json/copy' );
 	register_block_type( __DIR__ . '/blocks/json/talk' );
+	register_block_type(
+		__DIR__ . '/blocks/json/tag-list',
+		array(
+			'render_callback' => 'sketchpad_modified_blocks_tag_list',
+		)
+	);
 	register_block_type( __DIR__ . '/blocks/json/talk/parts/icon' );
 	register_block_type( __DIR__ . '/blocks/json/talk/parts/messagebox' );
 	register_block_type( __DIR__ . '/blocks/json/talk/parts/name' );

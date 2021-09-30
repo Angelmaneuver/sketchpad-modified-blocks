@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2021-09-30T13:09:47+00:00\n"
+"POT-Creation-Date: 2021-09-30T22:17:36+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
-#: plugin.php:134
+#: plugin.php:143
 msgid "Sketchpad Modified - Blocks"
 msgstr ""
 
@@ -62,7 +62,8 @@ msgid "Block for writing annotations."
 msgstr "注釈を書く為のブロックです。"
 
 #: blocks/json/annotations/block.json blocks/json/biim/block.json
-#: blocks/json/copy/block.json blocks/json/talk/block.json
+#: blocks/json/copy/block.json blocks/json/tag-list/block.json
+#: blocks/json/talk/block.json
 msgctxt "block keyword"
 msgid "Sketchpad"
 msgstr ""
@@ -165,6 +166,21 @@ msgstr "コピーボタンブロックでは、他のブロックのテキスト
 msgctxt "block keyword"
 msgid "Copy"
 msgstr "コピー"
+
+#: blocks/json/tag-list/block.json
+msgctxt "block title"
+msgid "Tag List Block"
+msgstr "タグ一覧ブロック"
+
+#: blocks/json/tag-list/block.json
+msgctxt "block description"
+msgid "A dynamic block that outputs a list of tags."
+msgstr "タグを一覧出力するダイナミックブロックです。"
+
+#: blocks/json/tag-list/block.json
+msgctxt "block keyword"
+msgid "Tag List"
+msgstr "タグ一覧"
 
 #: blocks/json/talk/block.json
 msgctxt "block title"
