@@ -27,7 +27,7 @@ function sketchpad_modified_blocks_init() {
 	load_plugin_textdomain(
 		'sketchpad-modified-blocks',
 		false,
-		__DIR__ . '/languages'
+		dirname( plugin_basename( __FILE__ ) ) . '/languages'
 	);
 
 	wp_register_script(
