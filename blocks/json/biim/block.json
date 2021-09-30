@@ -19,6 +19,10 @@
 		{
 			"name": "no-vertical-margin",
 			"label": "No Vertical Margin"
+		},
+		{
+			"name": "messagebox-only",
+			"label": "Messagebox Only"
 		}
 	],
 	"supports": {

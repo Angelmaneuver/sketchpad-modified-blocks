@@ -4,20 +4,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
+"POT-Creation-Date: 2021-09-30T13:09:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-09-22T09:11:30+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sketchpad-modified-blocks\n"
 
 #. Plugin Name of the plugin
-#: plugin.php:106
-msgid "Sketchpad Modified - Blocks"
+msgid "Sketchpad modified - Blocks"
 msgstr ""
 
 #. Plugin URI of the plugin
@@ -34,6 +33,10 @@ msgstr ""
 
 #. Author URI of the plugin
 msgid "https://github.com/Angelmaneuver"
+msgstr ""
+
+#: plugin.php:134
+msgid "Sketchpad Modified - Blocks"
 msgstr ""
 
 #: blocks/components/copy/copy.js:1
@@ -58,10 +61,8 @@ msgctxt "block description"
 msgid "Block for writing annotations."
 msgstr "注釈を書く為のブロックです。"
 
-#: blocks/json/annotations/block.json
-#: blocks/json/biim/block.json
-#: blocks/json/copy/block.json
-#: blocks/json/talk/block.json
+#: blocks/json/annotations/block.json blocks/json/biim/block.json
+#: blocks/json/copy/block.json blocks/json/talk/block.json
 msgctxt "block keyword"
 msgid "Sketchpad"
 msgstr ""
@@ -71,16 +72,15 @@ msgctxt "block keyword"
 msgid "Annotation"
 msgstr "注釈"
 
-#: blocks/json/annotations/block.json
-#: blocks/json/biim/block.json
+#: blocks/json/annotations/block.json blocks/json/biim/block.json
+#: blocks/json/biim/parts/navigationbar/block.json
 #: blocks/json/biim/parts/paragraphs/block.json
 #: blocks/json/talk/parts/icon/block.json
 msgctxt "block style label"
 msgid "default"
 msgstr "デフォルト"
 
-#: blocks/json/annotations/block.json
-#: blocks/json/biim/block.json
+#: blocks/json/annotations/block.json blocks/json/biim/block.json
 msgctxt "block style label"
 msgid "No Vertical Margin"
 msgstr "余白無し"
@@ -100,6 +100,11 @@ msgctxt "block keyword"
 msgid "Biim"
 msgstr ""
 
+#: blocks/json/biim/block.json
+msgctxt "block style label"
+msgid "Messagebox Only"
+msgstr "メッセージボックスのみ"
+
 #: blocks/json/biim/parts/navigationbar/block.json
 msgctxt "block title"
 msgid "Biim Navigationbar Block"
@@ -109,6 +114,11 @@ msgstr "Biimナビゲーションバーブロック"
 msgctxt "block description"
 msgid "Navigationbar Block."
 msgstr "ナビゲーションバーブロック"
+
+#: blocks/json/biim/parts/navigationbar/block.json
+msgctxt "block style label"
+msgid "No Icon"
+msgstr "アイコン無し"
 
 #: blocks/json/biim/parts/paragraphs/block.json
 msgctxt "block title"
