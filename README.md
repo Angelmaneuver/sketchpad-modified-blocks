@@ -41,3 +41,12 @@ Designed to look like a chat exchange.
 
 ### Editor Style
 ![Talk2](resource/readme/talk2.jpg)
+
+## Tag List Block (Dynamic Block)
+A dynamic block that outputs a list of tags.
+
+### Public Style
+![Tag-List1](resource/readme/tag-list1.jpg)
+
+### Editor Style
+![Tag-List2](resource/readme/tag-list2.jpg)
