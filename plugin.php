@@ -56,7 +56,7 @@ function sketchpad_modified_blocks_init() {
 	register_block_type(
 		__DIR__ . '/blocks/json/tag-list',
 		array(
-			'render_callback' => 'sketchpad_modified_blocks_tag_list',
+			'render_callback' => 'render_sketchpad_modified_blocks_tag_list',
 		)
 	);
 	register_block_type( __DIR__ . '/blocks/json/talk/parts/icon' );
