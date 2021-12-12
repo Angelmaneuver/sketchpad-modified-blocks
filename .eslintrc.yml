@@ -2,6 +2,8 @@ extends:
   - 'eslint:recommended'
   - 'plugin:@wordpress/eslint-plugin/recommended'
 parser: '@babel/eslint-parser'
+parserOptions:
+  - requireConfigFile: false,
 globals:
   jQuery: readonly
   ClipboardJS: readonly
