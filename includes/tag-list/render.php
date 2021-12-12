@@ -24,9 +24,7 @@ function render_sketchpad_modified_blocks_tag_list( $block_attributes, $content 
 		$list_items_markup .= '</li>';
 	}
 
-	$class = 'wp-block-sketchpad-modified-blocks-tag-list';
-
-	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $class ) );
+	$wrapper_attributes = get_block_wrapper_attributes();
 
 	return sprintf(
 		'<ul %1$s>%2$s</ul>',
