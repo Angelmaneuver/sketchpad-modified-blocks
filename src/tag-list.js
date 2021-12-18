@@ -12,7 +12,7 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './tag-list/style.scss';
+// import './tag-list/style.scss';
 
 /**
  * Internal dependencies
