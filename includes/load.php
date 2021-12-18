@@ -7,3 +7,4 @@
 
 // Modules loading.
 require_once __DIR__ . '/tag-list/render.php';
+require_once __DIR__ . '/table-of-contents/render.php';

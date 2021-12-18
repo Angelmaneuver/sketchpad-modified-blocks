@@ -1,0 +1,34 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+ul.wp-block-sketchpad-modified-blocks-table-of-contents {
+  li {
+    > div.toc-item {
+      display: flex;
+
+      > div.toc-accordion {
+        margin: auto 0;
+      }
+
+      &.toc-open:not(:only-child) {
+        > div.toc-accordion::after {
+          font-family: "dashicons";
+          content: "\f543";
+          cursor: pointer;
+        }
+      }
+
+      &.toc-close > div.toc-accordion::after {
+        font-family: "dashicons";
+        content: "\f460";
+        cursor: pointer;
+      }
+    }
+
+    ul.children {
+      display: none;
+    }
+  }
+}

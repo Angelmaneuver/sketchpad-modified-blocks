@@ -17,6 +17,7 @@ module.exports             = {
 	  'biim-navigationbar': './src/biim-navigationbar.js',
 	  'biim-paragraphs':    './src/biim-paragraphs.js',
 	  'copy':               './src/copy.js',
+	  'table-of-contents':  './src/table-of-contents.js',
 	  'tag-list':           './src/tag-list.js',
 	  'talk':               './src/talk.js',
 	  'talk-icon':          './src/talk-icon.js',

@@ -54,6 +54,12 @@ function sketchpad_modified_blocks_init() {
 	register_block_type( __DIR__ . '/blocks/json/copy' );
 	register_block_type( __DIR__ . '/blocks/json/talk' );
 	register_block_type(
+		__DIR__ . '/blocks/json/table-of-contents',
+		array(
+			'render_callback' => 'render_sketchpad_modified_blocks_table_of_contents',
+		)
+	);
+	register_block_type(
 		__DIR__ . '/blocks/json/tag-list',
 		array(
 			'render_callback' => 'render_sketchpad_modified_blocks_tag_list',
@@ -99,6 +105,13 @@ function sketchpad_modified_blocks_scripts() {
 			false,
 			true
 		);
+		wp_enqueue_script(
+			'smoothscroll',
+			'https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js',
+			array(),
+			false,
+			true
+		);
 
 		wp_enqueue_script(
 			'sketchpad-modified-blocks-clipboard',
@@ -112,6 +125,13 @@ function sketchpad_modified_blocks_scripts() {
 			plugins_url( 'js/datatrigger.js', __FILE__ ),
 			array( 'jquery', 'scrolltrigger' ),
 			(string) filemtime( plugin_dir_path( __FILE__ ) . 'js/datatrigger.js' ),
+			true
+		);
+		wp_enqueue_script(
+			'sketchpad-modified-blocks-toc',
+			plugins_url( 'js/toc.js', __FILE__ ),
+			array( 'jquery', 'smoothscroll' ),
+			(string) filemtime( plugin_dir_path( __FILE__ ) . 'js/toc.js' ),
 			true
 		);
 
