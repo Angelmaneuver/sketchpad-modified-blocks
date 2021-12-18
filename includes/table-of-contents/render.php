@@ -138,10 +138,11 @@ function sketchpad_modified_blocks_toc_filter( string $content ): string {
 		$open    = $headline['open'];
 		$close   = $headline['close'];
 		$value   = $headline['value'];
-		$content = str_replace(
-			$open . $value . $close,
+		$content = preg_replace(
+			'/' . preg_quote( "${open}${value}${close}", '/' ) . '/',
 			"${open}<span id=\"" . SMB_Table_Of_Contents::ANCHOR_PREFIX . "${key}\">${value}</span>${close}",
-			$content
+			$content,
+			1
 		);
 	}
 

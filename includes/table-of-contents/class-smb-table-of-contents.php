@@ -166,11 +166,14 @@ class SMB_Table_Of_Contents {
 				$last_rank = 0 === $this->layer ? 0 : $this->ranks[ array_key_last( $this->ranks ) ];
 			};
 
-			if ( 0 < $this->layer && $rank > $last_rank ) {
-				$temp .= '<ul class="children">';
-				array_push( $this->closing_tags, '</ul>' );
+			if ( $rank > $last_rank ) {
+				$temp                .= '<ul class="children">';
+				$this->closing_tags[] = '</ul>';
 
 				$this->layer++;
+			} elseif ( $rank === $last_rank ) {
+				$temp .= array_pop( $this->closing_tags );
+				array_pop( $this->ranks );
 			}
 		} else {
 			$this->layer++;
@@ -180,7 +183,8 @@ class SMB_Table_Of_Contents {
 
 		$this->list_items_markup .= "${temp}<li><div class=\"toc-item toc-open\"><div class=\"toc-element\">${element}</div><div class=\"toc-accordion\"></div></div>";
 
-		array_push( $this->closing_tags, '</li>' );
+		$this->closing_tags[] = '</li>';
+
 		array_push( $this->ranks, $rank );
 	}
 }
