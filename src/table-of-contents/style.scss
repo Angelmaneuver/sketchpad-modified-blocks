@@ -10,13 +10,13 @@ ul.wp-block-sketchpad-modified-blocks-table-of-contents {
 
       > div.toc-accordion {
         margin: auto 0;
+        cursor: pointer;
       }
 
       &.toc-open:not(:only-child) {
         > div.toc-accordion::after {
           font-family: "dashicons";
           content: "\f543";
-          cursor: pointer;
         }
       }
 
