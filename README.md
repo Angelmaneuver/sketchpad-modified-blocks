@@ -50,3 +50,7 @@ A dynamic block that outputs a list of tags.
 
 ### Editor Style
 ![Tag-List2](resource/readme/tag-list2.jpg)
+
+## Table of Contents Block (Dynamic Block)
+A dynamic block that outputs a table of contents.
+![Table-Of-Contents](resource/readme/table-of-contents.jpg)
