@@ -19,30 +19,22 @@ require_once __DIR__ . '/class-smb-table-of-contents.php';
  * @return string                   HTML String.
  */
 function render_sketchpad_modified_blocks_table_of_contents( $block_attributes, $content ):string {
-	$widgets_editing = sketchpad_modified_blocks_is_widgets_edit();
+	$editing = sketchpad_modified_blocks_is_edit();
 
-	if ( ! sketchpad_modified_blocks_table_of_contents_enable() && ! $widgets_editing ) {
+	if ( ! sketchpad_modified_blocks_table_of_contents_enable() && ! $editing ) {
 		return '';
 	}
 
-	$toc                = $widgets_editing ? null : new SMB_Table_Of_Contents( get_the_content(), is_singular() );
-	$format             = $widgets_editing ? '<div %1$s>%2$s</div>' : '<ul %1$s>%2$s</ul>';
+	$toc                = $editing ? null : new SMB_Table_Of_Contents( get_the_content(), true );
+	$format             = $editing ? '<div %1$s>%2$s</div>' : '<ul %1$s>%2$s</ul>';
 	$disable_message    = sprintf(
 		'<div class="components-placeholder is-medium"><div class="components-placeholder__label"></div><div class="components-placeholder__fieldset">%1$s</div></div>',
 		__( 'The table of contents cannot be displayed on this page.', 'sketchpad-modified-blocks' )
 	);
 	$wrapper_attributes = get_block_wrapper_attributes();
-	$elements_markup    = (
-		$widgets_editing
-			? $disable_message
-			: $toc->get_toc()
-	);
+	$elements_markup    = $editing ? $disable_message : $toc->get_toc();
 
-	return (
-		strlen( $elements_markup ) > 0
-			? sprintf( $format, $wrapper_attributes, $elements_markup )
-			: ''
-	);
+	return strlen( $elements_markup ) > 0 ? sprintf( $format, $wrapper_attributes, $elements_markup ) : '';
 }
 
 /**
@@ -60,23 +52,21 @@ function sketchpad_modified_blocks_get_raw_referer(): string {
  * @return boolean
  */
 function sketchpad_modified_blocks_table_of_contents_enable(): bool {
-	$referer          = sketchpad_modified_blocks_get_raw_referer();
-	$is_singular_edit = 1 === preg_match( '~/wp-admin/post.php\?(post|page)=\d+&action=edit~', $referer );
-
-	return is_singular() || $is_singular_edit;
+	return is_singular();
 }
 
 /**
- * Determine if a widgets is being edited.
+ * Determine if a being edited.
  *
  * @return boolean
  */
-function sketchpad_modified_blocks_is_widgets_edit(): bool {
+function sketchpad_modified_blocks_is_edit(): bool {
 	$referer          = sketchpad_modified_blocks_get_raw_referer();
+	$is_edit          = 1 === preg_match( '~/wp-admin/post\.php\?(post|page)=\d+&action=edit~', $referer );
 	$is_widgets_edit  = false !== strpos( $referer, '/wp-admin/widgets.php' );
-	$is_custmize_edit = false !== strpos( $referer, '/wp-admin/customize.php' );
+	$is_custmize_edit = ! is_singular() && false !== strpos( $referer, '/wp-admin/customize.php' );
 
-	return $is_widgets_edit || $is_custmize_edit;
+	return $is_edit || $is_widgets_edit || $is_custmize_edit;
 }
 
 /**
