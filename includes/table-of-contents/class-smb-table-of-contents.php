@@ -166,7 +166,7 @@ class SMB_Table_Of_Contents {
 				$last_rank = 0 === $this->layer ? 0 : $this->ranks[ array_key_last( $this->ranks ) ];
 			};
 
-			if ( $rank > $last_rank ) {
+			if ( $last_rank > 0 && $rank > $last_rank ) {
 				$temp                .= '<ul class="children">';
 				$this->closing_tags[] = '</ul>';
 
@@ -174,6 +174,8 @@ class SMB_Table_Of_Contents {
 			} elseif ( $rank === $last_rank ) {
 				$temp .= array_pop( $this->closing_tags );
 				array_pop( $this->ranks );
+			} else {
+				$this->layer++;
 			}
 		} else {
 			$this->layer++;
