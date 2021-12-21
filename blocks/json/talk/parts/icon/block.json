@@ -24,7 +24,5 @@
 	},
 	"attributes": {},
 	"textdomain": "sketchpad-modified-blocks",
-	"editorScript": "file:../../../../components/talk-icon/talk-icon.js",
-	"editorStyle": "file:../../../../components/talk-icon/talk-icon.css",
-	"style": "file:../../../../components/talk-icon/style-talk-icon.css"
+	"editorScript": "file:../../../../components/talk-icon/talk-icon.js"
 }

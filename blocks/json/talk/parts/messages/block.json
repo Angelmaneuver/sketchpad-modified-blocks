@@ -14,7 +14,5 @@
 	},
 	"attributes": {},
 	"textdomain": "sketchpad-modified-blocks",
-	"editorScript": "file:../../../../components/talk-messages/talk-messages.js",
-	"editorStyle": "file:../../../../components/talk-messages/talk-messages.css",
-	"style": "file:../../../../components/talk-messages/style-talk-messages.css"
+	"editorScript": "file:../../../../components/talk-messages/talk-messages.js"
 }

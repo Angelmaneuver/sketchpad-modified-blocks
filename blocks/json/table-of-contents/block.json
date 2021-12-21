@@ -18,6 +18,5 @@
 	"example": {},
 	"textdomain": "sketchpad-modified-blocks",
 	"editorScript": "file:../../components/table-of-contents/table-of-contents.js",
-	"editorStyle": "file:../../components/table-of-contents/table-of-contents.css",
 	"style": "file:../../components/table-of-contents/style-table-of-contents.css"
 }

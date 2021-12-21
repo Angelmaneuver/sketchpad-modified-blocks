@@ -17,7 +17,5 @@
 	"attributes": {},
 	"example": {},
 	"textdomain": "sketchpad-modified-blocks",
-	"editorScript": "file:../../components/tag-list/tag-list.js",
-	"editorStyle": "file:../../components/tag-list/tag-list.css",
-	"style": "file:../../components/tag-list/style-tag-list.css"
+	"editorScript": "file:../../components/tag-list/tag-list.js"
 }
