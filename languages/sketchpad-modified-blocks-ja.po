@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2021-12-18T09:35:54+00:00\n"
+"POT-Creation-Date: 2021-12-25T14:10:38+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,6 +124,11 @@ msgstr "ナビゲーションバーブロック"
 msgctxt "block style label"
 msgid "No Icon"
 msgstr "アイコン無し"
+
+#: blocks/json/biim/parts/navigationbar/block.json
+msgctxt "block style label"
+msgid "Icon Border"
+msgstr "アイコン (枠線)"
 
 #: blocks/json/biim/parts/paragraphs/block.json
 msgctxt "block title"

@@ -15,6 +15,10 @@
 		{
 			"name": "no-icon",
 			"label": "No Icon"
+		},
+		{
+			"name": "icon-border",
+			"label": "Icon Border"
 		}
 	],
 	"supports": {

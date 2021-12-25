@@ -25,4 +25,10 @@
       display: none;
     }
   }
+
+  &.is-style-icon-border {
+    > .sketchpad-modified-blocks-biim-icon {
+      border: thin solid #fff;
+    }
+  }
 }
