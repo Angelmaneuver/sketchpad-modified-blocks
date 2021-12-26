@@ -19,20 +19,23 @@ require_once __DIR__ . '/class-smb-table-of-contents.php';
  * @return string                   HTML String.
  */
 function render_sketchpad_modified_blocks_table_of_contents( $block_attributes, $content ):string {
+	$enable  = sketchpad_modified_blocks_table_of_contents_enable();
 	$editing = sketchpad_modified_blocks_is_edit();
 
-	if ( ! sketchpad_modified_blocks_table_of_contents_enable() && ! $editing ) {
+	if ( ! $enable && ! $editing ) {
 		return '';
+	} elseif ( ! $enable && $editing ) {
+		$format          = '<div %1$s>%2$s</div>';
+		$elements_markup = sprintf(
+			'<div class="components-placeholder is-medium"><div class="components-placeholder__label"></div><div class="components-placeholder__fieldset">%1$s</div></div>',
+			__( 'The table of contents cannot be displayed on this page.', 'sketchpad-modified-blocks' )
+		);
+	} else {
+		$format          = '<ul %1$s>%2$s</ul>';
+		$elements_markup = ( new SMB_Table_Of_Contents( get_the_content(), true ) )->get_toc();
 	}
 
-	$toc                = $editing ? null : new SMB_Table_Of_Contents( get_the_content(), true );
-	$format             = $editing ? '<div %1$s>%2$s</div>' : '<ul %1$s>%2$s</ul>';
-	$disable_message    = sprintf(
-		'<div class="components-placeholder is-medium"><div class="components-placeholder__label"></div><div class="components-placeholder__fieldset">%1$s</div></div>',
-		__( 'The table of contents cannot be displayed on this page.', 'sketchpad-modified-blocks' )
-	);
 	$wrapper_attributes = get_block_wrapper_attributes();
-	$elements_markup    = $editing ? $disable_message : $toc->get_toc();
 
 	return strlen( $elements_markup ) > 0 ? sprintf( $format, $wrapper_attributes, $elements_markup ) : '';
 }
@@ -78,11 +81,13 @@ function sketchpad_modified_blocks_is_edit(): bool {
  * @see https://github.com/Automattic/jetpack/blob/master/projects/plugins/jetpack/modules/widget-visibility/widget-conditions.php
  */
 function filter_widget_sketchpad_modified_blocks_table_of_contents( $instance ) {
-	if ( strpos( wp_get_raw_referer(), '/wp-admin/widgets.php' ) && false !== strpos( $_SERVER['REQUEST_URI'], '/wp-json/' ) ) {
+	$request_uri = ! empty( $_SERVER['REQUEST_URI'] ) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
+
+	if ( empty( $request_uri ) || strpos( wp_get_raw_referer(), '/wp-admin/widgets.php' ) && false !== strpos( $request_uri, '/wp-json/' ) ) {
 		return $instance;
 	}
 
-	$current_url = ! empty( $_SERVER['REQUEST_URI'] ) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
+	$current_url = $request_uri;
 	$nonce       = ! empty( $_REQUEST['_gutenberg_nonce'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['_gutenberg_nonce'] ) ) : '';
 	$context     = ! empty( $_REQUEST['context'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['context'] ) ) : '';
 	if ( wp_verify_nonce( $nonce, 'gutenberg_request' ) &&
