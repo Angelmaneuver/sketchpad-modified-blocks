@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2021-12-25T14:10:38+00:00\n"
+"POT-Creation-Date: 2022-01-03T07:23:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,19 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
+#: includes/file-data-display/get/render.php:33
+msgid "The file data display cannot be displayed on this page."
+msgstr "このページではファイルデータを表示できません。"
+
+#: includes/file-data-display/get/render.php:47
+msgid "Unauthorized request detected, terminated process..."
+msgstr "不正なリクエストを検出しました。プロセスを終了します..."
+
 #: includes/table-of-contents/render.php:32
 msgid "The table of contents cannot be displayed on this page."
 msgstr "このページでは目次を表示できません。"
 
-#: plugin.php:163
+#: plugin.php:172
 msgid "Sketchpad Modified - Blocks"
 msgstr ""
 
@@ -50,6 +58,14 @@ msgstr "コピーボタン設定"
 #: blocks/components/copy/copy.js:1
 msgid "Enter a value that identifies the element you want to copy the clipboard."
 msgstr "クリップボードにコピーさせたい要素を識別する値を入力します。"
+
+#: blocks/components/file-data-display-by-get/file-data-display-by-get.js:1
+msgid "File Data Display Configuration"
+msgstr "ファイルデータ表示設定"
+
+#: blocks/components/file-data-display-by-get/file-data-display-by-get.js:1
+msgid "Enter the directory where you want to search for files from the Get parameter. * Only under the WordPress installation directory."
+msgstr "Getパラメータからファイルを検索するディレクトリを入力します。※WordPressインストールディレクトリ配下のみ"
 
 #: js/clipboard.js:14
 msgid "copied!"
@@ -66,8 +82,9 @@ msgid "Block for writing annotations."
 msgstr "注釈を書く為のブロックです。"
 
 #: blocks/json/annotations/block.json blocks/json/biim/block.json
-#: blocks/json/copy/block.json blocks/json/table-of-contents/block.json
-#: blocks/json/tag-list/block.json blocks/json/talk/block.json
+#: blocks/json/copy/block.json blocks/json/file-data-display/get/block.json
+#: blocks/json/table-of-contents/block.json blocks/json/tag-list/block.json
+#: blocks/json/talk/block.json
 msgctxt "block keyword"
 msgid "Sketchpad"
 msgstr ""
@@ -175,6 +192,21 @@ msgstr "コピーボタンブロックでは、他のブロックのテキスト
 msgctxt "block keyword"
 msgid "Copy"
 msgstr "コピー"
+
+#: blocks/json/file-data-display/get/block.json
+msgctxt "block title"
+msgid "File Data Display Block (Get Parameter Type)"
+msgstr "ファイルデータ表示ブロック (Getパラメータ型)"
+
+#: blocks/json/file-data-display/get/block.json
+msgctxt "block description"
+msgid "A dynamic block that outputs a file data. Identify the file with the Get parameter."
+msgstr "ファイルデータを出力するダイナミックブロックです。Getパラメータでファイルを特定します。"
+
+#: blocks/json/file-data-display/get/block.json
+msgctxt "block keyword"
+msgid "File data display"
+msgstr "ファイルデータ表示"
 
 #: blocks/json/table-of-contents/block.json
 msgctxt "block title"

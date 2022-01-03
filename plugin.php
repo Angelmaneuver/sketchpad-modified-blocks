@@ -16,6 +16,9 @@
  * @package           Skethcpad modified - Blocks
  */
 
+// Constant.
+define( 'SMB_DIR', plugin_dir_path( __FILE__ ) );
+
 // Modules loading.
 require_once __DIR__ . '/includes/load.php';
 
@@ -47,12 +50,32 @@ function sketchpad_modified_blocks_init() {
 		__DIR__ . '/languages'
 	);
 
+	wp_register_script(
+		'sketchpad-modified-blocks-file-data-display-by-get-js',
+		plugins_url( '/blocks/components/file-data-display-by-get/file-data-display-by-get.js', __FILE__ ),
+		array( 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n', 'wp-server-side-render' ),
+		(string) filemtime( plugin_dir_path( __FILE__ ) . 'blocks/components/file-data-display-by-get/file-data-display-by-get.js' ),
+		true,
+	);
+
+	wp_set_script_translations(
+		'sketchpad-modified-blocks-file-data-display-by-get-js',
+		'sketchpad-modified-blocks',
+		__DIR__ . '/languages'
+	);
+
 	register_block_type( __DIR__ . '/blocks/json/annotations' );
 	register_block_type( __DIR__ . '/blocks/json/biim' );
 	register_block_type( __DIR__ . '/blocks/json/biim/parts/navigationbar' );
 	register_block_type( __DIR__ . '/blocks/json/biim/parts/paragraphs' );
 	register_block_type( __DIR__ . '/blocks/json/copy' );
 	register_block_type( __DIR__ . '/blocks/json/talk' );
+	register_block_type(
+		__DIR__ . '/blocks/json/file-data-display/get',
+		array(
+			'render_callback' => 'render_file_data_display_by_get',
+		)
+	);
 	register_block_type(
 		__DIR__ . '/blocks/json/table-of-contents',
 		array(
