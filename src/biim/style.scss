@@ -6,11 +6,10 @@
 .wp-block-sketchpad-modified-blocks-biim {
   background-color: rgb(49, 49, 49);
 
-  figcaption {
+  .wp-block-image figcaption {
     font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
     color: rgb(238, 238, 238);
-    text-align: center;
   }
 
   > .sketchpad-modified-blocks-biim-screen {
