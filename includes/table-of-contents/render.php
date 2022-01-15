@@ -101,7 +101,7 @@ function sketchpad_modified_blocks_toc_filter( string $content ): string {
 		return $content;
 	}
 
-	$headlines = SMB_Table_Of_Contents::get_headlines( $content );
+	$headlines = SMB_Table_Of_Contents::get_headlines( get_the_content() );
 
 	if ( ! SMB_Table_Of_Contents::is_required_headlines( $headlines ) ) {
 		return $content;
