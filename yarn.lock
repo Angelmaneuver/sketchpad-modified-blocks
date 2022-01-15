@@ -1416,9 +1416,9 @@
   "version" "1.0.0-next.20"
 
 "@popperjs/core@^2.5.4":
-  "integrity" "sha512-zrsUxjLOKAzdewIDRWy9nsV1GQsKBCWaGwsZQlCgr6/q+vjyZhFgqedLfFBuI9anTPEUT4APq9Mu0SZBTzIcGQ=="
-  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.0.tgz"
-  "version" "2.11.0"
+  "integrity" "sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.2.tgz"
+  "version" "2.11.2"
 
 "@react-spring/animated@~9.3.0":
   "integrity" "sha512-QvuyW77eDvLhdJyO6FFldlWlvnuKK2cpOx4+Zr962RyT/0IO1tbNDRO6G1vM8va6mbv6tmfYmRGKmKYePN3kVg=="
@@ -2189,10 +2189,10 @@
   dependencies:
     "@babel/runtime" "^7.16.0"
 
-"@wordpress/block-editor@^8.0.12":
-  "integrity" "sha512-wif8ntsph9N9s6wAh6xfEOQMzXg0uTnqaczoK01K+5gou01JILvGwaApTbWucgPDrLvU3CVW1Mt8USvBB2ujhw=="
-  "resolved" "https://registry.npmjs.org/@wordpress/block-editor/-/block-editor-8.0.12.tgz"
-  "version" "8.0.12"
+"@wordpress/block-editor@^8.0.13":
+  "integrity" "sha512-U/0Hj6wwayOFqBZg8ObR6XaDMpEnq1PXsNemxKp4BhLixiBDKMC0eXC0kBQJYm6BouMVwiw2r0StIyvl+XFovA=="
+  "resolved" "https://registry.npmjs.org/@wordpress/block-editor/-/block-editor-8.0.13.tgz"
+  "version" "8.0.13"
   dependencies:
     "@babel/runtime" "^7.16.0"
     "@react-spring/web" "^9.2.4"
@@ -2201,7 +2201,7 @@
     "@wordpress/blob" "^3.2.2"
     "@wordpress/block-serialization-default-parser" "^4.2.3"
     "@wordpress/blocks" "^11.1.5"
-    "@wordpress/components" "^19.1.6"
+    "@wordpress/components" "^19.2.0"
     "@wordpress/compose" "^5.0.7"
     "@wordpress/data" "^6.1.5"
     "@wordpress/deprecated" "^3.2.3"
@@ -2274,10 +2274,10 @@
   "resolved" "https://registry.npmjs.org/@wordpress/browserslist-config/-/browserslist-config-4.1.0.tgz"
   "version" "4.1.0"
 
-"@wordpress/components@^19.1.6":
-  "integrity" "sha512-+Vmj+w7aLudXUzBdAOA/1a/RKoFvVSckGfuF/qpsFCVv80t2a22sgG8ZVnjm6f+L5dcCQdr3xgvqyRgE4lOvqQ=="
-  "resolved" "https://registry.npmjs.org/@wordpress/components/-/components-19.1.6.tgz"
-  "version" "19.1.6"
+"@wordpress/components@^19.2.0":
+  "integrity" "sha512-IFvbH7Jo9jqbH+ZXCMm+tLaJDn95Q783aNtm9GVA+z3nJSyh4Dl2MXsRfOSE/mLd2iToPDCrpuHi51hr/lrGcw=="
+  "resolved" "https://registry.npmjs.org/@wordpress/components/-/components-19.2.0.tgz"
+  "version" "19.2.0"
   dependencies:
     "@babel/runtime" "^7.16.0"
     "@emotion/cache" "^11.4.0"
