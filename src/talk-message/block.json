@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/talk-message",
+	"version": "0.1.0",
+	"title": "Talk message",
+	"icon": "editor-paragraph",
+	"category": "text",
+	"parent": [ "sketchpad-modified-blocks/talk-messages" ],
+	"description": "Block for message.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [],
+	"styles": [
+		{
+			"name": "talk",
+			"label": "Talk style",
+			"isDefault": true
+		},
+		{
+			"name": "mind-voice",
+			"label": "Mind voice style"
+		}
+	],
+	"supports": {
+		"html": false,
+		"inserter": true,
+		"reusable": false
+	},
+	"attributes": {},
+	"editorScript": "file:talk-message.js"
+}

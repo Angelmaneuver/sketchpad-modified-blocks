@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/talk-name",
+	"version": "0.1.0",
+	"title": "Talk name",
+	"icon": "editor-paragraph",
+	"description": "This block manages name tag and messages.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [],
+	"styles": [],
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"reusable": false
+	},
+	"attributes": {},
+	"editorScript": "file:talk-name.js"
+}

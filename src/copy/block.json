@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/copy",
+	"version": "0.1.0",
+	"title": "Copy Button",
+	"category": "text",
+	"icon": "clipboard",
+	"description": "Copy button block allows you to copy the text of other blocks.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [ "copy" ],
+	"styles": [],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"target": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "button",
+			"attribute": "data-clipboard-target",
+			"default": ""
+		},
+		"alignment": {
+			"type": "string",
+			"default": "none"
+		}
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:copy.js",
+	"editorStyle": "file:copy.css",
+	"style": "file:style-copy.css"
+}

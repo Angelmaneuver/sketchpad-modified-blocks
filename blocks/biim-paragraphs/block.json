@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/biim-paragraphs",
+	"version": "0.1.0",
+	"title": "Biim Messagebox",
+	"icon": "editor-paragraph",
+	"description": "Messagebox block.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		},
+		{
+			"name": "bottom-justification",
+			"label": "Bottom justified vertical position"
+		},
+		{
+			"name": "center-justification",
+			"label": "Center justified vertical position"
+		},
+		{
+			"name": "space-between",
+			"label": "Space between"
+		},
+		{
+			"name": "space-around",
+			"label": "Space around"
+		}
+	],
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"reusable": false
+	},
+	"attributes": {},
+	"editorScript": "file:biim-paragraphs.js",
+	"editorStyle": "file:biim-paragraphs.css",
+	"style": "file:style-biim-paragraphs.css"
+}

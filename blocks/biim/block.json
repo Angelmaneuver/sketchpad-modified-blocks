@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/biim",
+	"version": "0.1.0",
+	"title": "Biim System",
+	"category": "text",
+	"icon": "editor-paragraph",
+	"description": "Block that reproduces the Biim System.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [ "Biim" ],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		},
+		{
+			"name": "no-vertical-margin",
+			"label": "No Vertical Margin"
+		},
+		{
+			"name": "messagebox-only",
+			"label": "Messagebox Only"
+		}
+	],
+	"supports": {
+		"html": false
+	},
+	"attributes": {},
+	"editorScript": "file:biim.js",
+	"editorStyle": "file:biim.css",
+	"style": "file:style-biim.css"
+}

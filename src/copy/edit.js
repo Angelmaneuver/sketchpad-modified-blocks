@@ -63,7 +63,7 @@ import './editor.scss';
 				>
 					<PanelRow>
 						<TextControl
-							label     = { __( 'Enter a value that identifies the element you want to copy the clipboard.', 'sketchpad-modified-blocks' ) }
+							label     = { __( 'Enter a value that identifies the element you want to copy for clipboard.', 'sketchpad-modified-blocks' ) }
 							className = "sketchpad-modified-blocks-copy"
 							value     = { attributes.target }
 							onChange  = { updateTarget }

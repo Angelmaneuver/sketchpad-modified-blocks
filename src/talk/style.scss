@@ -5,11 +5,11 @@
 
 div.wp-block-sketchpad-modified-blocks-talk {
   display: flex;
-  padding: 0.5rem;
+  padding: 0.3125rem;
 
   div.wp-block-sketchpad-modified-blocks-talk-icon {
     flex-grow: 2;
-    max-width: 7.5rem;
+    max-width: 4.6875rem;
     margin: 0;
 
     &.is-style-rounded {
@@ -19,15 +19,15 @@ div.wp-block-sketchpad-modified-blocks-talk {
     }
 
     figure.wp-block-image {
-      max-width: 7.5rem;
+      max-width: 4.6875rem;
       margin-bottom: 0;
     }
 
     p {
       display: inline-block;
-      width: 7.5rem;
-      height: 7.5rem;
-      line-height: 7.5rem;
+      width: 4.6875rem;
+      height: 4.6875rem;
+      line-height: 4.6875rem;
       margin-bottom: 0;
 
       &.has-background {
@@ -40,13 +40,13 @@ div.wp-block-sketchpad-modified-blocks-talk {
     flex-grow: 8;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 17.5rem);
-    max-width: calc(100% - 17.5rem);
+    width: calc(100% - 10.9375rem);
+    max-width: calc(100% - 10.9375rem);
 
     div.wp-block-sketchpad-modified-blocks-talk-name p {
-      font-size: 1.4rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      font-size: 0.875rem;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
 
       &::before {
         content: '';
@@ -60,19 +60,20 @@ div.wp-block-sketchpad-modified-blocks-talk {
 
       div.wp-block-sketchpad-modified-blocks-talk-message {
         position: relative;
-        min-height: 4.4rem;
+        min-height: 2.75rem;
         background-color: #f5f5f5;
-        border-radius: 1rem;
+        border-radius: 0.625rem;
         box-sizing: border-box;
 
-        & + div.wp-block-sketchpad-modified-blocks-talk-message {
-          margin-top: 1rem;
+        & + div.wp-block-sketchpad-modified-blocks-talk-message,
+        & + figure {
+          margin-top: 0.625rem;
         }
       }
     }
 
     p {
-      margin: 1rem 2rem;
+      margin: 0.625rem 1.25rem;
 
       &[class*='has-'][class*='-font-size'] {
         line-height: initial;
@@ -81,28 +82,28 @@ div.wp-block-sketchpad-modified-blocks-talk {
   }
 
   &:not([class*="is-style-"]), &[class*="-left"] {
-    transform: translateX(50px);
+    transform: translateX(3.125rem);
     transition: .6s;
 
     div.wp-block-sketchpad-modified-blocks-talk-messagebox {
       div.wp-block-sketchpad-modified-blocks-talk-messages {
-        margin-left: 2.5rem;
+        margin-left: 1.5625rem;
 
         div.wp-block-sketchpad-modified-blocks-talk-message {
           &:not([class*="is-style-"]), &.is-style-talk {
             &::before {
-              left: -1.3rem;
+              left: -0.8125rem;
               transform: rotate(-19deg);
             }
           }
 
           &.is-style-mind-voice {
             &::before {
-              left: -2.2rem;
+              left: -1.375rem;
             }
 
             &::after {
-              left: -1.8rem;
+              left: -1.125rem;
             }
           }
         }
@@ -112,7 +113,7 @@ div.wp-block-sketchpad-modified-blocks-talk {
 
   &[class*="-right"] {
     flex-direction: row-reverse;
-    transform: translateX(-50px);
+    transform: translateX(-3.125rem);
     transition: .6s;
 
     div.wp-block-sketchpad-modified-blocks-talk-messagebox {
@@ -121,7 +122,7 @@ div.wp-block-sketchpad-modified-blocks-talk {
       }
 
       div.wp-block-sketchpad-modified-blocks-talk-messages {
-        margin-right: 2.5rem;
+        margin-right: 1.5625rem;
 
         div.wp-block-sketchpad-modified-blocks-talk-message {
           &:not([class*="is-style-"]), &.is-style-talk {
@@ -129,18 +130,18 @@ div.wp-block-sketchpad-modified-blocks-talk {
               content: '';
               position: absolute;
               display: block;
-              right: -1.3rem;
+              right: -0.8125rem;
               transform: rotate(19deg);
             }
           }
 
           &.is-style-mind-voice {
             &::before {
-              right: -2.2rem;
+              right: -1.375rem;
             }
 
             &::after {
-              right: -1.8rem;
+              right: -1.125rem;
             }
           }
         }
@@ -154,11 +155,11 @@ div.wp-block-sketchpad-modified-blocks-talk {
         content: '';
         position: absolute;
         display: block;
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 0.9375rem;
+        height: 0.9375rem;
         background-color: transparent;
         border-radius: 50%;
-        box-shadow: 0 0.9rem 0 0.5rem #f5f5f5;
+        box-shadow: 0 0.5625rem 0 0.3125rem #f5f5f5;
         z-index: -1;
       }
     }
@@ -168,22 +169,22 @@ div.wp-block-sketchpad-modified-blocks-talk {
         content: '';
         position: absolute;
         display: block;
-        width: 1rem;
-        height: 1rem;
+        width: 0.625rem;
+        height: 0.625rem;
         top: 0;
         border-radius: 50%;
-        background-color: #f5f5f5;
+        background-color: #F5F5F5;
       }
 
       &::after {
         content: '';
         position: absolute;
         display: block;
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1rem;
+        height: 1rem;
         top: 1rem;
         border-radius: 50%;
-        background-color: #f5f5f5;
+        background-color: #F5F5F5;
       }
     }
   }

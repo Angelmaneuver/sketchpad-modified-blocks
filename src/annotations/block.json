@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/annotations",
+	"version": "0.1.0",
+	"title": "Annotations",
+	"category": "text",
+	"icon": "editor-paragraph",
+	"description": "This block for writing annotations.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [ "annotations" ],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		},
+		{
+			"name": "no-vertical-margin",
+			"label": "No Vertical Margin"
+		}
+	],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"simbol": {
+			"type": "string",
+			"source": "html",
+			"default": "*",
+			"selector": ".sketchpad-modified-blocks-annotations-simbol"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"default": "",
+			"selector": ".sketchpad-modified-blocks-annotations-content"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"simbol": "*",
+			"content": "Annotations will be provided.<br />Second line.<br />Third line."
+		}
+	},
+	"editorScript": "file:annotations.js",
+	"editorStyle": "file:annotations.css",
+	"style": "file:style-annotations.css"
+}

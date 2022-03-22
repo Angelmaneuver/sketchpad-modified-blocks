@@ -59,7 +59,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						{
 							value:    attributes.backgroundColor,
 							onChange: updateBackgroundColor,
-							label:    __( 'Background color' ),
+							label:    __( 'Background' ) + __( 'Color' ),
 						},
 					] }
 				/>
@@ -79,7 +79,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						style                  = { style }
 						value                  = { attributes.content }
 						onChange               = { updateContent }
-						placeholder            = { __( 'Start writing or type / to choose a block' ) }
+						placeholder            = { __( 'Enter annotations', 'sketchpad-modified-blocks' ) }
 					/>
 				</div>
 			</div>

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2022-01-03T07:23:52+00:00\n"
+"POT-Creation-Date: 2022-03-22T16:52:01+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,290 +35,446 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
-#: includes/file-data-display/get/render.php:33
+#: includes/blocks/file-data-display-by-get.php:32
 msgid "The file data display cannot be displayed on this page."
 msgstr "このページではファイルデータを表示できません。"
 
-#: includes/file-data-display/get/render.php:47
+#: includes/blocks/file-data-display-by-get.php:46
 msgid "Unauthorized request detected, terminated process..."
 msgstr "不正なリクエストを検出しました。プロセスを終了します..."
 
-#: includes/table-of-contents/render.php:32
+#: includes/blocks/table-of-content.php:31
 msgid "The table of contents cannot be displayed on this page."
 msgstr "このページでは目次を表示できません。"
 
-#: plugin.php:172
-msgid "Sketchpad Modified - Blocks"
-msgstr ""
-
-#: blocks/components/copy/copy.js:1
-msgid "Copy Button Configuration"
-msgstr "コピーボタン設定"
-
-#: blocks/components/copy/copy.js:1
-msgid "Enter a value that identifies the element you want to copy the clipboard."
-msgstr "クリップボードにコピーさせたい要素を識別する値を入力します。"
-
-#: blocks/components/file-data-display-by-get/file-data-display-by-get.js:1
-msgid "File Data Display Configuration"
-msgstr "ファイルデータ表示設定"
-
-#: blocks/components/file-data-display-by-get/file-data-display-by-get.js:1
-msgid "Enter the directory where you want to search for files from the Get parameter. * Only under the WordPress installation directory."
-msgstr "Getパラメータからファイルを検索するディレクトリを入力します。※WordPressインストールディレクトリ配下のみ"
-
-#: js/clipboard.js:14
+#: assets/js/clipboard.js:14
 msgid "copied!"
 msgstr "コピーしました..."
 
-#: blocks/json/annotations/block.json
-msgctxt "block title"
-msgid "Annotations Block"
-msgstr "注釈ブロック"
+#: blocks/annotations/annotations.js:1
+msgid "Enter annotations"
+msgstr "注釈を入力します"
 
-#: blocks/json/annotations/block.json
-msgctxt "block description"
-msgid "Block for writing annotations."
-msgstr "注釈を書く為のブロックです。"
+#: blocks/copy/copy.js:1
+msgid "Copy Button Configuration"
+msgstr "コピーボタン設定"
 
-#: blocks/json/annotations/block.json blocks/json/biim/block.json
-#: blocks/json/copy/block.json blocks/json/file-data-display/get/block.json
-#: blocks/json/table-of-contents/block.json blocks/json/tag-list/block.json
-#: blocks/json/talk/block.json
-msgctxt "block keyword"
-msgid "Sketchpad"
+#: blocks/copy/copy.js:1
+msgid "Enter a value that identifies the element you want to copy for clipboard."
+msgstr "クリップボードにコピーさせたい要素を識別する値を入力します。"
+
+#: blocks/file-data-display-by-get/file-data-display-by-get.js:1
+msgid "File Data Display Configuration"
+msgstr "ファイルデータ表示設定"
+
+#: blocks/file-data-display-by-get/file-data-display-by-get.js:1
+msgid "Enter the directory where you want to search for files from the Get parameter. * Only under the WordPress installation directory."
+msgstr "Getパラメータからファイルを検索するディレクトリを入力します。※WordPressインストールディレクトリ配下のみ"
+
+#: blocks/group/group.js:1
+msgid "Display control settings"
+msgstr "表示制御設定"
+
+#: blocks/group/group.js:1
+msgid "Display this block only if there are no query results."
+msgstr "クエリー結果が無かった場合のみ、このブロックを表示します。"
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Make the post comments count on the post a link."
+msgstr "投稿コメント数をリンクにする。"
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Enter the value you want to link destination."
+msgstr "リンク先にしたい値を入力してください。"
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Anchor string without \"#\""
+msgstr "\"#\"を除いたアンカー文字列"
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Post comments count before text"
 msgstr ""
 
-#: blocks/json/annotations/block.json
-msgctxt "block keyword"
-msgid "Annotation"
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Before post comments count"
+msgstr "投稿コメント数の前"
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Post Comments Count block: post not found."
+msgstr "投稿コメント数ブロック: 投稿が見つかりません。"
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "Post comments count after text"
+msgstr ""
+
+#: blocks/post-comments-count/post-comments-count.js:1
+msgid "After post comments count"
+msgstr "投稿コメント数の後"
+
+#: blocks/post-edit-link/post-edit-link.js:1
+msgid "Post edit link"
+msgstr "投稿編集リンク"
+
+#: blocks/post-edit-link/post-edit-link.js:1
+msgid "Post edit link label"
+msgstr "投稿編集リンクのラベル"
+
+#: blocks/search-keyword/search-keyword.js:1
+#: blocks/table-of-contents/table-of-contents.js:1
+msgid "Block Configuration"
+msgstr "ブロック設定"
+
+#: blocks/search-keyword/search-keyword.js:1
+msgid "Search keyword before text"
+msgstr ""
+
+#: blocks/search-keyword/search-keyword.js:1
+msgid "Add text before search keyword."
+msgstr "検索キーワードの前にテキストを追加します。"
+
+#: blocks/search-keyword/search-keyword.js:1
+msgid "Search Keyword"
+msgstr "検索キーワード"
+
+#: blocks/search-keyword/search-keyword.js:1
+msgid "Search keyword after text"
+msgstr ""
+
+#: blocks/search-keyword/search-keyword.js:1
+msgid "Add text after search keyword."
+msgstr "検索キーワードの後にテキストを追加します。"
+
+#: blocks/table-of-contents/table-of-contents.js:1
+msgid "Enter the value you want to display as the heading."
+msgstr "見出しとして表示したい値を入力します。"
+
+#: blocks/table-of-contents/table-of-contents.js:1
+msgid "Heading Element"
+msgstr "見出し要素"
+
+#: blocks/annotations/block.json
+msgctxt "block title"
+msgid "Annotations"
 msgstr "注釈"
 
-#: blocks/json/annotations/block.json blocks/json/biim/block.json
-#: blocks/json/biim/parts/navigationbar/block.json
-#: blocks/json/biim/parts/paragraphs/block.json
-#: blocks/json/talk/parts/icon/block.json
+#: blocks/annotations/block.json
+msgctxt "block description"
+msgid "This block for writing annotations."
+msgstr "注釈を書く為のブロックです。"
+
+#: blocks/annotations/block.json
+msgctxt "block keyword"
+msgid "annotations"
+msgstr "注釈"
+
+#: blocks/annotations/block.json blocks/biim-navigationbar/block.json
+#: blocks/biim-paragraphs/block.json blocks/biim/block.json
+#: blocks/talk-icon/block.json
 msgctxt "block style label"
 msgid "default"
 msgstr "デフォルト"
 
-#: blocks/json/annotations/block.json blocks/json/biim/block.json
+#: blocks/annotations/block.json blocks/biim/block.json
 msgctxt "block style label"
 msgid "No Vertical Margin"
 msgstr "余白無し"
 
-#: blocks/json/biim/block.json
+#: blocks/biim-navigationbar/block.json
 msgctxt "block title"
-msgid "Biim System Block"
-msgstr "Biimシステムブロック"
+msgid "Biim Navigationbar"
+msgstr "Biimナビゲーションバー"
 
-#: blocks/json/biim/block.json
+#: blocks/biim-navigationbar/block.json
 msgctxt "block description"
-msgid "Block that reproduces the Biim System."
-msgstr "Biim Systemを再現したブロックです。"
+msgid "Navigationbar block."
+msgstr "ナビゲーションバー"
 
-#: blocks/json/biim/block.json
-msgctxt "block keyword"
-msgid "Biim"
-msgstr ""
-
-#: blocks/json/biim/block.json
-msgctxt "block style label"
-msgid "Messagebox Only"
-msgstr "メッセージボックスのみ"
-
-#: blocks/json/biim/parts/navigationbar/block.json
-msgctxt "block title"
-msgid "Biim Navigationbar Block"
-msgstr "Biimナビゲーションバーブロック"
-
-#: blocks/json/biim/parts/navigationbar/block.json
-msgctxt "block description"
-msgid "Navigationbar Block."
-msgstr "ナビゲーションバーブロック"
-
-#: blocks/json/biim/parts/navigationbar/block.json
+#: blocks/biim-navigationbar/block.json
 msgctxt "block style label"
 msgid "No Icon"
 msgstr "アイコン無し"
 
-#: blocks/json/biim/parts/navigationbar/block.json
+#: blocks/biim-navigationbar/block.json
 msgctxt "block style label"
 msgid "Icon Border"
 msgstr "アイコン (枠線)"
 
-#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/biim-paragraphs/block.json
 msgctxt "block title"
-msgid "Biim Messagebox Block"
-msgstr "Biimメッセージボックスブロック"
+msgid "Biim Messagebox"
+msgstr "Biimメッセージボックス"
 
-#: blocks/json/biim/parts/paragraphs/block.json
-#: blocks/json/talk/parts/messagebox/block.json
+#: blocks/biim-paragraphs/block.json
 msgctxt "block description"
-msgid "Messagebox Block."
-msgstr "メッセージボックスブロック"
+msgid "Messagebox block."
+msgstr "メッセージボックス"
 
-#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Bottom justified vertical position"
 msgstr "下揃え"
 
-#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Center justified vertical position"
 msgstr "中央揃え"
 
-#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Space between"
 msgstr "両端揃え"
 
-#: blocks/json/biim/parts/paragraphs/block.json
+#: blocks/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Space around"
 msgstr "均等揃え"
 
-#: blocks/json/copy/block.json
+#: blocks/biim/block.json
 msgctxt "block title"
-msgid "Copy Block"
-msgstr "コピーブロック"
+msgid "Biim System"
+msgstr "Biimシステム"
 
-#: blocks/json/copy/block.json
+#: blocks/biim/block.json
+msgctxt "block description"
+msgid "Block that reproduces the Biim System."
+msgstr "Biim Systemを再現したブロックです。"
+
+#: blocks/biim/block.json
+msgctxt "block keyword"
+msgid "Biim"
+msgstr ""
+
+#: blocks/biim/block.json
+msgctxt "block style label"
+msgid "Messagebox Only"
+msgstr "メッセージボックスのみ"
+
+#: blocks/copy/block.json
+msgctxt "block title"
+msgid "Copy Button"
+msgstr "コピーボタン"
+
+#: blocks/copy/block.json
 msgctxt "block description"
 msgid "Copy button block allows you to copy the text of other blocks."
 msgstr "コピーボタンブロックでは、他のブロックのテキストをコピーする事ができます。"
 
-#: blocks/json/copy/block.json
+#: blocks/copy/block.json
 msgctxt "block keyword"
-msgid "Copy"
+msgid "copy"
 msgstr "コピー"
 
-#: blocks/json/file-data-display/get/block.json
+#: blocks/file-data-display-by-get/block.json
 msgctxt "block title"
-msgid "File Data Display Block (Get Parameter Type)"
-msgstr "ファイルデータ表示ブロック (Getパラメータ型)"
+msgid "File Data Display (Get Parameter Type)"
+msgstr "ファイルデータ表示 (Getパラメータ型)"
 
-#: blocks/json/file-data-display/get/block.json
+#: blocks/file-data-display-by-get/block.json
 msgctxt "block description"
 msgid "A dynamic block that outputs a file data. Identify the file with the Get parameter."
 msgstr "ファイルデータを出力するダイナミックブロックです。Getパラメータでファイルを特定します。"
 
-#: blocks/json/file-data-display/get/block.json
+#: blocks/file-data-display-by-get/block.json
 msgctxt "block keyword"
 msgid "File data display"
 msgstr "ファイルデータ表示"
 
-#: blocks/json/table-of-contents/block.json
+#: blocks/group/block.json
 msgctxt "block title"
-msgid "Table of Contents Block"
-msgstr "目次ブロック"
+msgid "Group and display control"
+msgstr "グループと表示制御"
 
-#: blocks/json/table-of-contents/block.json
+#: blocks/group/block.json
+msgctxt "block description"
+msgid "Combine blocks into a group and display control."
+msgstr "ブロックをグループ化し、表示制御を行います。"
+
+#: blocks/group/block.json
+msgctxt "block keyword"
+msgid "Group"
+msgstr "グループ"
+
+#: blocks/group/block.json
+msgctxt "block keyword"
+msgid "Display control"
+msgstr "表示制御"
+
+#: blocks/post-comments-count/block.json
+msgctxt "block title"
+msgid "Post comments count"
+msgstr "投稿コメント数"
+
+#: blocks/post-comments-count/block.json
+msgctxt "block description"
+msgid "Display a post's comments count and add text before or after."
+msgstr "投稿のコメント数を表示し、前後にテキストを追加する事ができます。"
+
+#: blocks/post-comments-count/block.json
+msgctxt "block keyword"
+msgid "Post comments count"
+msgstr "投稿コメント数"
+
+#: blocks/post-edit-link/block.json
+msgctxt "block title"
+msgid "Post edit link"
+msgstr "投稿編集リンク"
+
+#: blocks/post-edit-link/block.json
+msgctxt "block description"
+msgid "Add a post edit link."
+msgstr "投稿編集リンクを追加します。"
+
+#: blocks/post-edit-link/block.json
+msgctxt "block keyword"
+msgid "Post edit link"
+msgstr "投稿編集リンク"
+
+#: blocks/post-navigation-links/block.json
+msgctxt "block title"
+msgid "Post navigation links"
+msgstr "投稿のナビゲーションリンク (複数)"
+
+#: blocks/post-navigation-links/block.json
+msgctxt "block description"
+msgid "Displays the next and previous post link that is adjacent to the current post."
+msgstr "現在の投稿に隣接する、次の投稿と前の投稿のリンクを表示します。"
+
+#: blocks/post-navigation-links/block.json
+msgctxt "block keyword"
+msgid "Post navigation links"
+msgstr "投稿のナビゲーションリンク (複数)"
+
+#: blocks/search-keyword/block.json
+msgctxt "block title"
+msgid "Search keyword"
+msgstr "検索キーワード"
+
+#: blocks/search-keyword/block.json
+msgctxt "block description"
+msgid "Displays the search keyword and add text before or after."
+msgstr "検索キーワードを表示し、前後にテキストを追加します。"
+
+#: blocks/search-keyword/block.json
+msgctxt "block keyword"
+msgid "Search keyword"
+msgstr "検索キーワード"
+
+#: blocks/table-of-contents/block.json
+msgctxt "block title"
+msgid "Table of Contents"
+msgstr "目次"
+
+#: blocks/table-of-contents/block.json
 msgctxt "block description"
 msgid "A dynamic block that outputs a table of contents."
 msgstr "目次を出力するダイナミックブロックです。"
 
-#: blocks/json/table-of-contents/block.json
+#: blocks/table-of-contents/block.json
 msgctxt "block keyword"
 msgid "Table of Contents"
 msgstr "目次"
 
-#: blocks/json/tag-list/block.json
+#: blocks/tag-list/block.json
 msgctxt "block title"
-msgid "Tag List Block"
-msgstr "タグ一覧ブロック"
+msgid "Tag list"
+msgstr "タグ一覧"
 
-#: blocks/json/tag-list/block.json
+#: blocks/tag-list/block.json
 msgctxt "block description"
 msgid "A dynamic block that outputs a list of tags."
 msgstr "タグを一覧出力するダイナミックブロックです。"
 
-#: blocks/json/tag-list/block.json
+#: blocks/tag-list/block.json
 msgctxt "block keyword"
-msgid "Tag List"
+msgid "Tag list"
 msgstr "タグ一覧"
 
-#: blocks/json/talk/block.json
+#: blocks/talk-icon/block.json
 msgctxt "block title"
-msgid "Talk Block"
-msgstr "会話ブロック"
+msgid "Talk icon"
+msgstr "会話アイコン"
 
-#: blocks/json/talk/block.json
+#: blocks/talk-icon/block.json
 msgctxt "block description"
-msgid "Designed to look like a chat exchange."
-msgstr "チャットのやり取りに似せたデザインです。"
+msgid "Block for icon."
+msgstr "アイコン用のブロックです。"
 
-#: blocks/json/talk/block.json
-msgctxt "block keyword"
-msgid "Talk"
-msgstr "会話"
-
-#: blocks/json/talk/block.json
-msgctxt "block style label"
-msgid "Left style"
-msgstr "左側スタイル"
-
-#: blocks/json/talk/block.json
-msgctxt "block style label"
-msgid "Right style"
-msgstr "右側スタイル"
-
-#: blocks/json/talk/parts/icon/block.json
-msgctxt "block title"
-msgid "Talk Icon Block"
-msgstr "会話アイコンブロック"
-
-#: blocks/json/talk/parts/icon/block.json
-msgctxt "block description"
-msgid "Icon Block."
-msgstr "アイコンブロックです。"
-
-#: blocks/json/talk/parts/icon/block.json
+#: blocks/talk-icon/block.json
 msgctxt "block style label"
 msgid "Rounded Corners"
 msgstr "各丸"
 
-#: blocks/json/talk/parts/message/block.json
+#: blocks/talk-message/block.json
 msgctxt "block title"
-msgid "Talk Message Block"
-msgstr "会話メッセージブロック"
+msgid "Talk message"
+msgstr "会話メッセージ"
 
-#: blocks/json/talk/parts/message/block.json
+#: blocks/talk-message/block.json
 msgctxt "block description"
-msgid "Message Block."
-msgstr "メッセージブロックです。"
+msgid "Block for message."
+msgstr "メッセージ用のブロックです。"
 
-#: blocks/json/talk/parts/message/block.json
+#: blocks/talk-message/block.json
 msgctxt "block style label"
 msgid "Talk style"
 msgstr "会話スタイル"
 
-#: blocks/json/talk/parts/message/block.json
+#: blocks/talk-message/block.json
 msgctxt "block style label"
 msgid "Mind voice style"
 msgstr "心の声スタイル"
 
-#: blocks/json/talk/parts/messagebox/block.json
+#: blocks/talk-messagebox/block.json
 msgctxt "block title"
-msgid "Talk Messagebox Block"
-msgstr "会話メッセージボックスブロック"
+msgid "Talk Messagebox"
+msgstr "会話メッセージボックス"
 
-#: blocks/json/talk/parts/messages/block.json
-msgctxt "block title"
-msgid "Talk Messages Block"
-msgstr "会話メッセージブロック"
-
-#: blocks/json/talk/parts/messages/block.json
+#: blocks/talk-messagebox/block.json blocks/talk-name/block.json
 msgctxt "block description"
-msgid "Messages Block."
-msgstr "メッセージブロックです。"
+msgid "This block manages name tag and messages."
+msgstr "名札やメッセージを管理するブロックです。"
 
-#: blocks/json/talk/parts/name/block.json
+#: blocks/talk-messages/block.json
 msgctxt "block title"
-msgid "Talk Name Block"
-msgstr "会話名前ブロック"
+msgid "Talk Messages"
+msgstr "会話メッセージ (複数)"
 
-#: blocks/json/talk/parts/name/block.json
+#: blocks/talk-messages/block.json
 msgctxt "block description"
-msgid "Name Block."
-msgstr "名前ブロックです。"
+msgid "This block displays multiple messages in a callout."
+msgstr "複数のメッセージを吹き出しで表示するブロックです。"
+
+#: blocks/talk-name/block.json
+msgctxt "block title"
+msgid "Talk name"
+msgstr "会話の名前"
+
+#: blocks/talk/block.json
+msgctxt "block title"
+msgid "Talk"
+msgstr "会話"
+
+#: blocks/talk/block.json
+msgctxt "block description"
+msgid "Designed to look like a chat exchange."
+msgstr "チャットのやり取りに似せたデザインです。"
+
+#: blocks/talk/block.json
+msgctxt "block keyword"
+msgid "Talk"
+msgstr "会話"
+
+#: blocks/talk/block.json
+msgctxt "block keyword"
+msgid "Chat"
+msgstr "チャット"
+
+#: blocks/talk/block.json
+msgctxt "block style label"
+msgid "Left style"
+msgstr "左側スタイル"
+
+#: blocks/talk/block.json
+msgctxt "block style label"
+msgid "Right style"
+msgstr "右側スタイル"

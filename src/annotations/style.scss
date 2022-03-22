@@ -5,8 +5,12 @@
 
 .wp-block-sketchpad-modified-blocks-annotations {
 	display: flex;
-	
-	.sketchpad-modified-blocks-annotations-simbol {
+
+  .sketchpad-modified-blocks-annotations-simbol {
 		margin-right: 1rem;
 	}
+
+  p.sketchpad-modified-blocks-annotations-content {
+    margin-top: 0;
+  }
 }

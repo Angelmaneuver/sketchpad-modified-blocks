@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/talk-icon",
+	"version": "0.1.0",
+	"title": "Talk icon",
+	"icon": "format-image",
+	"description": "Block for icon.",
+	"keywords": [],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default"
+		},
+		{
+			"name": "rounded",
+			"label": "Rounded Corners",
+			"isDefault": true
+		}
+	],
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"reusable": false
+	},
+	"attributes": {},
+	"textdomain": "sketchpad-modified-blocks",
+	"editorScript": "file:talk-icon.js"
+}

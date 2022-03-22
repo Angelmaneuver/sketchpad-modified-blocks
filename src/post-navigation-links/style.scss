@@ -1,0 +1,27 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.wp-block-sketchpad-modified-blocks-post-navigation-links {
+	display: flex;
+  justify-content: space-between;
+
+  .post-navigation-link-previous,
+  .post-navigation-link-next {
+    width: 48%;
+  }
+
+  .wp-block-post-navigation-link {
+    &, > a {
+      display: flex;
+      gap: 5px;
+    }
+
+    &.post-navigation-link-next {
+      &, > a {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

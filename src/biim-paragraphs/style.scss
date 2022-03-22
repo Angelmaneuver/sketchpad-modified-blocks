@@ -1,0 +1,23 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.sketchpad-modified-blocks-biim-messagebox {
+  flex-grow: 7;
+  display: flex;
+  flex-direction: column;
+  min-width: 12.5rem;
+  min-height: 6.125rem;
+  padding: 0.3125rem 0.625rem;
+  border: thin solid #fff;
+
+  p {
+    color: rgb(238, 238, 238);
+  }
+}
+
+.is-style-bottom-justification { justify-content: flex-end; }
+.is-style-center-justification { justify-content: center; }
+.is-style-space-between        { justify-content: space-between; }
+.is-style-space-around         { justify-content: space-around; }

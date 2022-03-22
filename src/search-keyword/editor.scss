@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+.wp-block-sketchpad-modified-blocks-search-keyword {
+  display: flex;
+
+  &.is-selected {
+    justify-content: space-between;
+  }
+
+  &.has-text-align- {
+    &right {
+      justify-content: flex-end;
+    }
+
+    &center {
+      justify-content: center;
+    }
+  }
+}

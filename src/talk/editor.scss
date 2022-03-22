@@ -18,10 +18,10 @@ div.wp-block-sketchpad-modified-blocks-talk {
       > div:first-child {
         flex-basis: 0;
         flex-grow: 2;
-        width: 9.5rem;
-        min-width: 9.5rem;
-        max-width: 9.5rem;
-        margin: 1rem;
+        width: 5.9375rem;
+        min-width: 5.9375rem;
+        max-width: 5.9375rem;
+        margin: 0.625rem;
 
         > div.block-editor-inner-blocks {
           > div.block-editor-block-list__layout {
@@ -40,15 +40,15 @@ div.wp-block-sketchpad-modified-blocks-talk {
         max-width: 100%;
 
         div.wp-block-sketchpad-modified-blocks-talk-name p {
-          font-size: 1rem;
+          font-size: 0.625rem;
         }
 
         div.wp-block-sketchpad-modified-blocks-talk-messages {
           div.wp-block-sketchpad-modified-blocks-talk-message {
             p {
-              width: calc(100% - 4rem);
-              padding-top: 0.5rem;
-              padding-bottom: 0.5rem;
+              width: calc(100% - 2.5rem);
+              padding-top: 0.3125rem;
+              padding-bottom: 0.3125rem;
             }
           }
         }
@@ -68,12 +68,12 @@ div.wp-block-sketchpad-modified-blocks-talk-icon {
     .block-editor-block-list__layout {
       p {
         display: inline-block;
-        width: 9.5rem;
-        height: 9.5rem;
+        width: 5.9375rem;
+        height: 5.9375rem;
         line-height: initial;
 
         &[data-empty="false"] {
-          line-height: 9.5rem;
+          line-height: 5.9375rem;
         }
 
         &.has-background {
@@ -98,27 +98,27 @@ div.wp-block-sketchpad-modified-blocks-talk-icon {
               text-align: center;
 
               p {
-                font-size: 3rem;
-                width: 22rem;
-                height: 22rem;
-                line-height: 22rem;
+                font-size: 1.875rem;
+                width: 13.75rem;
+                height: 13.75rem;
+                line-height: 13.75rem;
               }
             }
           }
         }
 
         > .wp-block-sketchpad-modified-blocks-talk-message {
-          font-size: 4rem;
-          margin-left: 12rem;
+          font-size: 2.5rem;
+          margin-left: 7.5rem;
 
           p {
             position: relative;
-            height: 60rem;
-            top: 25rem;
-            padding-top: 3rem;
-            padding-left: 3rem;
-            background-color: #f5f5f5;
-            border-top-left-radius: 5rem;
+            height: 37.5rem;
+            top: 15.625rem;
+            padding-top: 1.875rem;
+            padding-left: 1.875rem;
+            background-color: #F5F5F5;
+            border-top-left-radius: 3.125rem;
             box-sizing: border-box;
           }
 
@@ -128,13 +128,13 @@ div.wp-block-sketchpad-modified-blocks-talk-icon {
                 content: '';
                 position: absolute;
                 display: block;
-                width: 15rem;
-                height: 15rem;
-                top: 2rem;
-                left: -5rem;
+                width: 9.375rem;
+                height: 9.375rem;
+                top: 1.25rem;
+                left: -3.125rem;
                 background-color: transparent;
                 border-radius: 50%;
-                box-shadow: 0 5rem 0 1rem #f5f5f5;
+                box-shadow: 0 3.125rem 0 0.625rem #F5F5F5;
                 transform: rotate(25deg);
                 z-index: -1;
               }
@@ -146,24 +146,24 @@ div.wp-block-sketchpad-modified-blocks-talk-icon {
               content: '';
               position: absolute;
               display: block;
-              width: 5rem;
-              height: 5rem;
-              top: 25rem;
-              left: 1rem;
+              width: 3.125rem;
+              height: 3.125rem;
+              top: 15.625rem;
+              left: 0.625rem;
               border-radius: 50%;
-              background-color: #f5f5f5;
+              background-color: #F5F5F5;
             }
 
             &::after {
               content: '';
               position: absolute;
               display: block;
-              width: 10rem;
-              height: 10rem;
-              top: 32rem;
-              left: 1.5rem;
+              width: 6.25rem;
+              height: 6.25rem;
+              top: 20rem;
+              left: 0.9375rem;
               border-radius: 50%;
-              background-color: #f5f5f5;
+              background-color: #F5F5F5;
             }
           }
         }

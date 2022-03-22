@@ -11,7 +11,16 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+ import { Fragment }     from '@wordpress/element';
+ import {
+	 useBlockProps,
+	 InspectorControls
+ }                       from '@wordpress/block-editor';
+  import {
+	 PanelBody,
+	 TextControl,
+	 SelectControl
+ }                       from '@wordpress/components';
 import ServerSideRender  from '@wordpress/server-side-render';
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,13 +38,49 @@ import ServerSideRender  from '@wordpress/server-side-render';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit( props ) {
+export default function Edit( { name, attributes, setAttributes } ) {
 	return (
-		<div { ...useBlockProps() } >
-			<ServerSideRender
-				block      = { props.name }
-				attributes = { props.attributes }
-			/>
-		</div>
+		<Fragment>
+			<InspectorControls>
+				<PanelBody
+					title       = { __( 'Block Configuration', 'sketchpad-modified-blocks' ) }
+					initialOpen = { true }
+				>
+					<SelectControl
+						label    = { __( 'HTML element' ) }
+						value    = { attributes.tagName }
+						options  = {[
+							{ label: '<div>',     value: 'div' },
+							{ label: '<section>', value: 'section' },
+						]}
+						onChange = { ( value ) => setAttributes( { tagName: value } ) }
+					/>
+					<TextControl
+						label    = { __( 'Enter the value you want to display as the heading.', 'sketchpad-modified-blocks' ) }
+						value    = { attributes.heading }
+						onChange = { ( value ) => setAttributes( { heading: value } ) }
+					/>
+					<SelectControl
+						label    = { __( 'Heading Element', 'sketchpad-modified-blocks' ) }
+						value    = { attributes.headingTagName }
+						options  = {[
+							{ label: '<h1>', value: 'h1' },
+							{ label: '<h2>', value: 'h2' },
+							{ label: '<h3>', value: 'h3' },
+							{ label: '<h4>', value: 'h4' },
+							{ label: '<h5>', value: 'h5' },
+							{ label: '<h6>', value: 'h6' },
+						]}
+						onChange = { ( value ) => setAttributes( { headingTagName: value } ) }
+					/>
+				</PanelBody>
+			</InspectorControls>
+			<div { ...useBlockProps() } >
+				<ServerSideRender
+					block      = { name }
+					attributes = { attributes }
+				/>
+			</div>
+		</Fragment>
 	);
 }

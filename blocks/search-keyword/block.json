@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/search-keyword",
+	"version": "0.1.0",
+	"title": "Search keyword",
+	"category": "theme",
+	"icon": "search",
+	"description": "Displays the search keyword and add text before or after.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [ "Search keyword" ],
+	"styles": [],
+	"supports": {
+		"html": false,
+		"color": {
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalTextTransform": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	},
+	"attributes": {
+		"textAlgin": {
+			"type": "string",
+			"default": ""
+		},
+		"tagName": {
+			"type": "string",
+			"default": "div"
+		},
+		"beforeText": {
+			"type": "string",
+			"default": ""
+		},
+		"afterText": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {},
+	"editorScript": "file:search-keyword.js",
+	"editorStyle": "file:search-keyword.css"
+}

@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sketchpad-modified-blocks/table-of-contents",
+	"version": "0.1.0",
+	"title": "Table of Contents",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "A dynamic block that outputs a table of contents.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [ "Table of Contents" ],
+	"styles": [],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "div"
+		},
+		"headingTagName": {
+			"type": "string",
+			"default": "h1"
+		},
+		"heading": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {},
+	"editorScript": "file:table-of-contents.js",
+	"style": "file:style-table-of-contents.css"
+}
