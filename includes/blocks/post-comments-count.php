@@ -29,9 +29,9 @@ function render_sketchpad_modified_blocks_post_comments_count( $attributes, $con
 	$label              = esc_html(
 		sprintf(
 			'%1$s%2$s%3$s',
-			( isset( $attributes['preLabel'] ) ? $attributes['preLabel'] : '' ),
+			( isset( $attributes['beforeText'] ) ? $attributes['beforeText'] : '' ),
 			$comments_count,
-			( isset( $attributes['afterLabel'] ) ? $attributes['afterLabel'] : '' )
+			( isset( $attributes['afterText'] ) ? $attributes['afterText'] : '' )
 		)
 	);
 	$is_link            = isset( $attributes['isLink'] ) ? $attributes['isLink'] : false;
