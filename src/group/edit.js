@@ -40,9 +40,13 @@ import {
  * @return {WPElement} Element to render.
  */
 export default function Edit( { attributes, setAttributes } ) {
-	const { tagName: TagName = 'div', isShowNoPosts } = attributes;
-	const blockProps                                  = useBlockProps();
-	const innerBlocksProps                            = useInnerBlocksProps( blockProps );
+	const {
+		tagName: TagName = 'div',
+		isShowNoPosts,
+		isShowHasCategory
+	}                             = attributes;
+	const blockProps              = useBlockProps();
+	const innerBlocksProps        = useInnerBlocksProps( blockProps );
 	return (
 		<>
 			<InspectorControls>
@@ -54,6 +58,11 @@ export default function Edit( { attributes, setAttributes } ) {
 						label    = { __( 'Display this block only if there are no query results.', 'sketchpad-modified-blocks' ) }
 						checked  = { isShowNoPosts }
 						onChange = { () => setAttributes( { isShowNoPosts: ! isShowNoPosts } ) }
+					/>
+					<ToggleControl
+						label    = { __( 'Display this block only if the post has a category.', 'sketchpad-modified-blocks' ) }
+						checked  = { isShowHasCategory }
+						onChange = { () => setAttributes( { isShowHasCategory: ! isShowHasCategory } ) }
 					/>
 				</PanelBody>
 			</InspectorControls>

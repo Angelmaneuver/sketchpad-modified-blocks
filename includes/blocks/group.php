@@ -29,10 +29,15 @@ add_action( 'init', 'register_sketchpad_modified_block_group' );
  */
 function pre_render_filter_sketchpad_modified_block_group( $pre_render, $block, $parent_block ) {
 	if ( 'sketchpad-modified-blocks/group' === $block['blockName'] ) {
-		$is_show_no_posts = isset( $block['attrs']['isShowNoPosts'] ) ? $block['attrs']['isShowNoPosts'] : false;
+		$is_show_no_posts     = isset( $block['attrs']['isShowNoPosts'] ) ? $block['attrs']['isShowNoPosts'] : false;
+		$is_show_has_category = isset( $block['attrs']['isShowHasCategory'] ) ? $block['attrs']['isShowHasCategory'] : false;
 
 		if ( $is_show_no_posts ) {
 			$pre_render = have_posts() ? '' : $pre_render;
+		}
+
+		if ( $is_show_has_category ) {
+			$pre_render = has_category() ? $pre_render : '';
 		}
 	}
 

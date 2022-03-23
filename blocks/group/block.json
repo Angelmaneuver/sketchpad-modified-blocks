@@ -45,6 +45,10 @@
 		"isShowNoPosts": {
 			"type": "boolean",
 			"default": false
+		},
+		"isShowHasCategory": {
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"example": {},

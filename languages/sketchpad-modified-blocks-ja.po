@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad Modified - Blocks 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
-"POT-Creation-Date: 2022-03-22T16:52:01+00:00\n"
+"POT-Creation-Date: 2022-03-23T08:07:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,10 @@ msgstr "表示制御設定"
 #: blocks/group/group.js:1
 msgid "Display this block only if there are no query results."
 msgstr "クエリー結果が無かった場合のみ、このブロックを表示します。"
+
+#: blocks/group/group.js:1
+msgid "Display this block only if the post has a category."
+msgstr "投稿にカテゴリーがある場合のみ、このブロックを表示します。"
 
 #: blocks/post-comments-count/post-comments-count.js:1
 msgid "Make the post comments count on the post a link."
