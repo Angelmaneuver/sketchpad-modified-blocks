@@ -18,9 +18,9 @@ div.wp-block-sketchpad-modified-blocks-talk {
       > div:first-child {
         flex-basis: 0;
         flex-grow: 2;
-        width: 5.9375rem;
-        min-width: 5.9375rem;
-        max-width: 5.9375rem;
+        width: auto;
+        min-width: auto;
+        max-width: 100%;
         margin: 0.625rem;
 
         > div.block-editor-inner-blocks {
