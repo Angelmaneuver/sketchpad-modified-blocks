@@ -11,7 +11,7 @@ Custom Gutenberg Blocks for myself.
  - [File data display by get](./src/file-data-display-by-get)
  - [Group](./src/group)
  - [Post comments count](./src/post-comments-count)
- - Post edit link
+ - [Post edit link](./src/post-edit-link)
  - Post navigation links
  - Search keyword
  - Table of contents
