@@ -16,4 +16,4 @@ Custom Gutenberg Blocks for myself.
  - [Search keyword](./src/search-keyword)
  - [Table of contents](./src/table-of-contents)
  - [Tag list](./src/tag-list)
- - Talk
+ - [Talk](./src/talk)
