@@ -10,7 +10,7 @@ Custom Gutenberg Blocks for myself.
  - [Copy](./src/copy)
  - [File data display by get](./src/file-data-display-by-get)
  - [Group](./src/group)
- - Post comments count
+ - [Post comments count](./src/post-comments-count)
  - Post edit link
  - Post navigation links
  - Search keyword
