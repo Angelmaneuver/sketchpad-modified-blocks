@@ -32,7 +32,7 @@
 		}
 	},
 	"attributes": {
-		"textAlgin": {
+		"textAlign": {
 			"type": "string",
 			"default": ""
 		},
