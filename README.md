@@ -12,7 +12,7 @@ Custom Gutenberg Blocks for myself.
  - [Group](./src/group)
  - [Post comments count](./src/post-comments-count)
  - [Post edit link](./src/post-edit-link)
- - Post navigation links
+ - [Post navigation links](./src/post-navigation-links)
  - Search keyword
  - Table of contents
  - Tag list
