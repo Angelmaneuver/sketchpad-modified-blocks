@@ -7,7 +7,7 @@ Custom Gutenberg Blocks for myself.
 ## Custom Blocks
  - [Annotaions](./src/annotations)
  - [Biim](./src/biim)
- - Copy
+ - [Copy](./src/copy)
  - File data display by get
  - Group
  - Post comments count
