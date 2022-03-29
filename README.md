@@ -6,7 +6,7 @@ Custom Gutenberg Blocks for myself.
 
 ## Custom Blocks
  - [Annotaions](./src/annotations)
- - Biim
+ - [Biim](./src/biim)
  - Copy
  - File data display by get
  - Group
