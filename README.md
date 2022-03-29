@@ -9,7 +9,7 @@ Custom Gutenberg Blocks for myself.
  - [Biim](./src/biim)
  - [Copy](./src/copy)
  - [File data display by get](./src/file-data-display-by-get)
- - Group
+ - [Group](./src/group)
  - Post comments count
  - Post edit link
  - Post navigation links
