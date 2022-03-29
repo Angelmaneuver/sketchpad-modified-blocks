@@ -14,6 +14,6 @@ Custom Gutenberg Blocks for myself.
  - [Post edit link](./src/post-edit-link)
  - [Post navigation links](./src/post-navigation-links)
  - [Search keyword](./src/search-keyword)
- - Table of contents
+ - [Table of contents](./src/table-of-contents)
  - Tag list
  - Talk
