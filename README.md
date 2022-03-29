@@ -5,7 +5,7 @@
 Custom Gutenberg Blocks for myself.
 
 ## Custom Blocks
- - [Annotaions](./src/annotations/README.md)
+ - [Annotaions](./src/annotations)
  - Biim
  - Copy
  - File data display by get
