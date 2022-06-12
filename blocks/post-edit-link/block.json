@@ -1,43 +1,47 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/post-edit-link",
-	"version": "0.1.0",
-	"title": "Post edit link",
-	"category": "theme",
-	"icon": "edit",
-	"description": "Add a post edit link.",
-	"textdomain": "sketchpad-modified-blocks",
-	"keywords": [ "Post edit link" ],
-	"styles": [],
-	"usesContext": [ "postId" ],
-	"supports": {
-		"html": false,
-		"color": {
-			"gradients": true,
-			"link": true,
-			"__experimentalDefaultControls": {
-				"background": true,
-				"text": true
-			}
-		},
-		"typography": {
-			"fontSize": true,
-			"lineHeight": true,
-			"__experimentalFontStyle": true,
-			"__experimentalFontWeight": true,
-			"__experimentalLetterSpacing": true,
-			"__experimentalDefaultControls": {
-				"fontSize": true
-			}
-		}
-	},
-	"attributes": {
-		"label": {
-			"type": "string",
-			"default": ""
-		}
-	},
-	"example": {},
-	"editorScript": "file:post-edit-link.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/post-edit-link",
+  "version": "0.1.0",
+  "title": "Post edit link",
+  "category": "theme",
+  "icon": "edit",
+  "description": "Add a post edit link.",
+  "textdomain": "sketchpad-modified-blocks",
+  "keywords": [
+    "Post edit link"
+  ],
+  "styles": [],
+  "usesContext": [
+    "postId"
+  ],
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "example": {},
+  "editorScript": "file:post-edit-link.js"
 }

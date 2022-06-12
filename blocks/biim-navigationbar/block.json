@@ -1,35 +1,35 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/biim-navigationbar",
-	"version": "0.1.0",
-	"title": "Biim Navigationbar",
-	"icon": "editor-paragraph",
-	"description": "Navigationbar block.",
-	"textdomain": "sketchpad-modified-blocks",
-	"keywords": [],
-	"styles": [
-		{
-			"name": "default",
-			"label": "default",
-			"isDefault": true
-		},
-		{
-			"name": "no-icon",
-			"label": "No Icon"
-		},
-		{
-			"name": "icon-border",
-			"label": "Icon Border"
-		}
-	],
-	"supports": {
-		"html": false,
-		"inserter": false,
-		"reusable": false
-	},
-	"attributes": {},
-	"editorScript": "file:biim-navigationbar.js",
-	"editorStyle": "file:biim-navigationbar.css",
-	"style": "file:style-biim-navigationbar.css"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/biim-navigationbar",
+  "version": "0.1.0",
+  "title": "Biim Navigationbar",
+  "icon": "editor-paragraph",
+  "description": "Navigationbar block.",
+  "textdomain": "sketchpad-modified-blocks",
+  "keywords": [],
+  "styles": [
+    {
+      "name": "default",
+      "label": "default",
+      "isDefault": true
+    },
+    {
+      "name": "no-icon",
+      "label": "No Icon"
+    },
+    {
+      "name": "icon-border",
+      "label": "Icon Border"
+    }
+  ],
+  "supports": {
+    "html": false,
+    "inserter": false,
+    "reusable": false
+  },
+  "attributes": {},
+  "editorScript": "file:biim-navigationbar.js",
+  "editorStyle": "file:biim-navigationbar.css",
+  "style": "file:style-biim-navigationbar.css"
 }

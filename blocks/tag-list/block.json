@@ -1,19 +1,21 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/tag-list",
-	"version": "0.1.0",
-	"title": "Tag list",
-	"category": "widgets",
-	"icon": "tag",
-	"description": "A dynamic block that outputs a list of tags.",
-	"textdomain": "sketchpad-modified-blocks",
-	"keywords": [ "Tag list" ],
-	"styles": [],
-	"supports": {
-		"html": false
-	},
-	"attributes": {},
-	"example": {},
-	"editorScript": "file:tag-list.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/tag-list",
+  "version": "0.1.0",
+  "title": "Tag list",
+  "category": "widgets",
+  "icon": "tag",
+  "description": "A dynamic block that outputs a list of tags.",
+  "textdomain": "sketchpad-modified-blocks",
+  "keywords": [
+    "Tag list"
+  ],
+  "styles": [],
+  "supports": {
+    "html": false
+  },
+  "attributes": {},
+  "example": {},
+  "editorScript": "file:tag-list.js"
 }

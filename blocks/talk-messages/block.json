@@ -1,19 +1,19 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/talk-messages",
-	"version": "0.1.0",
-	"title": "Talk Messages",
-	"icon": "editor-paragraph",
-	"description": "This block displays multiple messages in a callout.",
-	"keywords": [],
-	"styles": [],
-	"supports": {
-		"html": false,
-		"inserter": false,
-		"reusable": false
-	},
-	"attributes": {},
-	"textdomain": "sketchpad-modified-blocks",
-	"editorScript": "file:talk-messages.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/talk-messages",
+  "version": "0.1.0",
+  "title": "Talk Messages",
+  "icon": "editor-paragraph",
+  "description": "This block displays multiple messages in a callout.",
+  "keywords": [],
+  "styles": [],
+  "supports": {
+    "html": false,
+    "inserter": false,
+    "reusable": false
+  },
+  "attributes": {},
+  "textdomain": "sketchpad-modified-blocks",
+  "editorScript": "file:talk-messages.js"
 }

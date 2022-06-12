@@ -1,26 +1,28 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/file-data-display-by-get",
-	"version": "0.1.0",
-	"title": "File Data Display (Get Parameter Type)",
-	"category": "media",
-	"icon": "media-text",
-	"description": "A dynamic block that outputs a file data. Identify the file with the Get parameter.",
-	"textdomain": "sketchpad-modified-blocks",
-	"keywords": [ "File data display" ],
-	"styles": [],
-	"supports": {
-		"html": false,
-		"multiple": false,
-		"reusable": false
-	},
-	"attributes": {
-		"baseDirectory": {
-			"type": "string",
-			"default": ""
-		}
-	},
-	"example": {},
-	"editorScript": "file:file-data-display-by-get.js"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/file-data-display-by-get",
+  "version": "0.1.0",
+  "title": "File Data Display (Get Parameter Type)",
+  "category": "media",
+  "icon": "media-text",
+  "description": "A dynamic block that outputs a file data. Identify the file with the Get parameter.",
+  "textdomain": "sketchpad-modified-blocks",
+  "keywords": [
+    "File data display"
+  ],
+  "styles": [],
+  "supports": {
+    "html": false,
+    "multiple": false,
+    "reusable": false
+  },
+  "attributes": {
+    "baseDirectory": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "example": {},
+  "editorScript": "file:file-data-display-by-get.js"
 }

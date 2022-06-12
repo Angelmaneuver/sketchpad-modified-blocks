@@ -1,64 +1,68 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/post-comments-count",
-	"version": "0.1.0",
-	"title": "Post comments count",
-	"category": "theme",
-	"icon": "admin-comments",
-	"description": "Display a post's comments count and add text before or after.",
-	"textdomain": "sketchpad-modified-blocks",
-	"keywords": [ "Post comments count" ],
-	"styles": [],
-	"usesContext": [ "postId" ],
-	"supports": {
-		"html": false,
-		"color": {
-			"gradients": true,
-			"link": true,
-			"__experimentalDefaultControls": {
-				"background": true,
-				"text": true
-			}
-		},
-		"typography": {
-			"fontSize": true,
-			"lineHeight": true,
-			"__experimentalFontFamily": true,
-			"__experimentalFontWeight": true,
-			"__experimentalFontStyle": true,
-			"__experimentalTextTransform": true,
-			"__experimentalLetterSpacing": true,
-			"__experimentalDefaultControls": {
-				"fontSize": true,
-				"fontAppearance": true,
-				"textTransform": true
-			}
-		}
-	},
-	"attributes": {
-		"textAlgin": {
-			"type": "string",
-			"default": ""
-		},
-		"isLink": {
-			"type": "boolean",
-			"default": false
-		},
-		"anchor": {
-			"type": "string",
-			"default": ""
-		},
-		"beforeText": {
-			"type": "string",
-			"default": ""
-		},
-		"afterText": {
-			"type": "string",
-			"default": ""
-		}
-	},
-	"example": {},
-	"editorScript": "file:post-comments-count.js",
-	"editorStyle": "file:post-comments-count.css"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/post-comments-count",
+  "version": "0.1.0",
+  "title": "Post comments count",
+  "category": "theme",
+  "icon": "admin-comments",
+  "description": "Display a post's comments count and add text before or after.",
+  "textdomain": "sketchpad-modified-blocks",
+  "keywords": [
+    "Post comments count"
+  ],
+  "styles": [],
+  "usesContext": [
+    "postId"
+  ],
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true,
+        "fontAppearance": true,
+        "textTransform": true
+      }
+    }
+  },
+  "attributes": {
+    "textAlgin": {
+      "type": "string",
+      "default": ""
+    },
+    "isLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "beforeText": {
+      "type": "string",
+      "default": ""
+    },
+    "afterText": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "example": {},
+  "editorScript": "file:post-comments-count.js",
+  "editorStyle": "file:post-comments-count.css"
 }

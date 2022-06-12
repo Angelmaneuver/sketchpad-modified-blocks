@@ -1,29 +1,32 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
-	"name": "sketchpad-modified-blocks/talk",
-	"version": "0.1.0",
-	"title": "Talk",
-	"category": "text",
-	"description": "Designed to look like a chat exchange.",
-	"keywords": [ "Talk", "Chat" ],
-	"styles": [
-		{
-			"name": "left",
-			"label": "Left style",
-			"isDefault": true
-		},
-		{
-			"name": "right",
-			"label": "Right style"
-		}
-	],
-	"supports": {
-		"html": false
-	},
-	"attributes": {},
-	"textdomain": "sketchpad-modified-blocks",
-	"editorScript": "file:talk.js",
-	"editorStyle": "file:talk.css",
-	"style": "file:style-talk.css"
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sketchpad-modified-blocks/talk",
+  "version": "0.1.0",
+  "title": "Talk",
+  "category": "text",
+  "description": "Designed to look like a chat exchange.",
+  "keywords": [
+    "Talk",
+    "Chat"
+  ],
+  "styles": [
+    {
+      "name": "left",
+      "label": "Left style",
+      "isDefault": true
+    },
+    {
+      "name": "right",
+      "label": "Right style"
+    }
+  ],
+  "supports": {
+    "html": false
+  },
+  "attributes": {},
+  "textdomain": "sketchpad-modified-blocks",
+  "editorScript": "file:talk.js",
+  "editorStyle": "file:talk.css",
+  "style": "file:style-talk.css"
 }
