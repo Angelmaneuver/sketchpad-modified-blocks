@@ -181,8 +181,8 @@ class SMB_Table_Of_Contents {
 			$this->layer++;
 		}
 
-		$element                  = $this->anchor_enable ? '<a data-scroll href="#' . self::ANCHOR_PREFIX . "${key}\">${value}</a>" : $value;
-		$this->list_items_markup .= "${temp}<li><div class=\"toc-item toc-open\"><div class=\"toc-element\">${element}</div><div class=\"toc-accordion\"></div></div>";
+		$element                  = $this->anchor_enable ? '<a data-scroll href="#' . self::ANCHOR_PREFIX . "{$key}\">{$value}</a>" : $value;
+		$this->list_items_markup .= "{$temp}<li><div class=\"toc-item toc-open\"><div class=\"toc-element\">{$element}</div><div class=\"toc-accordion\"></div></div>";
 		$this->closing_tags[]     = '</li>';
 		$this->ranks[]            = $rank;
 	}
