@@ -17,7 +17,7 @@ module.exports             = {
 	  'biim-paragraphs':          './src/biim-paragraphs/index.js',
 	  'copy':                     './src/copy/index.js',
 	  'file-data-display-by-get': './src/file-data-display-by-get/index.js',
-	  'group':                    './src/group/index.js',
+	  // 'group':                    './src/group/index.js',
 	  'post-comments-count':      './src/post-comments-count/index.js',
 	  'post-edit-link':           './src/post-edit-link/index.js',
 	  'post-navigation-links':    './src/post-navigation-links/index.js',

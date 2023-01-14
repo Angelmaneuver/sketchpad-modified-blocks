@@ -31,7 +31,7 @@ require_once __DIR__ . '/blocks/talk-name.php';
 require_once __DIR__ . '/blocks/file-data-display-by-get.php';
 
 // Design category.
-require_once __DIR__ . '/blocks/group.php';
+// require_once __DIR__ . '/blocks/group.php'; Deprecated feature.
 
 // Widgets category.
 require_once __DIR__ . '/blocks/tag-list.php';

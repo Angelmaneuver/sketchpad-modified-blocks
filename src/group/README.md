@@ -1,4 +1,4 @@
-# Group
+# [Deprecated] Group
 
 Combine blocks into a group and display control.
 
