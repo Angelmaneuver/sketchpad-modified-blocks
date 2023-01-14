@@ -26,9 +26,6 @@
 			"default": "none"
 		}
 	},
-	"example": {
-		"attributes": {}
-	},
 	"editorScript": "file:copy.js",
 	"editorStyle": "file:copy.css",
 	"style": "file:style-copy.css"
