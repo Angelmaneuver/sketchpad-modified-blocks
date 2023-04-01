@@ -34,7 +34,7 @@ function render_sketchpad_modified_blocks_table_of_contents( $block_attributes, 
 		$wraper_tag_name  = $block_attributes['tagName'];
 		$heading_tag_name = $block_attributes['headingTagName'];
 		$title            = isset( $block_attributes['heading'] ) && ! empty( $block_attributes['heading'] )
-								? "<{$heading_tag_name}>" . esc_html( $block_attributes['heading'] ) . "</$heading_tag_name>"
+								? "<{$heading_tag_name}>" . esc_html( $block_attributes['heading'] ) . "</{$heading_tag_name}>"
 								: '';
 		$format           = "<{$wraper_tag_name}" . ' %1$s' . ">{$title}" . '<ul>%2$s</ul>' . "</{$wraper_tag_name}>";
 		$elements_markup  = ( new SMB_Table_Of_Contents( get_the_content(), true ) )->get_toc();
@@ -67,7 +67,7 @@ function sketchpad_modified_blocks_toc_filter( string $content ): string {
 		return $content;
 	}
 
-	$headlines = SMB_Table_Of_Contents::get_headlines( get_the_content() );
+	$headlines = SMB_Table_Of_Contents::get_headlines( $content );
 
 	if ( ! SMB_Table_Of_Contents::is_required_headlines( $headlines ) ) {
 		return $content;
@@ -78,8 +78,8 @@ function sketchpad_modified_blocks_toc_filter( string $content ): string {
 		$close   = $headline['close'];
 		$value   = $headline['value'];
 		$content = preg_replace(
-			'/' . preg_quote( "${open}${value}${close}", '/' ) . '/',
-			"${open}<span id=\"" . SMB_Table_Of_Contents::ANCHOR_PREFIX . "${key}\">${value}</span>${close}",
+			'/' . preg_quote( "{$open}{$value}{$close}", '/' ) . '/',
+			"{$open}<span id=\"" . SMB_Table_Of_Contents::ANCHOR_PREFIX . "{$key}\">{$value}</span>{$close}",
 			$content,
 			1
 		);
