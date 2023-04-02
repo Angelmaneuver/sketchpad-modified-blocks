@@ -41,8 +41,8 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit( { attributes, setAttributes } ) {
-	const textAlign            = attributes.textAlign;
-	const blockProps       = useBlockProps({
+	const textAlign  = attributes.textAlign;
+	const blockProps = useBlockProps({
 		className: classnames( {
 			[ `has-text-align-${textAlign}` ]: textAlign,
 		} ),
@@ -65,13 +65,15 @@ export default function Edit( { attributes, setAttributes } ) {
 						label    = { __( 'HTML element' ) }
 						value    = { attributes.tagName }
 						options  = { [
-							{ label: '<p>',  value: 'p' },
-							{ label: '<h1>', value: 'h1' },
-							{ label: '<h2>', value: 'h2' },
-							{ label: '<h3>', value: 'h3' },
-							{ label: '<h4>', value: 'h4' },
-							{ label: '<h5>', value: 'h5' },
-							{ label: '<h6>', value: 'h6' },
+							{ label: '<div>',  value: 'div' },
+							{ label: '<span>', value: 'span' },
+							{ label: '<p>',    value: 'p' },
+							{ label: '<h1>',   value: 'h1' },
+							{ label: '<h2>',   value: 'h2' },
+							{ label: '<h3>',   value: 'h3' },
+							{ label: '<h4>',   value: 'h4' },
+							{ label: '<h5>',   value: 'h5' },
+							{ label: '<h6>',   value: 'h6' },
 						] }
 						onChange = { ( value ) => setAttributes( { tagName: value } ) }
 					/>
