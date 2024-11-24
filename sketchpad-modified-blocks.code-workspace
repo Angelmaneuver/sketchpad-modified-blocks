@@ -15,6 +15,9 @@
 			"editor.tabSize": 2,
 		},
 		"auto-rename-tag.activationOnLanguage": ["*"],
+		"php.suggest.basic": false,
+		"php.validate.enable": false,
+		"php.validate.executablePath": null,
 		"phpcs.executablePath": "./vendor/squizlabs/php_codesniffer/bin/phpcs",
 		"phpcs.standard": "WordPress",
 		"intelephense.stubs": [
@@ -99,13 +102,11 @@
 			"christian-kohler.path-intellisense",
 			"anthonydiametrix.acf-snippet",
 			"zignd.html-css-class-completion",
-			"dbaeumer.vscode-eslint",
 			"shevaua.phpcs",
 			"neilbrayfield.php-docblocker",
 			"bmewburn.vscode-intelephense-client",
 			"xdebug.php-debug",
 			"wordpresstoolbox.wordpress-toolbox",
-			"esbenp.prettier-vscode",
 		]
 	},
 	"launch": {

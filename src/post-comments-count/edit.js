@@ -30,7 +30,7 @@ import {
 } from '@wordpress/element';
 import apiFetch         from '@wordpress/api-fetch';
 import { addQueryArgs } from '@wordpress/url';
-import classnames       from 'classnames';
+import clsx             from 'clsx';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -55,9 +55,7 @@ export default function Edit( { attributes, setAttributes, context } ) {
 	const anchor                              = attributes.anchor;
 	const [ commentsCount, setCommentsCount ] = useState();
 	const blockProps                          = useBlockProps({
-		className: classnames( {
-			[ `has-text-align-${textAlign}`]: textAlign,
-		} ),
+		className: clsx(`has-text-align-${textAlign}`, textAlign),
 	} );
 
 	useEffect( () => {

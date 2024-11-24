@@ -22,7 +22,7 @@ import {
 	PanelBody,
 	SelectControl
 }                       from '@wordpress/components';
-import classnames       from 'classnames';
+import clsx             from 'clsx';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -43,9 +43,7 @@ import './editor.scss';
 export default function Edit( { attributes, setAttributes } ) {
 	const textAlign  = attributes.textAlign;
 	const blockProps = useBlockProps({
-		className: classnames( {
-			[ `has-text-align-${textAlign}` ]: textAlign,
-		} ),
+		className: clsx(`has-text-align-${textAlign}`, textAlign),
 	} );
 
 	return (

@@ -5,8 +5,10 @@
 .wp-block-sketchpad-modified-blocks-post-comments-count {
   display: flex;
 
+  align-items: baseline;
+
   &.is-selected {
-    justify-content: space-between;
+    justify-content: start;
   }
 
   &.has-text-align- {
