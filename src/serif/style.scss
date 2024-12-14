@@ -1,0 +1,37 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.wp-block-sketchpad-modified-blocks-serif {
+  .sketchpad-modified-blocks-serif-name, .sketchpad-modified-blocks-serif-serif {
+    text-shadow: #abb8c3 .1rem .1rem 1rem, #abb8c3 -.1rem .1rem 1rem, #abb8c3 .1rem -.1rem 1rem, #abb8c3 -.1rem -.1rem 1rem;
+  }
+
+  .sketchpad-modified-blocks-serif-name {
+    margin-bottom: 1px;
+  }
+
+  .sketchpad-modified-blocks-serif-serif {
+    margin-top: 5px;
+  }
+
+  .sketchpad-modified-blocks-serif-separator {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+
+    &:not(.is-style-wide):not(.is-style-dots) {
+      width: 200px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      background-image: linear-gradient(to right, transparent, whitesmoke 35%, whitesmoke 75%, transparent);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

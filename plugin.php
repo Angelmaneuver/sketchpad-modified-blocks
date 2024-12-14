@@ -5,7 +5,7 @@
  * Description:       Custom Gutenberg Blocks for myself.
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           0.2.0
  * Author:            Angelmaneuver
  * Author URI:        https://github.com/Angelmaneuver
  * License:           GPL-2.0-or-later

@@ -22,6 +22,7 @@ module.exports             = {
 	  'post-edit-link':           './src/post-edit-link/index.js',
 	  'post-navigation-links':    './src/post-navigation-links/index.js',
 	  'search-keyword':           './src/search-keyword/index.js',
+	  'serif':                    './src/serif/index.js',
 	  'table-of-contents':        './src/table-of-contents/index.js',
 	  'tag-list':                 './src/tag-list/index.js',
 	  'talk':                     './src/talk/index.js',

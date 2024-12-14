@@ -26,6 +26,7 @@ require_once __DIR__ . '/blocks/talk-message.php';
 require_once __DIR__ . '/blocks/talk-messagebox.php';
 require_once __DIR__ . '/blocks/talk-messages.php';
 require_once __DIR__ . '/blocks/talk-name.php';
+require_once __DIR__ . '/blocks/serif.php';
 
 // Media category.
 require_once __DIR__ . '/blocks/file-data-display-by-get.php';

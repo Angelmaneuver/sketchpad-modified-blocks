@@ -94,6 +94,49 @@
 			"zlib",
 			"wordpress"
 		],
+		"command-launcher.commands": {
+			"WordPress": {
+				"type": 2,
+				"label": "$(repo)",
+				"description": "WordPress に関する操作をします。",
+				"orderNo": "100",
+				"make-pot": {
+					"command": "wp i18n make-pot . languages/sketchpad-modified-blocks.pot --domain=sketchpad-modified-blocks --exclude=vendor,assets --allow-root",
+					"type": 3,
+					"label": "$(file-add)",
+					"description": "POT ファイルを生成します。",
+					"orderNo": "100"
+				},
+				"msgmerge": {
+					"command": "msgmerge -U --no-wrap languages/sketchpad-modified-blocks-ja.po languages/sketchpad-modified-blocks.pot",
+					"type": 3,
+					"label": "$(merge)",
+					"description": "翻訳済みファイルと新規 POT ファイルをマージする。",
+					"orderNo": "101"
+				},
+				"msgfmt": {
+					"command": "msgfmt ./languages/sketchpad-modified-blocks-ja.po -o ./languages/sketchpad-modified-blocks-ja.mo",
+					"type": 3,
+					"label": "$(vm-running)",
+					"description": "MO ファイルを作成します。",
+					"orderNo": "102"
+				},
+				"make-json": {
+					"command": "wp i18n make-json ./languages/sketchpad-modified-blocks-ja.po --no-purge --allow-root",
+					"type": 3,
+					"label": "$(vm-running)",
+					"description": "Json ファイルを作成します。",
+					"orderNo": "103"
+				},
+				"ビルド": {
+					"command": "yarn run build",
+					"type": 3,
+					"label": "$(debug-start)",
+					"description": "Json ファイルを作成します。",
+					"orderNo": "104"
+				}
+			},
+		}
 	},
 	"extensions": {
 		"recommendations": [
@@ -107,6 +150,7 @@
 			"bmewburn.vscode-intelephense-client",
 			"xdebug.php-debug",
 			"wordpresstoolbox.wordpress-toolbox",
+			"angelmaneuver.command-launcher",
 		]
 	},
 	"launch": {

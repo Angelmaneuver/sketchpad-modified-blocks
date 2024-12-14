@@ -1,36 +1,41 @@
-# Copyright (C) 2022 Angelmaneuver
+# Copyright (C) 2024 Angelmaneuver
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sketchpad modified - Blocks 0.1.0\n"
+"Project-Id-Version: Sketchpad modified - Blocks 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sketchpad-modified-blocks\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-03-23T08:07:31+00:00\n"
+"POT-Creation-Date: 2024-12-12T16:26:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.5.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: sketchpad-modified-blocks\n"
 
 #. Plugin Name of the plugin
+#: plugin.php
 msgid "Sketchpad modified - Blocks"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: plugin.php
 msgid "https://github.com/Angelmaneuver/sketchpad-modified-blocks"
 msgstr ""
 
 #. Description of the plugin
+#: plugin.php
 msgid "Custom Gutenberg Blocks for myself."
 msgstr ""
 
 #. Author of the plugin
+#: plugin.php
 msgid "Angelmaneuver"
 msgstr ""
 
 #. Author URI of the plugin
+#: plugin.php
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
@@ -46,126 +51,159 @@ msgstr ""
 msgid "The table of contents cannot be displayed on this page."
 msgstr ""
 
-#: assets/js/clipboard.js:14
-msgid "copied!"
-msgstr ""
-
 #: blocks/annotations/annotations.js:1
+#: src/annotations/edit.js:82
 msgid "Enter annotations"
 msgstr ""
 
 #: blocks/copy/copy.js:1
+#: src/copy/edit.js:61
 msgid "Copy Button Configuration"
 msgstr ""
 
 #: blocks/copy/copy.js:1
+#: src/copy/edit.js:66
 msgid "Enter a value that identifies the element you want to copy for clipboard."
 msgstr ""
 
 #: blocks/file-data-display-by-get/file-data-display-by-get.js:1
+#: src/file-data-display-by-get/edit.js:51
 msgid "File Data Display Configuration"
 msgstr ""
 
 #: blocks/file-data-display-by-get/file-data-display-by-get.js:1
+#: src/file-data-display-by-get/edit.js:56
 msgid "Enter the directory where you want to search for files from the Get parameter. * Only under the WordPress installation directory."
 msgstr ""
 
-#: blocks/group/group.js:1
-msgid "Display control settings"
-msgstr ""
-
-#: blocks/group/group.js:1
-msgid "Display this block only if there are no query results."
-msgstr ""
-
-#: blocks/group/group.js:1
-msgid "Display this block only if the post has a category."
-msgstr ""
-
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:91
 msgid "Make the post comments count on the post a link."
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:97
 msgid "Enter the value you want to link destination."
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:98
 msgid "Anchor string without \"#\""
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:108
 msgid "Post comments count before text"
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:109
 msgid "Before post comments count"
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:117
 msgid "Post Comments Count block: post not found."
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:122
 msgid "Post comments count after text"
 msgstr ""
 
 #: blocks/post-comments-count/post-comments-count.js:1
+#: src/post-comments-count/edit.js:123
 msgid "After post comments count"
 msgstr ""
 
 #: blocks/post-edit-link/post-edit-link.js:1
+#: src/post-edit-link/edit.js:37
 msgid "Post edit link"
 msgstr ""
 
 #: blocks/post-edit-link/post-edit-link.js:1
+#: src/post-edit-link/edit.js:38
 msgid "Post edit link label"
 msgstr ""
 
 #: blocks/search-keyword/search-keyword.js:1
 #: blocks/table-of-contents/table-of-contents.js:1
+#: src/search-keyword/edit.js:59
+#: src/table-of-contents/edit.js:46
 msgid "Block Configuration"
 msgstr ""
 
 #: blocks/search-keyword/search-keyword.js:1
+#: src/search-keyword/edit.js:83
 msgid "Search keyword before text"
 msgstr ""
 
 #: blocks/search-keyword/search-keyword.js:1
+#: src/search-keyword/edit.js:84
 msgid "Add text before search keyword."
 msgstr ""
 
 #: blocks/search-keyword/search-keyword.js:1
+#: src/search-keyword/edit.js:88
 msgid "Search Keyword"
 msgstr ""
 
 #: blocks/search-keyword/search-keyword.js:1
+#: src/search-keyword/edit.js:91
 msgid "Search keyword after text"
 msgstr ""
 
 #: blocks/search-keyword/search-keyword.js:1
+#: src/search-keyword/edit.js:92
 msgid "Add text after search keyword."
 msgstr ""
 
+#: blocks/serif/serif.js:1
+#: src/serif/edit.js:42
+msgid "Please enter your name..."
+msgstr ""
+
+#: blocks/serif/serif.js:1
+#: src/serif/edit.js:53
+msgid "Please enter serif..."
+msgstr ""
+
 #: blocks/table-of-contents/table-of-contents.js:1
+#: src/table-of-contents/edit.js:59
 msgid "Enter the value you want to display as the heading."
 msgstr ""
 
 #: blocks/table-of-contents/table-of-contents.js:1
+#: src/table-of-contents/edit.js:64
 msgid "Heading Element"
 msgstr ""
 
+#: src/group/edit.js:54
+msgid "Display control settings"
+msgstr ""
+
+#: src/group/edit.js:58
+msgid "Display this block only if there are no query results."
+msgstr ""
+
+#: src/group/edit.js:63
+msgid "Display this block only if the post has a category."
+msgstr ""
+
 #: blocks/annotations/block.json
+#: src/annotations/block.json
 msgctxt "block title"
 msgid "Annotations"
 msgstr ""
 
 #: blocks/annotations/block.json
+#: src/annotations/block.json
 msgctxt "block description"
 msgid "This block for writing annotations."
 msgstr ""
 
 #: blocks/annotations/block.json
+#: src/annotations/block.json
 msgctxt "block keyword"
 msgid "annotations"
 msgstr ""
@@ -174,314 +212,372 @@ msgstr ""
 #: blocks/biim-navigationbar/block.json
 #: blocks/biim-paragraphs/block.json
 #: blocks/biim/block.json
+#: blocks/serif/block.json
 #: blocks/talk-icon/block.json
+#: src/annotations/block.json
+#: src/biim-navigationbar/block.json
+#: src/biim-paragraphs/block.json
+#: src/biim/block.json
+#: src/serif/block.json
+#: src/talk-icon/block.json
 msgctxt "block style label"
 msgid "default"
 msgstr ""
 
 #: blocks/annotations/block.json
 #: blocks/biim/block.json
+#: src/annotations/block.json
+#: src/biim/block.json
 msgctxt "block style label"
 msgid "No Vertical Margin"
 msgstr ""
 
 #: blocks/biim-navigationbar/block.json
+#: src/biim-navigationbar/block.json
 msgctxt "block title"
 msgid "Biim Navigationbar"
 msgstr ""
 
 #: blocks/biim-navigationbar/block.json
+#: src/biim-navigationbar/block.json
 msgctxt "block description"
 msgid "Navigationbar block."
 msgstr ""
 
 #: blocks/biim-navigationbar/block.json
+#: src/biim-navigationbar/block.json
 msgctxt "block style label"
 msgid "No Icon"
 msgstr ""
 
 #: blocks/biim-navigationbar/block.json
+#: src/biim-navigationbar/block.json
 msgctxt "block style label"
 msgid "Icon Border"
 msgstr ""
 
 #: blocks/biim-paragraphs/block.json
+#: src/biim-paragraphs/block.json
 msgctxt "block title"
 msgid "Biim Messagebox"
 msgstr ""
 
 #: blocks/biim-paragraphs/block.json
+#: src/biim-paragraphs/block.json
 msgctxt "block description"
 msgid "Messagebox block."
 msgstr ""
 
 #: blocks/biim-paragraphs/block.json
+#: src/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Bottom justified vertical position"
 msgstr ""
 
 #: blocks/biim-paragraphs/block.json
+#: src/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Center justified vertical position"
 msgstr ""
 
 #: blocks/biim-paragraphs/block.json
+#: src/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Space between"
 msgstr ""
 
 #: blocks/biim-paragraphs/block.json
+#: src/biim-paragraphs/block.json
 msgctxt "block style label"
 msgid "Space around"
 msgstr ""
 
 #: blocks/biim/block.json
+#: src/biim/block.json
 msgctxt "block title"
 msgid "Biim System"
 msgstr ""
 
 #: blocks/biim/block.json
+#: src/biim/block.json
 msgctxt "block description"
 msgid "Block that reproduces the Biim System."
 msgstr ""
 
 #: blocks/biim/block.json
+#: src/biim/block.json
 msgctxt "block keyword"
 msgid "Biim"
 msgstr ""
 
 #: blocks/biim/block.json
+#: src/biim/block.json
 msgctxt "block style label"
 msgid "Messagebox Only"
 msgstr ""
 
 #: blocks/copy/block.json
+#: src/copy/block.json
 msgctxt "block title"
 msgid "Copy Button"
 msgstr ""
 
 #: blocks/copy/block.json
+#: src/copy/block.json
 msgctxt "block description"
 msgid "Copy button block allows you to copy the text of other blocks."
 msgstr ""
 
 #: blocks/copy/block.json
+#: src/copy/block.json
 msgctxt "block keyword"
 msgid "copy"
 msgstr ""
 
 #: blocks/file-data-display-by-get/block.json
+#: src/file-data-display-by-get/block.json
 msgctxt "block title"
 msgid "File Data Display (Get Parameter Type)"
 msgstr ""
 
 #: blocks/file-data-display-by-get/block.json
+#: src/file-data-display-by-get/block.json
 msgctxt "block description"
 msgid "A dynamic block that outputs a file data. Identify the file with the Get parameter."
 msgstr ""
 
 #: blocks/file-data-display-by-get/block.json
+#: src/file-data-display-by-get/block.json
 msgctxt "block keyword"
 msgid "File data display"
 msgstr ""
 
-#: blocks/group/block.json
-msgctxt "block title"
-msgid "Group and display control"
-msgstr ""
-
-#: blocks/group/block.json
-msgctxt "block description"
-msgid "Combine blocks into a group and display control."
-msgstr ""
-
-#: blocks/group/block.json
-msgctxt "block keyword"
-msgid "Group"
-msgstr ""
-
-#: blocks/group/block.json
-msgctxt "block keyword"
-msgid "Display control"
-msgstr ""
-
 #: blocks/post-comments-count/block.json
+#: src/post-comments-count/block.json
 msgctxt "block title"
 msgid "Post comments count"
 msgstr ""
 
 #: blocks/post-comments-count/block.json
+#: src/post-comments-count/block.json
 msgctxt "block description"
 msgid "Display a post's comments count and add text before or after."
 msgstr ""
 
 #: blocks/post-comments-count/block.json
+#: src/post-comments-count/block.json
 msgctxt "block keyword"
 msgid "Post comments count"
 msgstr ""
 
 #: blocks/post-edit-link/block.json
+#: src/post-edit-link/block.json
 msgctxt "block title"
 msgid "Post edit link"
 msgstr ""
 
 #: blocks/post-edit-link/block.json
+#: src/post-edit-link/block.json
 msgctxt "block description"
 msgid "Add a post edit link."
 msgstr ""
 
 #: blocks/post-edit-link/block.json
+#: src/post-edit-link/block.json
 msgctxt "block keyword"
 msgid "Post edit link"
 msgstr ""
 
 #: blocks/post-navigation-links/block.json
+#: src/post-navigation-links/block.json
 msgctxt "block title"
 msgid "Post navigation links"
 msgstr ""
 
 #: blocks/post-navigation-links/block.json
+#: src/post-navigation-links/block.json
 msgctxt "block description"
 msgid "Displays the next and previous post link that is adjacent to the current post."
 msgstr ""
 
 #: blocks/post-navigation-links/block.json
+#: src/post-navigation-links/block.json
 msgctxt "block keyword"
 msgid "Post navigation links"
 msgstr ""
 
 #: blocks/search-keyword/block.json
+#: src/search-keyword/block.json
 msgctxt "block title"
 msgid "Search keyword"
 msgstr ""
 
 #: blocks/search-keyword/block.json
+#: src/search-keyword/block.json
 msgctxt "block description"
 msgid "Displays the search keyword and add text before or after."
 msgstr ""
 
 #: blocks/search-keyword/block.json
+#: src/search-keyword/block.json
 msgctxt "block keyword"
 msgid "Search keyword"
 msgstr ""
 
+#: blocks/serif/block.json
+#: src/serif/block.json
+msgctxt "block title"
+msgid "Serif"
+msgstr ""
+
+#: blocks/serif/block.json
+#: src/serif/block.json
+msgctxt "block description"
+msgid "Serif block."
+msgstr ""
+
 #: blocks/table-of-contents/block.json
+#: src/table-of-contents/block.json
 msgctxt "block title"
 msgid "Table of Contents"
 msgstr ""
 
 #: blocks/table-of-contents/block.json
+#: src/table-of-contents/block.json
 msgctxt "block description"
 msgid "A dynamic block that outputs a table of contents."
 msgstr ""
 
 #: blocks/table-of-contents/block.json
+#: src/table-of-contents/block.json
 msgctxt "block keyword"
 msgid "Table of Contents"
 msgstr ""
 
 #: blocks/tag-list/block.json
+#: src/tag-list/block.json
 msgctxt "block title"
 msgid "Tag list"
 msgstr ""
 
 #: blocks/tag-list/block.json
+#: src/tag-list/block.json
 msgctxt "block description"
 msgid "A dynamic block that outputs a list of tags."
 msgstr ""
 
 #: blocks/tag-list/block.json
+#: src/tag-list/block.json
 msgctxt "block keyword"
 msgid "Tag list"
 msgstr ""
 
 #: blocks/talk-icon/block.json
+#: src/talk-icon/block.json
 msgctxt "block title"
 msgid "Talk icon"
 msgstr ""
 
 #: blocks/talk-icon/block.json
+#: src/talk-icon/block.json
 msgctxt "block description"
 msgid "Block for icon."
 msgstr ""
 
 #: blocks/talk-icon/block.json
+#: src/talk-icon/block.json
 msgctxt "block style label"
 msgid "Rounded Corners"
 msgstr ""
 
 #: blocks/talk-message/block.json
+#: src/talk-message/block.json
 msgctxt "block title"
 msgid "Talk message"
 msgstr ""
 
 #: blocks/talk-message/block.json
+#: src/talk-message/block.json
 msgctxt "block description"
 msgid "Block for message."
 msgstr ""
 
 #: blocks/talk-message/block.json
+#: src/talk-message/block.json
 msgctxt "block style label"
 msgid "Talk style"
 msgstr ""
 
 #: blocks/talk-message/block.json
+#: src/talk-message/block.json
 msgctxt "block style label"
 msgid "Mind voice style"
 msgstr ""
 
 #: blocks/talk-messagebox/block.json
+#: src/talk-messagebox/block.json
 msgctxt "block title"
 msgid "Talk Messagebox"
 msgstr ""
 
 #: blocks/talk-messagebox/block.json
 #: blocks/talk-name/block.json
+#: src/talk-messagebox/block.json
+#: src/talk-name/block.json
 msgctxt "block description"
 msgid "This block manages name tag and messages."
 msgstr ""
 
 #: blocks/talk-messages/block.json
+#: src/talk-messages/block.json
 msgctxt "block title"
 msgid "Talk Messages"
 msgstr ""
 
 #: blocks/talk-messages/block.json
+#: src/talk-messages/block.json
 msgctxt "block description"
 msgid "This block displays multiple messages in a callout."
 msgstr ""
 
 #: blocks/talk-name/block.json
+#: src/talk-name/block.json
 msgctxt "block title"
 msgid "Talk name"
 msgstr ""
 
 #: blocks/talk/block.json
+#: src/talk/block.json
 msgctxt "block title"
 msgid "Talk"
 msgstr ""
 
 #: blocks/talk/block.json
+#: src/talk/block.json
 msgctxt "block description"
 msgid "Designed to look like a chat exchange."
 msgstr ""
 
 #: blocks/talk/block.json
+#: src/talk/block.json
 msgctxt "block keyword"
 msgid "Talk"
 msgstr ""
 
 #: blocks/talk/block.json
+#: src/talk/block.json
 msgctxt "block keyword"
 msgid "Chat"
 msgstr ""
 
 #: blocks/talk/block.json
+#: src/talk/block.json
 msgctxt "block style label"
 msgid "Left style"
 msgstr ""
 
 #: blocks/talk/block.json
+#: src/talk/block.json
 msgctxt "block style label"
 msgid "Right style"
 msgstr ""

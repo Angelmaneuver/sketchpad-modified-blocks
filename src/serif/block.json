@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "sketchpad-modified-blocks/serif",
+	"version": "0.2.0",
+	"title": "Serif",
+	"category": "text",
+	"icon": "editor-paragraph",
+	"description": "Serif block.",
+	"textdomain": "sketchpad-modified-blocks",
+	"keywords": [],
+	"styles": [
+		{
+			"name": "default",
+			"label": "default",
+			"isDefault": true
+		}
+	],
+	"supports": {
+		"html": false,
+		"color": {
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalTextTransform": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	},
+	"attributes": {},
+	"example": {},
+	"editorScript": "file:serif.js",
+	"editorStyle": "file:serif.css",
+	"style": "file:style-serif.css"
+}
